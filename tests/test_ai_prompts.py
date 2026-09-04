@@ -28,7 +28,7 @@ def test_data_sanitizer():
     assert "[REDACTED_PASS]" in clean
 
 def test_prompt_template_structure_5_components():
-    """Kiểm tra bộ Prompt có đầy đủ 5 thành phần theo chuẩn Chương 3."""
+    """Kiểm tra bộ Prompt có đầy đủ cấu trúc chuẩn 5 thành phần (Structured Prompting)."""
     prompt = PromptTemplates.get_fault_summary_prompt(
         model_may="iPhone 13 Pro Max",
         mo_ta_loi_khach="Máy sập nguồn",

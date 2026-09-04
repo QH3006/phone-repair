@@ -12,14 +12,14 @@ except ImportError:
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Hệ thống Quản lý Trung tâm Sửa chữa Điện thoại AI"
-    VERSION: str = "1.0.0 (KT1 Phase)"
+    VERSION: str = "2.1.0"
     API_V1_STR: str = "/api"
     
     # CSDL
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./phone_repair.db")
     
     # Bảo mật JWT
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "phone_repair_super_secret_jwt_key_kt1_kt2_kt3")
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "phone_repair_super_secret_jwt_key")
     ALGORITHM: str = os.getenv("ALGORITHM", "HS256")
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 480  # 8 giờ
     

@@ -31,9 +31,9 @@ Yêu cầu:
 
 ---
 
-### 3. ĐÁNH GIÁ, PHẢN BIỆN VÀ HIỆU CHỈNH CỦA SINH VIÊN (Human Review & Refine)
+### 3. ĐÁNH GIÁ, PHẢN BIỆN VÀ HIỆU CHỈNH CỦA KỸ SƯ (Human Review & Refine)
 
-| Thành phần | AI đề xuất ban đầu | Đánh giá của Sinh viên | Quyết định điều chỉnh / Bác bỏ |
+| Thành phần | AI đề xuất ban đầu | Đánh giá của Kỹ sư | Quyết định điều chỉnh / Bác bỏ |
 |---|---|---|---|
 | **Phân định vai trò tác nhân** | Gộp chung "Nhân viên" làm cả Lễ tân và Thu ngân. | Chưa sát thực tế trung tâm chuyên nghiệp; có rủi ro thất thoát tài chính nếu lễ tân tự thu tiền và tự sửa giá. | **SỬA ĐỔI**: Tách thành 4 vai trò RBAC độc lập: `QuanLy`, `LeTan`, `KyThuatVien`, `ThuNgan` (chỉ Thu ngân mới được lập hóa đơn và xác nhận thanh toán). |
 | **Vòng đời trạng thái phiếu** | 6 trạng thái cơ bản. | Thiếu bước phân công KTV và bước kiểm tra chất lượng (QC) sau sửa. | **BỔ SUNG**: Chuẩn hóa thành 8 trạng thái kỹ thuật: `TiepNhan` $\rightarrow$ `PhanCongKTV` $\rightarrow$ `DangKiemTra` $\rightarrow$ `BaoGia_ChoDuyet` $\rightarrow$ `DangSuaChua` $\rightarrow$ `DaSuaXong` $\rightarrow$ `DaThanhToan` $\rightarrow$ `HoanTat_TraMay`. |

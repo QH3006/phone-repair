@@ -5,9 +5,9 @@ Toàn bộ các thay đổi, bổ sung tính năng, tối ưu hóa kiến trúc 
 
 ---
 
-## [v2.1.0] - 2026-09-04 (Hoàn Thiện Tính Năng KT2, Cổng Khách Hàng & Tinh Gọn Mã Nguồn)
+## [v2.1.0] - 2026-09-04 (Hoàn Thiện Cổng Tra Cứu Khách Hàng & Tinh Gọn Mã Nguồn)
 
-Bản phát hành tập trung tối ưu hóa kiến trúc mã nguồn sạch, hoàn thiện các yêu cầu mở rộng thực tế cho giai đoạn KT2, giải quyết triệt để lỗi giao diện và bổ sung tiện ích khách hàng.
+Bản phát hành tập trung tối ưu hóa kiến trúc mã nguồn sạch, hoàn thiện các yêu cầu mở rộng thực tế, giải quyết triệt để lỗi giao diện và bổ sung tiện ích khách hàng.
 
 ### 🚀 Thêm mới (Added)
 * **Cổng Tra Cứu Khách Hàng Công Khai Độc Lập (`/tracking` & `/tra-cuu`):**
@@ -51,9 +51,9 @@ Bản phát hành tập trung tối ưu hóa kiến trúc mã nguồn sạch, ho
 
 ---
 
-## [v2.0.0] - 2026-08-21 (Hiện Thực Hóa CRUD Nghiệp Vụ & Phân Quyền RBAC - Giai Đoạn KT2)
+## [v2.0.0] - 2026-08-21 (Hiện Thực Hóa CRUD Nghiệp Vụ & Phân Quyền RBAC)
 
-Bản phát hành lớn chuyển giao toàn bộ kết quả phân tích thiết kế của KT1 thành mã nguồn ứng dụng web fullstack chạy thực tế.
+Bản phát hành lớn chuyển giao toàn bộ kết quả phân tích thiết kế hệ thống thành mã nguồn ứng dụng web fullstack chạy thực tế.
 
 ### 🚀 Thêm mới (Added)
 * **Hệ thống Xác thực & Phân quyền RBAC 4 Vai trò:**
@@ -80,9 +80,9 @@ Bản phát hành lớn chuyển giao toàn bộ kết quả phân tích thiết
 
 ---
 
-## [v1.0.0] - 2026-08-14 (Phân Tích & Thiết Kế Hệ Thống - Giai Đoạn KT1)
+## [v1.0.0] - 2026-08-14 (Khảo Sát & Thiết Kế Kiến Trúc Hệ Thống Nền Tảng)
 
-Bản phát hành đầu tiên hoàn thành toàn diện 10 tiêu chí đánh giá phân tích thiết kế kỹ thuật phần mềm hướng AI.
+Bản phát hành đầu tiên hoàn thành phân tích thiết kế kỹ thuật hệ thống phần mềm hướng AI chuẩn doanh nghiệp.
 
 ### 🚀 Thêm mới (Added)
 * **Khảo sát bài toán & Quy trình nghiệp vụ:**

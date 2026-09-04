@@ -25,28 +25,28 @@ def init_db():
         u_admin = NguoiDung(
             ten_dang_nhap="admin",
             mat_khau_hash=get_password_hash("123456"),
-            ho_ten="Nguyễn Văn Quản Lý",
+            ho_ten="Nguyễn Hoàng Long",
             vai_tro="QuanLy",
             so_dien_thoai="0901112233"
         )
         u_letan = NguoiDung(
             ten_dang_nhap="letan",
             mat_khau_hash=get_password_hash("123456"),
-            ho_ten="Trần Thị Lễ Tân",
+            ho_ten="Trần Mai Phương",
             vai_tro="LeTan",
             so_dien_thoai="0902223344"
         )
         u_ktv = NguoiDung(
             ten_dang_nhap="ktv",
             mat_khau_hash=get_password_hash("123456"),
-            ho_ten="Lê Văn Kỹ Thuật",
+            ho_ten="Lê Quốc Cường",
             vai_tro="KyThuatVien",
             so_dien_thoai="0903334455"
         )
         u_thungan = NguoiDung(
             ten_dang_nhap="thungan",
             mat_khau_hash=get_password_hash("123456"),
-            ho_ten="Phạm Thị Thu Ngân",
+            ho_ten="Phạm Thanh Hà",
             vai_tro="ThuNgan",
             so_dien_thoai="0904445566"
         )

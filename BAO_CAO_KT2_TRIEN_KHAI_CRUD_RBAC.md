@@ -3,7 +3,7 @@
 
 ---
 
-**Học phần:** Phát triển Phần mềm Hướng AI (AI-Driven Software Engineering)  
+**Chuyên đề kỹ thuật:** Phát triển Phần mềm Doanh Nghiệp Hướng AI (AI-Driven Software Engineering)  
 **Giai đoạn:** Kiểm tra Thường xuyên 2 (KT2) - Xây dựng CRUD Nghiệp vụ, Xác thực & Phân quyền RBAC  
 **Nền tảng công nghệ:** Python 3.12, FastAPI, SQLAlchemy ORM, SQLite, Pydantic V2, Vanilla JS, Google Gemini 1.5 Flash API  
 **Thời gian thực hiện:** Tháng 08/2026  
@@ -270,5 +270,5 @@ python -m uvicorn backend.app.main:app --reload --port 8000
 Hệ thống đã hoàn thiện 100% khối lượng công việc đặt ra cho Kiểm tra Thường xuyên 2 (KT2), tạo nền tảng vững chắc để chuyển giao sang **Giai đoạn KT3**:
 1. **Tối ưu hóa Prompt qua 3 vòng thử nghiệm (Prompt Optimization Cycle):** So sánh hiệu năng Zero-shot vs Few-shot vs Chain-of-Thought (CoT).
 2. **Bộ Xử Lý Ngoại Lệ & Phòng Thủ AI Nâng Cao:** Regex JSON Repair tự động và cơ chế tĩnh Fallback khi API Timeout.
-3. **Đánh giá Benchmark 20 ca bệnh thực tế:** Chấm điểm theo 5 tiêu chí: Accuracy, Completeness, Consistency, Robustness và Performance.
-4. **Review mã nguồn và tối ưu bảo mật:** Rà soát lỗ hổng và đóng gói hoàn chỉnh cho kỳ thi Capstone.
+3. **Đánh giá Benchmark 20 ca bệnh thực tế:** Đo lường theo 5 chỉ số kỹ thuật: Accuracy, Completeness, Consistency, Robustness và Performance.
+4. **Review mã nguồn và tối ưu bảo mật:** Rà soát lỗ hổng và đóng gói hoàn chỉnh sẵn sàng chuyển giao vận hành thực tế (Production Go-Live).

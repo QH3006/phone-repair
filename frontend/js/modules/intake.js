@@ -77,9 +77,9 @@ function setDemoPhoto(type) {
     if (photo) {
         currentIntakePhotoBase64 = photo;
         const labels = {
-            broken_screen: 'Ảnh demo: Màn hình nứt vỡ kính',
-            stripe_screen: 'Ảnh demo: Sọc màn hình AMOLED & Chập nguồn',
-            battery_swollen: 'Ảnh demo: Pin phồng & Hỏng bo cáp sạc'
+            broken_screen: 'Ảnh hiện trạng: Màn hình nứt vỡ kính',
+            stripe_screen: 'Ảnh hiện trạng: Sọc màn hình AMOLED & Chập nguồn',
+            battery_swollen: 'Ảnh hiện trạng: Pin phồng & Hỏng bo cáp sạc'
         };
         showPhotoPreview(photo, labels[type] || 'Ảnh hiện trạng tiếp nhận');
     }

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Script Sao Lưu & Phục Hồi Cơ Sở Dữ Liệu Tự Động (NFR-08: Database Backup & Recovery)
-Đáp ứng tiêu chuẩn kỹ thuật KT1/KT2 cho dự án PhoneCare AI.
+Đáp ứng tiêu chuẩn kỹ thuật cho dự án PhoneCare AI.
 """
 
 import os

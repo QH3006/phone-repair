@@ -1,7 +1,7 @@
 # 5. THIẾT KẾ PROMPT VÀ LUỒNG GỌI AI SƠ BỘ
 
-## 5.1. Cấu trúc Prompt Chuẩn 5 Thành Phần (Theo Chương 3)
-Theo giáo trình Kỹ thuật thiết kế Prompt, mọi prompt kỹ thuật phục vụ tích hợp hệ thống đều được cấu trúc đầy đủ 5 thành phần:
+## 5.1. Cấu trúc Prompt Kỹ Thuật Chuẩn 5 Thành Phần (Structured Prompting)
+Theo chuẩn kỹ thuật Prompt Engineering chuyên sâu, mọi prompt kỹ thuật phục vụ tích hợp hệ thống đều được cấu trúc đầy đủ 5 thành phần:
 1. **Instructions (Chỉ dẫn)**: Động từ hành động rõ ràng xác định nhiệm vụ duy nhất.
 2. **Context (Ngữ cảnh)**: Vai trò của AI, bối cảnh hệ thống, đối tượng tiếp nhận thông tin.
 3. **Input Data / Constraints (Dữ liệu & Ràng buộc)**: Dữ liệu đầu vào kèm các điều kiện biên và giới hạn nghiêm ngặt.

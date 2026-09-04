@@ -654,12 +654,12 @@ sequenceDiagram
 
 ## 9. TIÊU CHÍ 9: MINH CHỨNG SỬ DỤNG AI TRONG PHÂN TÍCH VÀ THIẾT KẾ (AI USAGE LOG - KT1)
 
-Trong quá trình thực hiện bài tập lớn, nhóm sinh viên áp dụng phương pháp **AI-Augmented SDLC**, sử dụng các mô hình ngôn ngữ lớn (Google Gemini 1.5 Pro, ChatGPT-4o, Claude 3.5 Sonnet) làm trợ lý đồng hành. Toàn bộ các phiên làm việc với AI đều được ghi lại với minh chứng nguyên văn (Prompt gốc, Phản hồi của AI, Phần AI đề xuất và Phần sinh viên đã phân tích, hiệu chỉnh hoặc bác bỏ) tại thư mục:
+Trong quá trình phân tích và thiết kế hệ thống, đội ngũ kỹ sư áp dụng phương pháp **AI-Augmented SDLC**, sử dụng các mô hình ngôn ngữ lớn (Google Gemini 1.5 Pro, ChatGPT-4o, Claude 3.5 Sonnet) làm trợ lý đồng hành. Toàn bộ các phiên làm việc với AI đều được ghi lại với minh chứng nguyên văn (Prompt gốc, Phản hồi của AI, Phần AI đề xuất và Phần kỹ sư đã phân tích, hiệu chỉnh hoặc bác bỏ) tại thư mục:
 👉 **[`docs/ai-evidence/KT1/`](docs/ai-evidence/KT1/)**
 
 ### BẢNG TỔNG HỢP NHẬT KÝ MINH CHỨNG SỬ DỤNG AI (KT1)
 
-| STT | File Minh Chứng | Nhiệm Vụ Thiết Kế | Prompt Gửi AI | Phần AI Đề Xuất Ban Đầu | Đánh Giá & Quyết Định Hiệu Chỉnh Của Sinh Viên |
+| STT | File Minh Chứng | Nhiệm Vụ Thiết Kế | Prompt Gửi AI | Phần AI Đề Xuất Ban Đầu | Đánh Giá & Quyết Định Hiệu Chỉnh Của Kỹ Sư |
 |:---:|---|---|---|---|---|
 | **1** | [`01_prompt_phan_tich_yeu_cau_va_usecase.md`](docs/ai-evidence/KT1/01_prompt_phan_tich_yeu_cau_va_usecase.md) | Khảo sát bài toán & Phân rã Use Case | *"Phân tích quy trình tiếp nhận, sửa chữa, bảo hành điện thoại. Liệt kê tác nhân, luồng trạng thái và điểm nghẽn..."* | • Gộp chung vai trò Lễ tân và Thu ngân làm một.<br>• Đề xuất 6 trạng thái cơ bản.<br>• Cho phép AI tự động đặt linh kiện. | • **BÁC BỎ**: Tách riêng vai trò `ThuNgan` để kiểm soát tài chính.<br>• **BỔ SUNG**: Chuẩn hóa 8 trạng thái kỹ thuật (thêm `PhanCongKTV` và `DaSuaXong`).<br>• **GIỚI HẠN**: Áp dụng cơ chế **Human-in-the-Loop (HITL)**, không để AI tự quyết. |
 | **2** | [`02_prompt_thiet_ke_database_erd.md`](docs/ai-evidence/KT1/02_prompt_thiet_ke_database_erd.md) | Thiết kế CSDL & Sơ đồ ERD | *"Đề xuất cấu trúc bảng CSDL SQLite và ERD cho phần mềm quản lý sửa chữa điện thoại có audit log..."* | • Đề xuất 6 bảng cơ bản.<br>• Gộp chung tiền linh kiện và tiền công vào 1 trường duy nhất.<br>• Không có bảng bảo hành và bảng log AI. | • **BỔ SUNG**: Tách thành 2 bảng `linh_kien` (kho vật tư) và `dich_vu` (tiền công thợ).<br>• **BỔ SUNG**: Bảng `bao_hanh` điện tử theo dõi ngày hết hạn từng linh kiện.<br>• **BỔ SUNG**: Bảng `nhat_ky_ai` (`ai_logs`) lưu vết prompt và phản hồi AI.<br>• **BỔ SUNG**: Cột `hinh_anh` lưu ảnh hiện trạng máy khi tiếp nhận. |
@@ -720,7 +720,7 @@ du_an/
    - Viết bộ Test Cases với Pytest: Test CRUD, Test chuyển trạng thái hợp lệ/bất hợp lệ, Test AI Prompt với input thiếu/gây nhiễu/injection.
 5. **Review mã nguồn bằng AI**: Minh chứng sử dụng AI để rà soát bảo mật code và refactor logic.
 
-#### C. Kế hoạch Thi Kết thúc Học phần
+#### C. Kế hoạch Đóng Gói Triển Khai Thực Tế & Chuyển Giao Sản Xuất (Production Ready)
 1. Đóng gói mã nguồn hoàn chỉnh (Dockerfile / hướng dẫn triển khai môi trường sạch).
 2. Hoàn thiện Báo cáo kỹ thuật tổng hợp toàn diện (Phân tích, Thiết kế, Triển khai, Đo lường hiệu quả AI theo DORA/SPACE/DevX).
-3. Chuẩn bị Slide thuyết trình và kịch bản Demo trực quan 100% các chức năng.
+3. Chuẩn bị tài liệu hướng dẫn vận hành và quy trình bàn giao toàn diện 100% các chức năng.

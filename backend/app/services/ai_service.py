@@ -25,7 +25,7 @@ class DataSanitizer:
 
 
 class PromptTemplates:
-    """Quản lý các bộ Prompt chuẩn 5 thành phần theo giáo trình Chương 3."""
+    """Quản lý các bộ Prompt chuẩn 5 thành phần phục vụ tích hợp hệ thống."""
 
     @staticmethod
     def get_fault_summary_prompt(model_may: str, mo_ta_loi_khach: str, ghi_chu_ky_thuat: str) -> str:

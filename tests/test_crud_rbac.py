@@ -48,7 +48,7 @@ def test_rbac_user_management():
     res_create = client.post("/api/users", headers=headers_admin, json={
         "ten_dang_nhap": f"test_ktv_{ts}",
         "mat_khau": "123456",
-        "ho_ten": "KTV Test 02",
+        "ho_ten": "Vũ Đình Trọng",
         "vai_tro": "KyThuatVien",
         "so_dien_thoai": "0912345678"
     })
@@ -79,7 +79,7 @@ def test_customer_crud():
 
     # Tạo khách hàng
     res = client.post("/api/customers", headers=headers, json={
-        "ho_ten": "Trần Văn Test",
+        "ho_ten": "Trần Tuấn Kiệt",
         "so_dien_thoai": phone,
         "dia_chi": "Hà Nội"
     })
@@ -89,7 +89,7 @@ def test_customer_crud():
     # Đọc chi tiết
     res_get = client.get(f"/api/customers/{cust_id}", headers=headers)
     assert res_get.status_code == 200
-    assert res_get.json()["ho_ten"] == "Trần Văn Test"
+    assert res_get.json()["ho_ten"] == "Trần Tuấn Kiệt"
 
     # Cập nhật
     res_put = client.put(f"/api/customers/{cust_id}", headers=headers, json={"dia_chi": "Đà Nẵng"})
@@ -157,7 +157,7 @@ def test_repair_ticket_flow():
 
     # 1. Lễ tân tiếp nhận máy
     res_intake = client.post("/api/repairs", headers={"Authorization": f"Bearer {letan_token}"}, json={
-        "ho_ten": "Nguyễn Khách Mới",
+        "ho_ten": "Nguyễn Hải Đăng",
         "so_dien_thoai": phone,
         "dia_chi": "TP.HCM",
         "hang_san_xuat": "Samsung",
@@ -218,7 +218,7 @@ def test_dashboard_stats():
     assert "status_distribution" in data
     assert "top_models" in data
 
-# ================= 6. PUBLIC LOOKUP & BACKUP TESTS (KT2 COMPLETION) =================
+# ================= 6. PUBLIC LOOKUP & BACKUP TESTS =================
 def test_public_repair_lookup():
     """Kiểm tra API tra cứu tiến độ sửa chữa công khai không cần token (FR-03 & UC_KH_Track)."""
     # Tra cứu bằng từ khóa "PSC"

@@ -12,7 +12,7 @@ from backend.app.api.endpoints import router as api_router
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
-    description="Hệ thống Quản lý Trung tâm Sửa chữa Điện thoại Tích hợp AI (Giai đoạn KT1)",
+    description="Hệ thống Quản lý Trung tâm Sửa chữa Điện thoại Tích hợp AI",
     docs_url="/docs",
     redoc_url="/redoc"
 )

@@ -1,14 +1,14 @@
-<!-- TAB 3: PHÂN HỆ TRỢ LÝ AI (INTERACTIVE SANDBOX) -->
+<!-- PHÂN HỆ TRỢ LÝ AI COPILOT -->
 <section id="tab-ai-sandbox" class="tab-pane">
     <div class="ai-tabs">
         <button class="ai-tab-btn active" data-subtab="subtab-fault">
-            <span>1. AI Tóm Tắt Tình Trạng Máy (FR-10)</span>
+            <span>1. Tóm Tắt Tình Trạng Kỹ Thuật (Chẩn Đoán)</span>
         </button>
         <button class="ai-tab-btn" data-subtab="subtab-message">
-            <span>2. AI Sinh Tin Nhắn Tiến Độ (FR-11)</span>
+            <span>2. Soạn Thảo Tin Nhắn Chăm Sóc Khách Hàng</span>
         </button>
         <button class="ai-tab-btn" data-subtab="subtab-explain">
-            <span>3. AI Diễn Giải Lỗi & Dịch Vụ (FR-12)</span>
+            <span>3. Diễn Giải Kỹ Thuật & Tư Vấn Dịch Vụ</span>
         </button>
     </div>
 
@@ -18,10 +18,10 @@
             <div class="card">
                 <div class="card-header">
                     <h4>Đầu Vào Ghi Chú Kỹ Thuật (KTV)</h4>
-                    <span class="badge badge-info">Prompt 5 Thành Phần</span>
+                    <span class="badge badge-info">Trợ Lý Chẩn Đoán AI</span>
                 </div>
                 <div class="form-group">
-                    <label>Chọn phiếu sửa chữa mẫu:</label>
+                    <label>Chọn phiếu sửa chữa tra cứu:</label>
                     <select id="select-sample-fault" class="form-control" onchange="fillFaultSample()">
                         <option value="1">PSC-20260814-001 | iPhone 13 Pro Max (Chập nguồn VDD_MAIN)</option>
                         <option value="2">PSC-20260814-002 | Galaxy S22 Ultra (Sọc màn hình & liệt cảm ứng)</option>
@@ -47,7 +47,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h4>Đầu Ra JSON & Phê Duyệt (Human-in-the-loop)</h4>
+                    <h4>Kết Quả Phân Tích & Phê Duyệt (HITL)</h4>
                     <span class="badge badge-success" id="ai-fault-status">Chờ Kích Hoạt</span>
                 </div>
                 <div id="ai-fault-result" class="ai-output-box">

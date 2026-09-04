@@ -26,9 +26,9 @@ Yêu cầu:
 
 ---
 
-### 3. ĐÁNH GIÁ, PHẢN BIỆN VÀ HIỆU CHỈNH CỦA SINH VIÊN (Human Review & Refine)
+### 3. ĐÁNH GIÁ, PHẢN BIỆN VÀ HIỆU CHỈNH CỦA KỸ SƯ (Human Review & Refine)
 
-| Thành phần | AI đề xuất ban đầu | Đánh giá của Sinh viên | Quyết định điều chỉnh / Bác bỏ |
+| Thành phần | AI đề xuất ban đầu | Đánh giá của Kỹ sư | Quyết định điều chỉnh / Bác bỏ |
 |---|---|---|---|
 | **Định dạng Output** | AI đề xuất trả về Markdown tự do có bullet points. | Frontend rất khó parse để render vào form hoặc lưu vào các cột CSDL có cấu trúc. | **SỬA ĐỔI THÀNH STRICT JSON SCHEMA**: Ép buộc Gemini trả về đúng các key: `nguyen_nhan_chinh`, `cac_buoc_kiem_tra`, `linh_kien_nghi_ngo`, `muc_do_nghiem_trong`, `canh_bao_an_toan`. |
 | **Bảo vệ dữ liệu cá nhân (PII)** | AI chỉ cảnh báo chung về rủi ro vi phạm GDPR/Privacy. | Thiếu giải pháp code cụ thể để chặn dữ liệu PII trước khi gửi đến Google Cloud. | **LẬP TRÌNH MODULE `DataSanitizer`**: Sử dụng Regex tự động ẩn danh hóa SĐT (thay bằng `09xxxxxxxx`), ẩn danh số IMEI (thay bằng `3548xxxxxxxxx`) và mật khẩu trước khi đưa vào payload prompt. |

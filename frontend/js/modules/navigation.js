@@ -26,14 +26,14 @@ function initNavigation() {
             // Cập nhật tiêu đề trang
             const headingMap = {
                 'tab-dashboard': '📊 Dashboard Thống Kê & Báo Cáo Thời Gian Thực',
-                'tab-repairs': '📱 Quản Lý Phiếu Tiếp Nhận & Sửa Chữa (CSDL SQLite)',
+                'tab-repairs': '📱 Quản Lý Phiếu Tiếp Nhận & Sửa Chữa',
                 'tab-customers': '👥 Quản Lý Khách Hàng & Thiết Bị Tiếp Nhận',
                 'tab-inventory': '📦 Quản Lý Kho Linh Kiện & Dịch Vụ Sửa Chữa',
                 'tab-billing': '🧾 Quản Lý Hóa Đơn Thu Tiền & Bảo Hành Điện Tử',
                 'tab-users': '🛡️ Quản Lý Nhân Sự & Phân Quyền Vai Trò RBAC',
-                'tab-ai-sandbox': '✨ Phân Hệ Trợ Lý AI Thông Minh (Interactive Demo)',
+                'tab-ai-sandbox': '✨ Phân Hệ Trợ Lý AI Thông Minh',
                 'tab-ai-logs': '📝 Nhật Ký Tương Tác AI Thời Gian Thực (Audit Logs)',
-                'tab-architecture': '🏛️ Kiến Trúc Hệ Thống & Use Case Nghiệp Vụ'
+                'tab-architecture': '🏛️ Kiến Trúc Hệ Thống & Ma Trận Phân Quyền'
             };
             const headingEl = document.getElementById('page-heading');
             if (headingEl) {
