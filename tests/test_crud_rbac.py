@@ -217,3 +217,28 @@ def test_dashboard_stats():
     assert data["summary"]["total_repairs"] > 0
     assert "status_distribution" in data
     assert "top_models" in data
+
+# ================= 6. PUBLIC LOOKUP & BACKUP TESTS (KT2 COMPLETION) =================
+def test_public_repair_lookup():
+    """Kiểm tra API tra cứu tiến độ sửa chữa công khai không cần token (FR-03 & UC_KH_Track)."""
+    # Tra cứu bằng từ khóa "PSC"
+    res = client.get("/api/repairs/lookup?q=PSC")
+    assert res.status_code == 200
+    data = res.json()
+    assert isinstance(data, list)
+    if len(data) > 0:
+        assert "ma_phieu" in data[0]
+        assert "trang_thai" in data[0]
+
+def test_database_backup_nfr08():
+    """Kiểm tra cơ chế sao lưu tự động CSDL SQLite theo NFR-08."""
+    import backup_db
+    import os
+    backup_file = backup_db.create_backup()
+    assert os.path.exists(backup_file)
+    assert os.path.getsize(backup_file) > 0
+
+    backups = backup_db.list_backups()
+    assert len(backups) >= 1
+    assert any(b["path"] == backup_file for b in backups)
+

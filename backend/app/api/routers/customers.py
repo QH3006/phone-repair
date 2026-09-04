@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 
 from backend.app.db.database import get_db
-from backend.app.db.models import KhachHang, ThietBi, PhieuSuaChua, NguoiDung
+from backend.app.db.models import KhachHang, NguoiDung
 from backend.app.core.security import require_roles, get_current_user
 from backend.app.schemas.schemas import CustomerCreate, CustomerUpdate, CustomerOut
 

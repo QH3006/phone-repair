@@ -5,7 +5,7 @@ from datetime import datetime
 
 from backend.app.db.database import get_db
 from backend.app.db.models import (
-    PhieuSuaChua, KhachHang, ThietBi, NguoiDung, LinhKien, DichVu, ChiTietSuaChua, HoaDon, BaoHanh
+    PhieuSuaChua, KhachHang, ThietBi, NguoiDung, LinhKien, DichVu, ChiTietSuaChua
 )
 from backend.app.core.security import require_roles, get_current_user
 from backend.app.schemas.schemas import (
@@ -15,99 +15,8 @@ from backend.app.schemas.schemas import (
 
 router = APIRouter(prefix="/repairs", tags=["Quản lý Phiếu Sửa Chữa"])
 
-@router.get("", response_model=List[RepairTicketOut])
-def list_repairs(
-    q: Optional[str] = Query(None, description="Tìm kiếm theo Mã phiếu, SĐT, Tên khách hoặc IMEI"),
-    trang_thai: Optional[str] = Query(None, description="Lọc theo trạng thái"),
-    ktv_id: Optional[int] = Query(None, description="Lọc theo KTV phụ trách"),
-    skip: int = 0,
-    limit: int = 100,
-    db: Session = Depends(get_db),
-    current_user: NguoiDung = Depends(get_current_user)
-):
-    """Lấy danh sách phiếu sửa chữa có tìm kiếm đa trường và bộ lọc."""
-    query = db.query(PhieuSuaChua)
-    
-    if trang_thai:
-        query = query.filter(PhieuSuaChua.trang_thai == trang_thai)
-    if ktv_id:
-        query = query.filter(PhieuSuaChua.ktv_id == ktv_id)
-    if q:
-        search = f"%{q.strip()}%"
-        query = query.join(PhieuSuaChua.khach_hang).join(PhieuSuaChua.thiet_bi).filter(
-            (PhieuSuaChua.ma_phieu.ilike(search)) |
-            (KhachHang.ho_ten.ilike(search)) |
-            (KhachHang.so_dien_thoai.ilike(search)) |
-            (ThietBi.so_imei.ilike(search)) |
-            (ThietBi.model_may.ilike(search))
-        )
-    
-    repairs = query.order_by(PhieuSuaChua.id.desc()).offset(skip).limit(limit).all()
-    
-    result = []
-    for r in repairs:
-        # Build details list
-        details = []
-        for ct in r.chi_tiet:
-            ten_muc = ct.linh_kien.ten_linh_kien if ct.linh_kien else (ct.dich_vu.ten_dich_vu if ct.dich_vu else "N/A")
-            loai = "LinhKien" if ct.linh_kien else "DichVu"
-            details.append(RepairDetailOut(
-                id=ct.id,
-                phieu_sua_chua_id=ct.phieu_sua_chua_id,
-                linh_kien_id=ct.linh_kien_id,
-                dich_vu_id=ct.dich_vu_id,
-                ten_muc=ten_muc,
-                loai=loai,
-                so_luong=ct.so_luong,
-                don_gia=ct.don_gia,
-                thanh_tien=ct.thanh_tien
-            ))
-
-        result.append(RepairTicketOut(
-            id=r.id,
-            ma_phieu=r.ma_phieu,
-            khach_hang_id=r.khach_hang_id,
-            thiet_bi_id=r.thiet_bi_id,
-            khach_hang={
-                "id": r.khach_hang.id,
-                "ho_ten": r.khach_hang.ho_ten,
-                "so_dien_thoai": r.khach_hang.so_dien_thoai,
-                "dia_chi": r.khach_hang.dia_chi
-            },
-            thiet_bi={
-                "id": r.thiet_bi.id,
-                "hang_san_xuat": r.thiet_bi.hang_san_xuat,
-                "model_may": r.thiet_bi.model_may,
-                "so_imei": r.thiet_bi.so_imei,
-                "mat_khau_may": r.thiet_bi.mat_khau_may
-            },
-            mo_ta_loi_khach=r.mo_ta_loi_khach,
-            ghi_chu_ky_thuat=r.ghi_chu_ky_thuat,
-            hinh_anh=r.hinh_anh,
-            ai_tom_tat_loi=r.ai_tom_tat_loi,
-            ai_giai_thich_dv=r.ai_giai_thich_dv,
-            trang_thai=r.trang_thai,
-            tong_tien_du_kien=r.tong_tien_du_kien or 0.0,
-            ktv_id=r.ktv_id,
-            ktv_phu_trach=r.ktv.ho_ten if r.ktv else "Chưa phân công",
-            le_tan_id=r.le_tan_id,
-            le_tan_tiep_nhan=r.le_tan.ho_ten if r.le_tan else "Lễ tân",
-            ngay_tiep_nhan=r.ngay_tiep_nhan.strftime("%d/%m/%Y %H:%M") if r.ngay_tiep_nhan else None,
-            ngay_hen_tra=r.ngay_hen_tra.strftime("%d/%m/%Y %H:%M") if r.ngay_hen_tra else None,
-            ngay_hoan_tat=r.ngay_hoan_tat.strftime("%d/%m/%Y %H:%M") if r.ngay_hoan_tat else None,
-            chi_tiet=details,
-            da_thanh_toan=True if r.hoa_don else False,
-            co_bao_hanh=True if len(r.bao_hanh) > 0 else False
-        ))
-    return result
-
-@router.get("/{phieu_id}", response_model=RepairTicketOut)
-def get_repair_detail(phieu_id: int, db: Session = Depends(get_db), current_user: NguoiDung = Depends(get_current_user)):
-    """Xem thông tin chi tiết một phiếu sửa chữa."""
-    r = db.query(PhieuSuaChua).filter(PhieuSuaChua.id == phieu_id).first()
-    if not r:
-        raise HTTPException(status_code=404, detail="Không tìm thấy phiếu sửa chữa.")
-
+def _serialize_repair_ticket(r: PhieuSuaChua) -> RepairTicketOut:
+    """Chuyển đổi thực thể PhieuSuaChua ORM sang schema RepairTicketOut dùng chung."""
     details = []
     for ct in r.chi_tiet:
         ten_muc = ct.linh_kien.ten_linh_kien if ct.linh_kien else (ct.dich_vu.ten_dich_vu if ct.dich_vu else "N/A")
@@ -160,6 +69,59 @@ def get_repair_detail(phieu_id: int, db: Session = Depends(get_db), current_user
         da_thanh_toan=True if r.hoa_don else False,
         co_bao_hanh=True if len(r.bao_hanh) > 0 else False
     )
+
+@router.get("", response_model=List[RepairTicketOut])
+def list_repairs(
+    q: Optional[str] = Query(None, description="Tìm kiếm theo Mã phiếu, SĐT, Tên khách hoặc IMEI"),
+    trang_thai: Optional[str] = Query(None, description="Lọc theo trạng thái"),
+    ktv_id: Optional[int] = Query(None, description="Lọc theo KTV phụ trách"),
+    skip: int = 0,
+    limit: int = 100,
+    db: Session = Depends(get_db),
+    current_user: NguoiDung = Depends(get_current_user)
+):
+    """Lấy danh sách phiếu sửa chữa có tìm kiếm đa trường và bộ lọc."""
+    query = db.query(PhieuSuaChua)
+    
+    if trang_thai:
+        query = query.filter(PhieuSuaChua.trang_thai == trang_thai)
+    if ktv_id:
+        query = query.filter(PhieuSuaChua.ktv_id == ktv_id)
+    if q:
+        search = f"%{q.strip()}%"
+        query = query.join(PhieuSuaChua.khach_hang).join(PhieuSuaChua.thiet_bi).filter(
+            (PhieuSuaChua.ma_phieu.ilike(search)) |
+            (KhachHang.ho_ten.ilike(search)) |
+            (KhachHang.so_dien_thoai.ilike(search)) |
+            (ThietBi.so_imei.ilike(search)) |
+            (ThietBi.model_may.ilike(search))
+        )
+    
+    repairs = query.order_by(PhieuSuaChua.id.desc()).offset(skip).limit(limit).all()
+    return [_serialize_repair_ticket(r) for r in repairs]
+
+@router.get("/lookup", response_model=List[RepairTicketOut])
+def lookup_repair_tickets(
+    q: str = Query(..., description="Tra cứu công khai: Mã phiếu, Số điện thoại hoặc IMEI"),
+    db: Session = Depends(get_db)
+):
+    """FR-03 & UC_KH_Track: Tra cứu tiến độ phiếu sửa chữa công khai dành cho khách hàng không cần đăng nhập."""
+    search = f"%{q.strip()}%"
+    repairs = db.query(PhieuSuaChua).join(PhieuSuaChua.khach_hang).join(PhieuSuaChua.thiet_bi).filter(
+        (PhieuSuaChua.ma_phieu.ilike(search)) |
+        (KhachHang.so_dien_thoai.ilike(search)) |
+        (ThietBi.so_imei.ilike(search))
+    ).order_by(PhieuSuaChua.id.desc()).limit(10).all()
+    return [_serialize_repair_ticket(r) for r in repairs]
+
+@router.get("/{phieu_id}", response_model=RepairTicketOut)
+def get_repair_detail(phieu_id: int, db: Session = Depends(get_db), current_user: NguoiDung = Depends(get_current_user)):
+    """Xem thông tin chi tiết một phiếu sửa chữa."""
+    r = db.query(PhieuSuaChua).filter(PhieuSuaChua.id == phieu_id).first()
+    if not r:
+        raise HTTPException(status_code=404, detail="Không tìm thấy phiếu sửa chữa.")
+    return _serialize_repair_ticket(r)
+
 
 @router.post("", status_code=status.HTTP_201_CREATED)
 def create_repair_ticket(

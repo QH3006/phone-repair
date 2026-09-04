@@ -1,6 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from datetime import datetime
 
 from backend.app.db.database import get_db
 from backend.app.db.models import NguoiDung

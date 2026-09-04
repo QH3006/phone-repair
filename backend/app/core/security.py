@@ -2,7 +2,6 @@ import hashlib
 import hmac
 import base64
 import json
-import os
 from datetime import datetime, timedelta, timezone
 from typing import Optional, Union, Any, List
 from fastapi import Depends, HTTPException, status
@@ -22,7 +21,7 @@ except ImportError:
     USE_PASSLIB = False
 
 try:
-    from jose import jwt, JWTError
+    from jose import jwt
     USE_JOSE = True
 except ImportError:
     USE_JOSE = False

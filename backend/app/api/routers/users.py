@@ -4,7 +4,7 @@ from typing import List, Optional
 
 from backend.app.db.database import get_db
 from backend.app.db.models import NguoiDung
-from backend.app.core.security import get_password_hash, require_roles, get_current_user
+from backend.app.core.security import get_password_hash, require_roles
 from backend.app.schemas.schemas import UserCreate, UserUpdate, UserOut
 
 router = APIRouter(prefix="/users", tags=["Quản lý Người dùng / Nhân sự (RBAC)"])

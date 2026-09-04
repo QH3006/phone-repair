@@ -1,0 +1,49 @@
+<!-- Modal Tra Cứu Tiến Độ Sửa Chữa Công Khai (Khách Hàng) -->
+<div id="modal-public-tracking" class="modal">
+    <div class="modal-content" style="max-width: 800px;">
+        <div class="modal-header">
+            <h3 style="display:flex; align-items:center; gap:8px;">
+                <span>🔍 Tra Cứu Tiến Độ Sửa Chữa Trực Tuyến</span>
+                <span class="badge badge-success">Công Khai</span>
+            </h3>
+            <span class="close-btn" onclick="closePublicTrackingModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:15px;">
+                Khách hàng có thể tra cứu trạng thái sửa chữa, chi phí ước tính và giải thích kỹ thuật bằng <strong>Mã phiếu tiếp nhận</strong>, <strong>Số điện thoại</strong> hoặc <strong>Số IMEI</strong> thiết bị mà không cần đăng nhập.
+            </p>
+            <div style="display:flex; gap:10px; margin-bottom:20px;">
+                <input type="text" id="public-tracking-input" class="form-control" placeholder="Nhập Mã phiếu (vd: PSC-20260814-001) hoặc SĐT (vd: 0912345678)..." onkeydown="if(event.key==='Enter') doPublicTrackingSearch()">
+                <button class="btn btn-gradient" onclick="doPublicTrackingSearch()" style="min-width:140px;">
+                    <span>🔍 Tra Cứu</span>
+                </button>
+            </div>
+            <div id="public-tracking-results" style="min-height:100px;">
+                <div style="text-align:center; padding:30px; color:var(--text-muted);">
+                    Nhập thông tin và bấm Tra Cứu để xem kết quả.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Xem Trước & In Ấn Phiếu / Hóa Đơn (Print View) -->
+<div id="modal-print-view" class="modal">
+    <div class="modal-content" style="max-width: 750px;">
+        <div class="modal-header">
+            <h3 id="print-modal-title">🖨️ Bản In Phiếu Tiếp Nhận</h3>
+            <span class="close-btn" onclick="closePrintModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div id="printable-receipt-content" style="background:#fff; color:#111; padding:24px; border-radius:8px; font-family:'Plus Jakarta Sans', Arial, sans-serif; line-height:1.5;">
+                <!-- Nội dung bản in sinh động qua JS -->
+            </div>
+            <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:20px;">
+                <button class="btn btn-outline" onclick="closePrintModal()">Đóng</button>
+                <button class="btn btn-gradient" onclick="executePrintDocument()">
+                    <span>🖨️ Tiến Hành In (Ctrl + P)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

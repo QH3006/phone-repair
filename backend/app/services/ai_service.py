@@ -1,8 +1,7 @@
 import re
 import json
 import time
-from typing import Dict, Any, Optional, List
-from datetime import datetime
+from typing import Dict, Any, Optional
 from backend.app.core.config import settings
 from backend.app.db.database import SessionLocal
 from backend.app.db.models import NhatKyAI
@@ -168,6 +167,11 @@ class GeminiAIService:
                     "risk_level": "TrungBinh"
                 }
                 status = "Fallback"
+        elif task_type == "GiaiThichDichVu":
+            parsed_data = {
+                "message": raw_text.strip(),
+                "explanation": raw_text.strip()
+            }
         else:
             parsed_data = {"message": raw_text.strip()}
 

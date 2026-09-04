@@ -51,17 +51,51 @@ async function runSummarizeFault() {
         statusBadge.innerText = `Hoàn Tất (${data.status})`;
         statusBadge.className = data.status === 'ThanhCong' ? 'badge badge-success' : 'badge badge-warning';
 
+        const d = data.data || {};
+        const riskColors = {
+            'Cao': 'badge-danger',
+            'TrungBinh': 'badge-warning',
+            'Thap': 'badge-success'
+        };
+        const riskBadge = `<span class="badge ${riskColors[d.risk_level] || 'badge-info'}">Rủi ro: ${d.risk_level || 'N/A'}</span>`;
+        const comps = Array.isArray(d.faulty_components) ? d.faulty_components.map(c => `<span class="badge badge-primary" style="margin:2px 4px 2px 0;">${c}</span>`).join('') : (d.faulty_components || 'N/A');
+
         resultBox.innerHTML = `
-            <div style="margin-bottom: 8px;">
-                <span class="badge ${data.is_fallback ? 'badge-warning' : 'badge-primary'}">
-                    ${data.is_fallback ? '🛡️ Fallback Rule Engine' : '⚡ Gemini AI Cloud'}
-                </span>
-                <small style="color:var(--text-muted); margin-left:8px;">Độ trễ: ${data.execution_time_ms}ms</small>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
+                <div>
+                    <span class="badge ${data.is_fallback ? 'badge-warning' : 'badge-primary'}">
+                        ${data.is_fallback ? '🛡️ Fallback Rule Engine' : '⚡ Gemini AI Cloud'}
+                    </span>
+                    <small style="color:var(--text-muted); margin-left:8px;">Độ trễ: ${data.execution_time_ms}ms</small>
+                </div>
+                <div>${riskBadge}</div>
             </div>
-            <pre class="json-view">${JSON.stringify(data.data, null, 2)}</pre>
+
+            <div class="ai-summary-card">
+                <div class="ai-summary-row">
+                    <div class="ai-summary-label">🔍 Hiện Tượng Phần Cứng</div>
+                    <div class="ai-summary-value"><strong>${d.hardware_issue || 'N/A'}</strong></div>
+                </div>
+                <div class="ai-summary-row">
+                    <div class="ai-summary-label">⚠️ Linh Kiện Nghi Vấn Hỏng</div>
+                    <div class="ai-summary-value">${comps}</div>
+                </div>
+                <div class="ai-summary-row">
+                    <div class="ai-summary-label">🔧 Đề Xuất Xử Lý</div>
+                    <div class="ai-summary-value" style="color:var(--primary); font-weight:600;">${d.recommended_action || 'N/A'}</div>
+                </div>
+            </div>
+
+            <details open style="margin-top: 8px;">
+                <summary style="cursor:pointer; font-size:0.8rem; color:var(--text-muted); font-weight:600; margin-bottom:6px;">
+                    📋 Khối JSON Chuẩn Hóa (Pydantic Schema)
+                </summary>
+                <pre class="json-view">${JSON.stringify(d, null, 2)}</pre>
+            </details>
         `;
 
         if (hitlBox) hitlBox.style.display = 'block';
+
     } catch (e) {
         statusBadge.innerText = 'Thất Bại';
         statusBadge.className = 'badge badge-danger';
@@ -161,15 +195,29 @@ async function runExplainService() {
             body: JSON.stringify(payload)
         });
         const data = await res.json();
-        const exp = data.data.explanation;
+        const exp = (data.data && (data.data.explanation || data.data.message)) || data.raw_response || "Không có nội dung phản hồi.";
+        const isAI = data.status === 'ThanhCong';
 
         resultBox.innerHTML = `
             <div style="background: rgba(192, 132, 252, 0.08); border-left: 3px solid var(--purple); padding: 16px; border-radius: var(--radius-sm);">
-                <h5 style="color:var(--purple); margin-bottom:8px;">💡 Giải thích minh bạch dành cho khách hàng:</h5>
-                <p style="font-size:0.92rem; color:var(--text-main); line-height:1.7;">${exp}</p>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <h5 style="color:var(--purple); margin:0;">💡 Giải thích minh bạch dành cho khách hàng:</h5>
+                    <span class="badge ${isAI ? 'badge-success' : 'badge-warning'}">${isAI ? 'Gemini AI Cloud' : 'Phòng thủ Fallback'} (${data.execution_time_ms || 0}ms)</span>
+                </div>
+                <p id="ai-exp-text" style="font-size:0.95rem; color:var(--text-main); line-height:1.7; margin-bottom:12px;">${exp}</p>
+                <button class="btn btn-outline btn-sm" onclick="copyExplanation()">📋 Sao chép lời tư vấn</button>
             </div>
         `;
     } catch (e) {
         resultBox.innerHTML = `<p style="color:var(--danger)">Lỗi: ${e.message}</p>`;
+    }
+}
+
+function copyExplanation() {
+    const textEl = document.getElementById('ai-exp-text');
+    if (textEl) {
+        navigator.clipboard.writeText(textEl.innerText).then(() => {
+            alert('Đã sao chép lời tư vấn cho khách hàng!');
+        });
     }
 }

@@ -96,9 +96,12 @@ du an/
 │   ├── css/
 │   │   ├── base.css                 # CSS Variables, Dark/Light theme tokens
 │   │   ├── layout.css               # App layout, grid & responsive design
-│   │   ├── components.css           # UI Cards, Tables, Badges, Buttons
+│   │   ├── components.css           # UI Cards, Tables, Badges, Buttons, Forms
+│   │   ├── modals.css               # UI Modals dialogs & backdrop
+│   │   ├── rbac.css                 # UI Phân quyền RBAC, Role Switcher Banner & Pills
 │   │   ├── ai-sandbox.css           # Giao diện Prompt Studio & AI Chat
-│   │   └── style.css                # Global overrides
+│   │   └── style.css                # Master stylesheet
+
 │   ├── js/
 │   │   ├── modules/
 │   │   │   ├── theme.js             # Quản lý Dark/Light mode không giật sáng

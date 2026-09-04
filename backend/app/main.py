@@ -40,6 +40,12 @@ if os.path.exists(frontend_dir):
     def read_root(request: Request):
         return templates.TemplateResponse(request=request, name="index.html")
 
+    @app.get("/tracking", include_in_schema=False)
+    @app.get("/tra-cuu", include_in_schema=False)
+    def read_customer_tracking(request: Request):
+        """Cổng tra cứu tiến độ sửa chữa và bảo hành công khai riêng biệt dành cho khách hàng."""
+        return templates.TemplateResponse(request=request, name="tracking.html")
+
 @app.on_event("startup")
 def on_startup():
     """Tự động khởi tạo database SQLite và nạp dữ liệu mẫu khi backend khởi động."""

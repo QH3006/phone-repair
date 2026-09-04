@@ -84,8 +84,9 @@ function renderRepairsTable(data) {
                 <td><small>${r.ktv_phu_trach || 'Chưa phân công'}</small></td>
                 <td>${badge}</td>
                 <td><strong style="color:var(--primary);">${Number(r.tong_tien_du_kien || 0).toLocaleString('vi-VN')} đ</strong></td>
-                <td style="text-align:center;">
+                <td style="text-align:center; white-space:nowrap;">
                     ${actionBtnHtml}
+                    <button class="btn btn-outline btn-sm" onclick="printRepairReceipt(${r.id})" title="In phiếu tiếp nhận">🖨️ In</button>
                 </td>
             </tr>
         `;

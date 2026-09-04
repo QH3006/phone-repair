@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from backend.app.db.database import get_db
 from backend.app.db.models import (
-    PhieuSuaChua, KhachHang, ThietBi, LinhKien, DichVu, HoaDon, BaoHanh, NhatKyAI, NguoiDung
+    PhieuSuaChua, KhachHang, ThietBi, LinhKien, HoaDon, NhatKyAI, NguoiDung
 )
 from backend.app.core.security import get_current_user
 
