@@ -1,0 +1,82 @@
+<!-- Tab 3: Quản Lý Khách Hàng & Thiết Bị -->
+<div id="tab-customers" class="tab-pane">
+    <div class="panel-header">
+        <div class="filter-controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="customer-search-input" placeholder="Tìm tên khách, số điện thoại..." onkeyup="filterCustomersLive()">
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="openCustomerModal()" data-roles="QuanLy,LeTan">
+                <span>➕</span> Thêm Khách Hàng Mới
+            </button>
+            <button class="btn btn-outline" onclick="openDeviceModal()" data-roles="QuanLy,LeTan">
+                <span>📱</span> Đăng Ký Thiết Bị
+            </button>
+            <button class="btn btn-outline" onclick="loadCustomersData()">
+                <span>🔄</span> Tải Lại
+            </button>
+        </div>
+    </div>
+
+    <!-- Danh sách Khách hàng & Thiết bị -->
+    <div class="grid-2-col" style="gap: 20px;">
+        <!-- Danh sách Khách hàng -->
+        <div class="card">
+            <div class="card-header">
+                <h3>👥 Danh Sách Khách Hàng</h3>
+            </div>
+            <div class="card-body" style="padding: 0;">
+                <div class="table-container" style="max-height: 520px; overflow-y: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Họ Tên</th>
+                                <th>Số Điện Thoại</th>
+                                <th>Địa Chỉ</th>
+                                <th style="text-align: center;">Thiết Bị</th>
+                                <th style="text-align: center;">Thao Tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customers-tbody">
+                            <tr>
+                                <td colspan="5" style="text-align: center; padding: 30px; color: var(--text-muted);">
+                                    Đang tải dữ liệu khách hàng...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danh sách Thiết bị đã đăng ký -->
+        <div class="card">
+            <div class="card-header">
+                <h3>📱 Danh Sách Thiết Bị Khách Gửi</h3>
+            </div>
+            <div class="card-body" style="padding: 0;">
+                <div class="table-container" style="max-height: 520px; overflow-y: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Hãng & Model</th>
+                                <th>Số IMEI</th>
+                                <th>Chủ Sở Hữu</th>
+                                <th>Mật Khẩu Máy</th>
+                            </tr>
+                        </thead>
+                        <tbody id="devices-tbody">
+                            <tr>
+                                <td colspan="4" style="text-align: center; padding: 30px; color: var(--text-muted);">
+                                    Đang tải danh sách thiết bị...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

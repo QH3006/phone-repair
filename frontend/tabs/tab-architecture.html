@@ -1,0 +1,95 @@
+<!-- TAB 4: KIẾN TRÚC VÀ USE CASE -->
+<section id="tab-architecture" class="tab-pane">
+    <div class="grid-2">
+        <div class="card">
+            <div class="card-header">
+                <h4>Kiến Trúc Đa Tầng Hệ Thống (Multi-Tier)</h4>
+                <span class="badge badge-primary">FastAPI + AI Layer</span>
+            </div>
+            <div class="code-diagram">
+<pre>
+┌─────────────────────────────────────────────────────────────┐
+│ 1. PRESENTATION LAYER (Web Dashboard / Tra Cứu Khách Hàng)  │
+└──────────────────────────────┬──────────────────────────────┘
+                               │ HTTPS / RESTful JSON
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│ 2. BACKEND LAYER (FastAPI + JWT + RBAC)                      │
+│    - API Gateway, Auth Middleware, Customer/Repair Router   │
+│    ┌───────────────────────────────────────────────────┐    │
+│    │ 2.1 AI ORCHESTRATION & PROMPT SERVICE             │    │
+│    │   - Data Sanitization (Loại bỏ PII nhạy cảm)      │    │
+│    │   - 5-Component Prompt Manager & Guardrails       │    │
+│    │   - JSON Schema Validator & Fallback Engine       │    │
+│    │   - Audit Logger (Ghi vết vào NhatKyAI)           │    │
+│    └───────────────────────────────────────────────────┘    │
+└──────────────┬──────────────────────────────┬───────────────┘
+               │ SQLAlchemy                   │ HTTPS API
+               ▼                              ▼
+┌──────────────────────────────┐ ┌────────────────────────────┐
+│ 3. DATABASE LAYER (SQLite)   │ │ 4. AI CLOUD SERVICE        │
+│   - phone_repair.db          │ │   - Google Gemini 1.5      │
+│   - 10 Bảng quan hệ toàn vẹn │ │   - Anti-Hallucination     │
+└──────────────────────────────┘ └────────────────────────────┘
+</pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4>Ma Trận Phân Quyền Vai Trò (RBAC Matrix)</h4>
+                <span class="badge badge-info">4 Roles Nội Bộ</span>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table small-table">
+                    <thead>
+                        <tr>
+                            <th>Quyền / Nghiệp Vụ</th>
+                            <th>Quản Lý</th>
+                            <th>Lễ Tân</th>
+                            <th>KTV</th>
+                            <th>Thu Ngân</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Quản trị tài khoản</td>
+                            <td><span class="tag-full">Toàn quyền</span></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Tiếp nhận & Lập phiếu</td>
+                            <td><span class="tag-full">Toàn quyền</span></td>
+                            <td><span class="tag-full">Toàn quyền</span></td>
+                            <td>Xem</td>
+                            <td>Xem</td>
+                        </tr>
+                        <tr>
+                            <td>Chẩn đoán & Dùng AI (FR-10)</td>
+                            <td>Xem</td>
+                            <td>Xem</td>
+                            <td><span class="tag-full">Thực thi/Duyệt</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Sinh tin nhắn SMS (FR-11)</td>
+                            <td>Xem</td>
+                            <td><span class="tag-full">Thực thi/Gửi</span></td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Lập hóa đơn & Bảo hành</td>
+                            <td><span class="tag-full">Toàn quyền</span></td>
+                            <td>Xem</td>
+                            <td>Xem</td>
+                            <td><span class="tag-full">Toàn quyền</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

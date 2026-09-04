@@ -1,0 +1,30 @@
+<!-- TAB 5: NHẬT KÝ AI AUDIT LOGS -->
+<section id="tab-ai-logs" class="tab-pane">
+    <div class="card">
+        <div class="card-header">
+            <div>
+                <h3>Nhật Ký Tương Tác AI Thời Gian Thực (NhatKyAI Table)</h3>
+                <p class="subtitle">Ghi vết tự động mọi lệnh prompt, thời gian phản hồi (latency), và trạng thái hoàn thành</p>
+            </div>
+            <button class="btn btn-outline" onclick="loadAILogs()">🔄 Tải Lại Nhật Ký</button>
+        </div>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID Log</th>
+                        <th>Tác Vụ</th>
+                        <th>Mô Hình</th>
+                        <th>Thời Gian (ms)</th>
+                        <th>Trạng Thái</th>
+                        <th>Thời Điểm</th>
+                        <th>Dữ Liệu JSON Đã Parse</th>
+                    </tr>
+                </thead>
+                <tbody id="ai-logs-table-body">
+                    <!-- Dynamic AI Logs loaded by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

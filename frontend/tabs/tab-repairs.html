@@ -1,0 +1,59 @@
+<!-- Tab 2: Quản Lý Phiếu Sửa Chữa (Core CRUD) -->
+<div id="tab-repairs" class="tab-pane">
+    <div class="panel-header">
+        <div class="filter-controls">
+            <!-- Tìm kiếm đa năng -->
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="repair-search-input" placeholder="Tìm kiếm SĐT, Mã phiếu, Model, IMEI..." onkeyup="filterRepairsLive()">
+            </div>
+
+            <!-- Bộ lọc trạng thái -->
+            <select id="repair-status-filter" class="form-select" onchange="filterRepairsLive()">
+                <option value="">-- Tất cả trạng thái --</option>
+                <option value="TiepNhan">1. Tiếp Nhận (TiepNhan)</option>
+                <option value="PhanCongKTV">2. Đã Phân Công (PhanCongKTV)</option>
+                <option value="DangKiemTra">3. Đang Kiểm Tra (DangKiemTra)</option>
+                <option value="BaoGia_ChoDuyet">4. Báo Giá Chờ Duyệt (BaoGia_ChoDuyet)</option>
+                <option value="DangSuaChua">5. Đang Sửa Chữa (DangSuaChua)</option>
+                <option value="DaSuaXong">6. Đã Sửa Xong (DaSuaXong)</option>
+                <option value="DaThanhToan">7. Đã Thanh Toán (DaThanhToan)</option>
+                <option value="HoanTat_TraMay">8. Hoàn Tất Trả Máy (HoanTat_TraMay)</option>
+            </select>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="openIntakeModal()" id="btn-intake-new" data-roles="QuanLy,LeTan">
+                <span>➕</span> Tiếp Nhận Máy Mới
+            </button>
+            <button class="btn btn-outline" onclick="loadRepairsData()">
+                <span>🔄</span> Tải Lại
+            </button>
+        </div>
+    </div>
+
+    <!-- Bảng danh sách phiếu sửa chữa -->
+    <div class="table-container">
+        <table class="data-table" id="repairs-table">
+            <thead>
+                <tr>
+                    <th style="width: 140px;">Mã Phiếu</th>
+                    <th>Khách Hàng</th>
+                    <th>Thiết Bị</th>
+                    <th>Mô Tả Lỗi (Khách)</th>
+                    <th style="width: 150px;">KTV Phụ Trách</th>
+                    <th style="width: 140px;">Trạng Thái</th>
+                    <th style="width: 120px;">Tổng Tiền</th>
+                    <th style="width: 160px; text-align: center;">Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody id="repairs-tbody">
+                <tr>
+                    <td colspan="8" style="text-align: center; padding: 40px; color: var(--text-muted);">
+                        Đang tải danh sách phiếu sửa chữa từ CSDL...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

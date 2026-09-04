@@ -1,0 +1,493 @@
+<!-- Modal 1: Chi Tiết Phiếu Sửa -->
+<div id="repair-modal" class="modal">
+    <div class="modal-content" style="max-width: 820px;">
+        <div class="modal-header">
+            <h3 id="modal-title">Chi Tiết Phiếu Sửa Chữa</h3>
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <!-- Loaded dynamically by JS -->
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2: Tạo Phiếu Tiếp Nhận Thiết Bị Mới -->
+<div id="intake-modal" class="modal">
+    <div class="modal-content" style="max-width: 820px;">
+        <div class="modal-header">
+            <div>
+                <h3>➕ Lập Phiếu Tiếp Nhận & Tạo Hồ Sơ Thiết Bị</h3>
+                <p class="subtitle" style="margin-top:2px;">Tạo đồng bộ thông tin Khách hàng, Thiết bị và Phiếu sửa chữa mới</p>
+            </div>
+            <span class="close-btn" onclick="closeIntakeModal()">&times;</span>
+        </div>
+        
+        <form id="intake-form" onsubmit="submitIntakeTicket(event)" style="overflow-y: auto; overflow-x: hidden; flex: 1 1 auto; min-height: 0; padding-right: 8px;">
+            <div style="background: rgba(56, 189, 248, 0.08); border: 1px dashed var(--primary); padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--primary);">⚡ Thử nghiệm nhanh với mẫu có sẵn:</span>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <button type="button" class="btn btn-outline btn-sm" onclick="fillSampleIntake('iphone')">📱 iPhone 14 Pro Max</button>
+                    <button type="button" class="btn btn-outline btn-sm" onclick="fillSampleIntake('samsung')">📱 Galaxy S24 Ultra</button>
+                    <button type="button" class="btn btn-outline btn-sm" onclick="fillSampleIntake('xiaomi')">📱 Xiaomi 13T Pro</button>
+                </div>
+            </div>
+
+            <!-- Khối 1: Thông tin Khách hàng -->
+            <div style="margin-bottom: 20px;">
+                <h4 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--primary); border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                    1. Thông Tin Khách Hàng
+                </h4>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Họ và tên khách hàng *</label>
+                        <input type="text" id="intake-customer-name" class="form-control" placeholder="Ví dụ: Trần Văn Nam" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại liên hệ *</label>
+                        <input type="tel" id="intake-customer-phone" class="form-control" placeholder="Ví dụ: 0912345678" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ khách hàng</label>
+                    <input type="text" id="intake-customer-address" class="form-control" placeholder="Ví dụ: 120 Hoàng Quốc Việt, Cầu Giấy, Hà Nội">
+                </div>
+            </div>
+
+            <!-- Khối 2: Thông tin Thiết bị -->
+            <div style="margin-bottom: 20px;">
+                <h4 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--primary); border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                    2. Thông Tin Thiết Bị Tiếp Nhận
+                </h4>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Hãng sản xuất *</label>
+                        <select id="intake-device-brand" class="form-control" required>
+                            <option value="Apple">Apple</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Oppo">Oppo</option>
+                            <option value="Vivo">Vivo</option>
+                            <option value="Asus">Asus / ROG</option>
+                            <option value="Khac">Hãng khác</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Dòng máy (Model) *</label>
+                        <input type="text" id="intake-device-model" class="form-control" placeholder="Ví dụ: iPhone 14 Pro Max 256GB" required>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Số IMEI / Serial</label>
+                        <input type="text" id="intake-device-imei" class="form-control" placeholder="Ví dụ: 354892091234567">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu màn hình (nếu khách bàn giao)</label>
+                        <input type="text" id="intake-device-pass" class="form-control" placeholder="Ví dụ: 112233 hoặc Vẽ hình chữ L">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Khối 3: Tình trạng lỗi & Ảnh thực tế -->
+            <div style="margin-bottom: 24px;">
+                <h4 style="font-size: 0.95rem; margin-bottom: 12px; color: var(--primary); border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+                    3. Tình Trạng Tiếp Nhận & Ảnh Hiện Trạng
+                </h4>
+                <div class="form-group">
+                    <label>Mô tả hiện tượng lỗi khách báo *</label>
+                    <textarea id="intake-fault-desc" class="form-control" rows="2" placeholder="Ví dụ: Rơi từ trên cao xuống, màn hình vỡ kính tối đen, cắm sạc máy nóng ran..." required></textarea>
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Tình trạng ngoại quan / Ghi chú kỹ thuật sơ bộ</label>
+                        <input type="text" id="intake-tech-notes" class="form-control" placeholder="Ví dụ: Viền nhôm trầy xước góc trên, nắp lưng còn nguyên">
+                    </div>
+                    <div class="form-group">
+                        <label>Chi phí dự kiến ban đầu (VNĐ)</label>
+                        <input type="number" id="intake-est-cost" class="form-control" value="0" step="50000">
+                    </div>
+                </div>
+
+                <!-- Upload ảnh thiết bị -->
+                <div class="form-group" style="margin-top: 10px;">
+                    <label>📸 Ảnh chụp hiện trạng thiết bị:</label>
+                    <div style="display:flex; gap:10px; margin-bottom: 10px; flex-wrap: wrap;">
+                        <label class="btn btn-outline btn-sm" style="cursor:pointer;">
+                            📁 Chọn file ảnh từ máy...
+                            <input type="file" id="intake-photo-input" accept="image/*" style="display:none;" onchange="handleImageUpload(this)">
+                        </label>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="setDemoPhoto('broken_screen')">📷 Mẫu 1: Vỡ màn hình</button>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="setDemoPhoto('stripe_screen')">📷 Mẫu 2: Sọc cảm ứng</button>
+                        <button type="button" class="btn btn-outline btn-sm" onclick="setDemoPhoto('battery_swollen')">📷 Mẫu 3: Phồng pin</button>
+                        <button type="button" class="btn btn-outline btn-sm" id="btn-clear-photo" onclick="clearPhoto()" style="display:none; color:var(--danger);">✕ Xóa ảnh</button>
+                    </div>
+
+                    <div id="photo-preview-container" style="display:none; text-align:center; padding:12px; background:var(--bg-input); border:1px solid var(--border-color); border-radius:var(--radius-sm);">
+                        <img id="photo-preview-img" src="" alt="Ảnh thiết bị" style="max-height: 180px; max-width: 100%; border-radius: 6px; box-shadow: var(--shadow-sm); object-fit: contain;">
+                        <p id="photo-preview-label" style="font-size: 0.78rem; color: var(--text-muted); margin-top: 6px;">Ảnh hiện trạng thiết bị khi tiếp nhận</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 12px; border-top: 1px solid var(--border-color); padding-top: 16px;">
+                <button type="button" class="btn btn-outline" onclick="closeIntakeModal()">Hủy Bỏ</button>
+                <button type="submit" id="btn-submit-intake" class="btn btn-gradient" style="padding: 10px 24px;">
+                    <span>💾 Lưu & Lập Phiếu Tiếp Nhận</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal 3: Đăng Nhập Xác Thực 4 Vai Trò -->
+<div id="login-modal" class="modal">
+    <div class="modal-content" style="max-width: 600px;">
+        <div class="modal-header">
+            <div>
+                <h3>🔐 Đăng Nhập Hệ Thống (Phân Quyền 4 Vai Trò RBAC)</h3>
+                <p class="subtitle" style="margin-top:2px;">Xác thực bằng JWT Token và phân quyền theo vai trò</p>
+            </div>
+            <span class="close-btn" onclick="closeLoginModal()">&times;</span>
+        </div>
+
+        <div class="modal-body">
+            <div style="margin-bottom: 20px;">
+                <label style="font-size: 0.85rem; font-weight: 600; color: var(--primary); display:block; margin-bottom: 8px;">
+                    ⚡ Chọn nhanh vai trò đăng nhập (Mật khẩu: <code>123456</code>):
+                </label>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                    <div class="role-quick-card" onclick="quickLoginRole('admin')" style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); cursor: pointer;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">👑</span>
+                            <div>
+                                <strong style="font-size: 0.9rem; display:block;">Quản Lý</strong>
+                                <small style="color: var(--text-muted);">User: <code>admin</code></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="role-quick-card" onclick="quickLoginRole('letan')" style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); cursor: pointer;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">💁</span>
+                            <div>
+                                <strong style="font-size: 0.9rem; display:block;">Lễ Tân</strong>
+                                <small style="color: var(--text-muted);">User: <code>letan</code></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="role-quick-card" onclick="quickLoginRole('ktv')" style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); cursor: pointer;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">🔧</span>
+                            <div>
+                                <strong style="font-size: 0.9rem; display:block;">Kỹ Thuật Viên</strong>
+                                <small style="color: var(--text-muted);">User: <code>ktv</code></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="role-quick-card" onclick="quickLoginRole('thungan')" style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--radius-sm); cursor: pointer;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">💳</span>
+                            <div>
+                                <strong style="font-size: 0.9rem; display:block;">Thu Ngân</strong>
+                                <small style="color: var(--text-muted);">User: <code>thungan</code></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 12px 0; color: var(--text-muted); font-size: 0.8rem; position: relative;">
+                <hr style="border-color: var(--border-color);">
+                <span style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--bg-modal); padding: 0 10px;">HOẶC NHẬP THỦ CÔNG</span>
+            </div>
+
+            <form id="login-form" onsubmit="submitLogin(event)">
+                <div class="form-group" style="margin-bottom: 14px;">
+                    <label>Tên đăng nhập *</label>
+                    <input type="text" id="login-username" class="form-control" placeholder="admin, letan, ktv, thungan" value="admin" required>
+                </div>
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label>Mật khẩu *</label>
+                    <input type="password" id="login-password" class="form-control" placeholder="Mật khẩu" value="123456" required>
+                </div>
+                
+                <div id="login-alert-box" style="display:none; padding:10px; border-radius:var(--radius-sm); font-size:0.85rem; margin-bottom:14px;"></div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 16px;">
+                    <button type="button" class="btn btn-outline btn-sm" onclick="handleLogout()" style="color: var(--danger);">🚪 Đăng Xuất</button>
+                    <div style="display: flex; gap: 10px;">
+                        <button type="button" class="btn btn-outline" onclick="closeLoginModal()">Đóng</button>
+                        <button type="submit" id="btn-do-login" class="btn btn-gradient" style="padding: 8px 20px;">
+                            <span>🔐 Đăng Nhập</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4: Thêm / Sửa Khách Hàng -->
+<div id="customer-modal" class="modal">
+    <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-header">
+            <h3 id="customer-modal-title">➕ Thêm Khách Hàng Mới</h3>
+            <span class="close-btn" onclick="closeCustomerModal()">&times;</span>
+        </div>
+        <form id="customer-form" onsubmit="submitCustomerForm(event)" style="padding: 20px;">
+            <input type="hidden" id="cust-form-id">
+            <div class="form-group">
+                <label>Họ và tên khách hàng *</label>
+                <input type="text" id="cust-form-name" class="form-control" required placeholder="Ví dụ: Nguyễn Văn A">
+            </div>
+            <div class="form-group">
+                <label>Số điện thoại *</label>
+                <input type="tel" id="cust-form-phone" class="form-control" required placeholder="Ví dụ: 0988123456">
+            </div>
+            <div class="form-group">
+                <label>Địa chỉ</label>
+                <input type="text" id="cust-form-address" class="form-control" placeholder="Ví dụ: Cầu Giấy, Hà Nội">
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                <button type="button" class="btn btn-outline" onclick="closeCustomerModal()">Hủy</button>
+                <button type="submit" class="btn btn-gradient">💾 Lưu Khách Hàng</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal 5: Đăng ký Thiết Bị -->
+<div id="device-modal" class="modal">
+    <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-header">
+            <h3>📱 Đăng Ký Thiết Bị Mới</h3>
+            <span class="close-btn" onclick="closeDeviceModal()">&times;</span>
+        </div>
+        <form id="device-form" onsubmit="submitDeviceForm(event)" style="padding: 20px;">
+            <div class="form-group">
+                <label>Chọn Khách Hàng Sở Hữu *</label>
+                <select id="dev-form-customer-select" class="form-control" required>
+                    <!-- Loaded dynamically -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Hãng sản xuất *</label>
+                <select id="dev-form-brand" class="form-control" required>
+                    <option value="Apple">Apple</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Oppo">Oppo</option>
+                    <option value="Vivo">Vivo</option>
+                    <option value="Khac">Khác</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Model máy *</label>
+                <input type="text" id="dev-form-model" class="form-control" required placeholder="Ví dụ: iPhone 14 Pro Max">
+            </div>
+            <div class="form-group">
+                <label>Số IMEI / Serial *</label>
+                <input type="text" id="dev-form-imei" class="form-control" required placeholder="15 chữ số IMEI">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu màn hình</label>
+                <input type="text" id="dev-form-pass" class="form-control" placeholder="112233">
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                <button type="button" class="btn btn-outline" onclick="closeDeviceModal()">Hủy</button>
+                <button type="submit" class="btn btn-gradient">💾 Đăng Ký Thiết Bị</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal 6: Thêm / Sửa Linh Kiện Kho -->
+<div id="part-modal" class="modal">
+    <div class="modal-content" style="max-width: 550px;">
+        <div class="modal-header">
+            <h3 id="part-modal-title">📦 Nhập Linh Kiện Mới</h3>
+            <span class="close-btn" onclick="closePartModal()">&times;</span>
+        </div>
+        <form id="part-form" onsubmit="submitPartForm(event)" style="padding: 20px;">
+            <input type="hidden" id="part-form-id">
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Mã linh kiện *</label>
+                    <input type="text" id="part-form-code" class="form-control" required placeholder="LK-PIN-IP14">
+                </div>
+                <div class="form-group">
+                    <label>Dòng máy áp dụng</label>
+                    <input type="text" id="part-form-model" class="form-control" placeholder="iPhone 14 Series">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Tên linh kiện *</label>
+                <input type="text" id="part-form-name" class="form-control" required placeholder="Pin Dung Lượng Cao iPhone 14 Pro">
+            </div>
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Giá nhập (VNĐ) *</label>
+                    <input type="number" id="part-form-cost" class="form-control" required value="200000" step="10000">
+                </div>
+                <div class="form-group">
+                    <label>Giá bán ra (VNĐ) *</label>
+                    <input type="number" id="part-form-price" class="form-control" required value="450000" step="10000">
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Số lượng tồn kho *</label>
+                    <input type="number" id="part-form-qty" class="form-control" required value="10">
+                </div>
+                <div class="form-group">
+                    <label>Bảo hành (tháng) *</label>
+                    <input type="number" id="part-form-warranty" class="form-control" required value="6">
+                </div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                <button type="button" class="btn btn-outline" onclick="closePartModal()">Hủy</button>
+                <button type="submit" class="btn btn-gradient">💾 Lưu Linh Kiện</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal 7: Thêm / Sửa Dịch Vụ Sửa Chữa -->
+<div id="service-modal" class="modal">
+    <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-header">
+            <h3 id="service-modal-title">🛠️ Thêm Dịch Vụ Kỹ Thuật</h3>
+            <span class="close-btn" onclick="closeServiceModal()">&times;</span>
+        </div>
+        <form id="service-form" onsubmit="submitServiceForm(event)" style="padding: 20px;">
+            <input type="hidden" id="service-form-id">
+            <div class="form-group">
+                <label>Mã dịch vụ *</label>
+                <input type="text" id="service-form-code" class="form-control" required placeholder="DV-THAY-PIN">
+            </div>
+            <div class="form-group">
+                <label>Tên dịch vụ *</label>
+                <input type="text" id="service-form-name" class="form-control" required placeholder="Công thay Pin & Test sạc xả">
+            </div>
+            <div class="form-group">
+                <label>Giá công thợ (VNĐ) *</label>
+                <input type="number" id="service-form-price" class="form-control" required value="150000" step="10000">
+            </div>
+            <div class="form-group">
+                <label>Mô tả quy trình</label>
+                <textarea id="service-form-desc" class="form-control" rows="2" placeholder="Dán keo chống nước, test sạc dòng tiêu chuẩn..."></textarea>
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                <button type="button" class="btn btn-outline" onclick="closeServiceModal()">Hủy</button>
+                <button type="submit" class="btn btn-gradient">💾 Lưu Dịch Vụ</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal 8: Thêm / Sửa Tài Khoản Nhân Viên -->
+<div id="user-modal" class="modal">
+    <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-header">
+            <h3 id="user-modal-title">👥 Thêm Tài Khoản Nhân Viên</h3>
+            <span class="close-btn" onclick="closeUserModal()">&times;</span>
+        </div>
+        <form id="user-form" onsubmit="submitUserForm(event)" style="padding: 20px;">
+            <input type="hidden" id="user-form-id">
+            <div class="form-group">
+                <label>Tên đăng nhập *</label>
+                <input type="text" id="user-form-username" class="form-control" required placeholder="letan_02">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu (để trống nếu không đổi)</label>
+                <input type="password" id="user-form-password" class="form-control" placeholder="123456">
+            </div>
+            <div class="form-group">
+                <label>Họ và tên nhân viên *</label>
+                <input type="text" id="user-form-fullname" class="form-control" required placeholder="Nguyễn Văn A">
+            </div>
+            <div class="grid-2">
+                <div class="form-group">
+                    <label>Vai trò (RBAC) *</label>
+                    <select id="user-form-role" class="form-control" required>
+                        <option value="QuanLy">👑 Quản Lý (Admin)</option>
+                        <option value="LeTan">💁 Lễ Tân (Tiếp nhận)</option>
+                        <option value="KyThuatVien">🔧 Kỹ Thuật Viên</option>
+                        <option value="ThuNgan">💳 Thu Ngân</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Trạng thái</label>
+                    <select id="user-form-status" class="form-control">
+                        <option value="HoatDong">Hoạt Động</option>
+                        <option value="TamKhoa">Tạm Khóa</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Số điện thoại liên hệ</label>
+                <input type="tel" id="user-form-phone" class="form-control" placeholder="0901234567">
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                <button type="button" class="btn btn-outline" onclick="closeUserModal()">Hủy</button>
+                <button type="submit" class="btn btn-gradient">💾 Lưu Tài Khoản</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal 9: Thêm Linh Kiện / Dịch Vụ vào Phiếu Sửa -->
+<div id="add-item-modal" class="modal">
+    <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-header">
+            <h3>➕ Thêm Linh Kiện / Dịch Vụ Vào Phiếu Sửa</h3>
+            <span class="close-btn" onclick="closeAddItemModal()">&times;</span>
+        </div>
+        <form id="add-item-form" onsubmit="submitAddItemToRepair(event)" style="padding: 20px;">
+            <input type="hidden" id="add-item-repair-id">
+            <div class="form-group">
+                <label>Loại mục *</label>
+                <select id="add-item-type" class="form-control" onchange="toggleItemTypeSelect()">
+                    <option value="linhkien">📦 Linh Kiện Thay Thế</option>
+                    <option value="dichvu">🛠️ Dịch Vụ Công Kỹ Thuật</option>
+                </select>
+            </div>
+            <div class="form-group" id="group-select-part">
+                <label>Chọn Linh Kiện Kho *</label>
+                <select id="add-item-part-select" class="form-control">
+                    <!-- Dynamic -->
+                </select>
+            </div>
+            <div class="form-group" id="group-select-service" style="display:none;">
+                <label>Chọn Dịch Vụ Kỹ Thuật *</label>
+                <select id="add-item-service-select" class="form-control">
+                    <!-- Dynamic -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Số lượng *</label>
+                <input type="number" id="add-item-qty" class="form-control" value="1" min="1">
+            </div>
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+                <button type="button" class="btn btn-outline" onclick="closeAddItemModal()">Hủy</button>
+                <button type="submit" class="btn btn-gradient">➕ Thêm Vào Phiếu</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal 10: In Hóa Đơn & Thẻ Bảo Hành -->
+<div id="print-modal" class="modal">
+    <div class="modal-content" style="max-width: 650px;">
+        <div class="modal-header">
+            <h3 id="print-modal-title">🧾 Hóa Đơn / Phiếu Bảo Hành</h3>
+            <span class="close-btn" onclick="closePrintModal()">&times;</span>
+        </div>
+        <div class="modal-body" id="print-modal-body" style="padding: 20px; font-family: monospace;">
+            <!-- Render print template -->
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 10px; padding: 16px 20px; border-top: 1px solid var(--border-color);">
+            <button class="btn btn-outline" onclick="closePrintModal()">Đóng</button>
+            <button class="btn btn-gradient" onclick="window.print()">🖨️ In Ngay</button>
+        </div>
+    </div>
+</div>

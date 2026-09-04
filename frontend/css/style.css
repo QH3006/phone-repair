@@ -1,0 +1,9 @@
+/* ==========================================================================
+   PhoneCare AI - Master Stylesheet
+   Modularized Architecture
+   ========================================================================== */
+
+@import url('base.css?v=10');
+@import url('layout.css?v=10');
+@import url('components.css?v=10');
+@import url('ai-sandbox.css?v=10');

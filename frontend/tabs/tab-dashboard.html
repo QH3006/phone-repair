@@ -1,0 +1,95 @@
+﻿<!-- Tab 1: Dashboard Thống Kê & Báo Cáo Tổng Quan -->
+<div id="tab-dashboard" class="tab-pane active">
+    <!-- Header KPI Cards -->
+    <div class="stats-grid">
+        <div class="stat-card" data-roles="QuanLy,LeTan,KyThuatVien,ThuNgan">
+            <div class="stat-icon" style="background: rgba(59, 130, 246, 0.15); color: #3b82f6;">📱</div>
+            <div class="stat-info">
+                <div class="stat-label">Tổng Phiếu Sửa Chữa</div>
+                <div class="stat-value" id="kpi-total-repairs">--</div>
+                <div class="stat-sub text-info" id="kpi-active-repairs">Đang xử lý: --</div>
+            </div>
+        </div>
+
+        <div class="stat-card" data-roles="QuanLy,LeTan,KyThuatVien,ThuNgan">
+            <div class="stat-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">✅</div>
+            <div class="stat-info">
+                <div class="stat-label">Đã Hoàn Tất / Trả Máy</div>
+                <div class="stat-value" id="kpi-completed-repairs">--</div>
+                <div class="stat-sub text-success">Hoàn tất bàn giao</div>
+            </div>
+        </div>
+
+        <div class="stat-card" data-roles="QuanLy,ThuNgan">
+            <div class="stat-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">💰</div>
+            <div class="stat-info">
+                <div class="stat-label">Doanh Thu Thực Thu</div>
+                <div class="stat-value" id="kpi-total-revenue">-- đ</div>
+                <div class="stat-sub text-warning">Từ các hóa đơn đã thanh toán</div>
+            </div>
+        </div>
+
+        <div class="stat-card" data-roles="QuanLy,LeTan">
+            <div class="stat-icon" style="background: rgba(139, 92, 246, 0.15); color: #8b5cf6;">👥</div>
+            <div class="stat-info">
+                <div class="stat-label">Khách Hàng Đăng Ký</div>
+                <div class="stat-value" id="kpi-total-customers">--</div>
+                <div class="stat-sub text-primary">Hồ sơ khách trong CSDL</div>
+            </div>
+        </div>
+
+        <div class="stat-card" data-roles="QuanLy,KyThuatVien">
+            <div class="stat-icon" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">📦</div>
+            <div class="stat-info">
+                <div class="stat-label">Mặt Hàng Linh Kiện</div>
+                <div class="stat-value" id="kpi-total-parts">--</div>
+                <div class="stat-sub text-danger" id="kpi-low-stock">Cảnh báo tồn ít: --</div>
+            </div>
+        </div>
+
+        <div class="stat-card" data-roles="QuanLy">
+            <div class="stat-icon" style="background: rgba(6, 182, 212, 0.15); color: #06b6d4;">✨</div>
+            <div class="stat-info">
+                <div class="stat-label">Lượt Gọi Trợ Lý AI</div>
+                <div class="stat-value" id="kpi-total-ai-logs">--</div>
+                <div class="stat-sub text-info">Lưu vết trong Nhật ký AI</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts & Breakdown Section -->
+    <div class="grid-2-col" style="margin-top: 24px; gap: 24px;">
+        <!-- Phân bổ trạng thái vòng đời 8 bước -->
+        <div class="card">
+            <div class="card-header">
+                <h3>📊 Phân Bổ Theo Vòng Đời Sửa Chữa (8 Trạng Thái)</h3>
+            </div>
+            <div class="card-body">
+                <div class="lifecycle-bars" id="lifecycle-bars-container">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Top thiết bị & Cảnh báo kho -->
+        <div class="card">
+            <div class="card-header">
+                <h3>📱 Top Thiết Bị Tiếp Nhận Nhiều Nhất</h3>
+            </div>
+            <div class="card-body">
+                <ul class="top-list" id="top-devices-list">
+                    <!-- Dynamic rendering via JS -->
+                </ul>
+
+                <div id="wrapper-low-stock-alert" data-roles="QuanLy,KyThuatVien">
+                    <h4 style="margin-top: 20px; font-size: 0.95rem; color: #ef4444; display: flex; align-items: center; gap: 6px;">
+                        <span>⚠️</span> Cảnh Báo Linh Kiện Sắp Hết (Tồn &le; 5)
+                    </h4>
+                    <div id="low-stock-alert-list" style="margin-top: 10px;">
+                        <!-- Dynamic low stock list -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

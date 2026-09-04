@@ -1,0 +1,122 @@
+<!-- Tab 6: Quản Lý Nhân Sự & Phân Quyền RBAC -->
+<div id="tab-users" class="tab-pane">
+    <div class="panel-header">
+        <div class="filter-controls">
+            <span class="badge badge-info" style="font-size: 0.9rem; padding: 6px 12px;">
+                Mô hình RBAC: 4 Vai Trò (Quản Lý, Lễ Tân, Kỹ Thuật Viên, Thu Ngân)
+            </span>
+        </div>
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="openUserModal()" data-roles="QuanLy">
+                <span>➕</span> Thêm Tài Khoản Nhân Viên
+            </button>
+            <button class="btn btn-outline" onclick="loadUsersData()">
+                <span>🔄</span> Tải Lại
+            </button>
+        </div>
+    </div>
+
+    <!-- Bảng Nhân Viên & Ma Trận Phân Quyền -->
+    <div class="grid-2-col" style="gap: 20px;">
+        <!-- Danh sách Tài Khoản Nhân Viên -->
+        <div class="card">
+            <div class="card-header">
+                <h3>👥 Danh Sách Tài Khoản Nhân Viên</h3>
+            </div>
+            <div class="card-body" style="padding: 0;">
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Tên Đăng Nhập</th>
+                                <th>Họ Tên</th>
+                                <th>Vai Trò (Role)</th>
+                                <th>Số Điện Thoại</th>
+                                <th>Trạng Thái</th>
+                                <th style="text-align: center;">Thao Tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-tbody">
+                            <tr>
+                                <td colspan="6" style="text-align: center; padding: 30px; color: var(--text-muted);">
+                                    Đang tải danh sách người dùng...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ma trận phân quyền RBAC Matrix -->
+        <div class="card">
+            <div class="card-header">
+                <h3>🛡️ Ma Trận Phân Quyền Chi Tiết (RBAC Matrix)</h3>
+            </div>
+            <div class="card-body">
+                <table class="data-table" style="font-size: 0.85rem;">
+                    <thead>
+                        <tr>
+                            <th>Chức Năng Nghiệp Vụ</th>
+                            <th style="text-align: center;">Quản Lý</th>
+                            <th style="text-align: center;">Lễ Tân</th>
+                            <th style="text-align: center;">KTV</th>
+                            <th style="text-align: center;">Thu Ngân</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Quản trị Tài khoản & Nhân sự</strong></td>
+                            <td style="text-align: center; color: #10b981;">✅ Full</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Xem</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Tiếp nhận máy & Tạo hồ sơ khách</strong></td>
+                            <td style="text-align: center; color: #10b981;">✅ Full</td>
+                            <td style="text-align: center; color: #10b981;">✅ Chính</td>
+                            <td style="text-align: center; color: #f59e0b;">⚠️ Xem</td>
+                            <td style="text-align: center; color: #f59e0b;">⚠️ Xem</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Khám máy & Cập nhật Kỹ thuật (AI)</strong></td>
+                            <td style="text-align: center; color: #10b981;">✅ Full</td>
+                            <td style="text-align: center; color: #f59e0b;">⚠️ Xem</td>
+                            <td style="text-align: center; color: #10b981;">✅ Chính</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Xuất kho linh kiện vào phiếu sửa</strong></td>
+                            <td style="text-align: center; color: #10b981;">✅ Full</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                            <td style="text-align: center; color: #10b981;">✅ Chính</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Lập Hóa đơn & Thu tiền</strong></td>
+                            <td style="text-align: center; color: #10b981;">✅ Full</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                            <td style="text-align: center; color: #10b981;">✅ Chính</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. Cấp & Tra cứu Bảo hành</strong></td>
+                            <td style="text-align: center; color: #10b981;">✅ Full</td>
+                            <td style="text-align: center; color: #10b981;">✅ Tra cứu</td>
+                            <td style="text-align: center; color: #10b981;">✅ Tra cứu</td>
+                            <td style="text-align: center; color: #10b981;">✅ Tạo/In</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7. Xem Báo cáo Doanh thu & KPI</strong></td>
+                            <td style="text-align: center; color: #10b981;">✅ Full</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                            <td style="text-align: center; color: #ef4444;">❌ Chặn</td>
+                            <td style="text-align: center; color: #f59e0b;">⚠️ Bán lẻ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

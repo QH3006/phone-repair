@@ -1,0 +1,167 @@
+<!-- TAB 3: PHÂN HỆ TRỢ LÝ AI (INTERACTIVE SANDBOX) -->
+<section id="tab-ai-sandbox" class="tab-pane">
+    <div class="ai-tabs">
+        <button class="ai-tab-btn active" data-subtab="subtab-fault">
+            <span>1. AI Tóm Tắt Tình Trạng Máy (FR-10)</span>
+        </button>
+        <button class="ai-tab-btn" data-subtab="subtab-message">
+            <span>2. AI Sinh Tin Nhắn Tiến Độ (FR-11)</span>
+        </button>
+        <button class="ai-tab-btn" data-subtab="subtab-explain">
+            <span>3. AI Diễn Giải Lỗi & Dịch Vụ (FR-12)</span>
+        </button>
+    </div>
+
+    <!-- AI Subtab 1: Tóm Tắt Lỗi KTV -->
+    <div id="subtab-fault" class="ai-subpane active">
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Đầu Vào Ghi Chú Kỹ Thuật (KTV)</h4>
+                    <span class="badge badge-info">Prompt 5 Thành Phần</span>
+                </div>
+                <div class="form-group">
+                    <label>Chọn phiếu sửa chữa mẫu:</label>
+                    <select id="select-sample-fault" class="form-control" onchange="fillFaultSample()">
+                        <option value="1">PSC-20260814-001 | iPhone 13 Pro Max (Chập nguồn VDD_MAIN)</option>
+                        <option value="2">PSC-20260814-002 | Galaxy S22 Ultra (Sọc màn hình & liệt cảm ứng)</option>
+                        <option value="3">PSC-20260814-003 | Redmi Note 12 (Hỏng bo cáp sạc)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Model máy:</label>
+                    <input type="text" id="ai-fault-model" class="form-control" value="iPhone 13 Pro Max">
+                </div>
+                <div class="form-group">
+                    <label>Mô tả lỗi khách báo:</label>
+                    <input type="text" id="ai-fault-desc" class="form-control" value="Máy sập nguồn khi cắm sạc, pin tụt nhanh và máy nóng ran.">
+                </div>
+                <div class="form-group">
+                    <label>Ghi chú kỹ thuật thô của KTV (Chứa thuật ngữ phần cứng):</label>
+                    <textarea id="ai-fault-notes" class="form-control" rows="4">Máy ngấm ẩm, chập đường VDD_MAIN do tụ C2301 rỉ sét. IC sạc USB U3300 nóng bất thường. Pin phù nhẹ 78% dung lượng.</textarea>
+                </div>
+                <button class="btn btn-gradient btn-block" onclick="runSummarizeFault()">
+                    <span>✨ Kích Hoạt AI Tóm Tắt Chuẩn Hóa JSON</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h4>Đầu Ra JSON & Phê Duyệt (Human-in-the-loop)</h4>
+                    <span class="badge badge-success" id="ai-fault-status">Chờ Kích Hoạt</span>
+                </div>
+                <div id="ai-fault-result" class="ai-output-box">
+                    <p class="placeholder-text">Nhấn nút kích hoạt để xem kết quả suy luận cấu trúc JSON từ Gemini AI...</p>
+                </div>
+                <div class="hitl-actions" id="hitl-fault-actions" style="display: none;">
+                    <div class="alert alert-warning">
+                        ⚠️ <strong>Nguyên tắc HITL:</strong> Vui lòng rà soát bản nháp trước khi bấm "Phê duyệt" để lưu chính thức vào CSDL.
+                    </div>
+                    <button class="btn btn-success btn-block" onclick="approveFaultSummary()">
+                        ✓ Phê Duyệt & Lưu Vào CSDL (Phiếu Sửa Chữa)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Subtab 2: Sinh Tin Nhắn Tiến Độ -->
+    <div id="subtab-message" class="ai-subpane">
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Thông Tin Đơn Hàng Cần Báo Khách</h4>
+                    <span class="badge badge-info">Kênh SMS / Zalo</span>
+                </div>
+                <div class="form-group">
+                    <label>Họ tên khách hàng:</label>
+                    <input type="text" id="ai-msg-name" class="form-control" value="Anh Hoàng Đức Minh">
+                </div>
+                <div class="form-group">
+                    <label>Dòng máy:</label>
+                    <input type="text" id="ai-msg-model" class="form-control" value="iPhone 13 Pro Max">
+                </div>
+                <div class="form-group">
+                    <label>Trạng thái sửa chữa:</label>
+                    <select id="ai-msg-status" class="form-control">
+                        <option value="DangKiemTra">DangKiemTra (Đang kiểm tra)</option>
+                        <option value="DangSuaChua">DangSuaChua (Đang tiến hành sửa)</option>
+                        <option value="DaSuaXong" selected>DaSuaXong (Đã sửa xong)</option>
+                        <option value="HoanTat_TraMay">HoanTat_TraMay (Hoàn tất bàn giao)</option>
+                    </select>
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Tổng chi phí dự kiến:</label>
+                        <input type="number" id="ai-msg-cost" class="form-control" value="1250000">
+                    </div>
+                    <div class="form-group">
+                        <label>Kênh gửi:</label>
+                        <select id="ai-msg-channel" class="form-control">
+                            <option value="SMS">SMS (&lt;160 ký tự)</option>
+                            <option value="Zalo">Zalo / Email</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Thời gian hẹn trả máy:</label>
+                    <input type="text" id="ai-msg-time" class="form-control" value="Trước 18h hôm nay">
+                </div>
+                <button class="btn btn-gradient btn-block" onclick="runGenerateMessage()">
+                    <span>📩 Sinh Tin Nhắn Tự Động</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h4>Nội Dung Tin Nhắn Đề Xuất</h4>
+                    <span class="badge badge-success" id="ai-msg-badge">Sẵn Sàng</span>
+                </div>
+                <div id="ai-msg-result" class="ai-output-box">
+                    <p class="placeholder-text">Nội dung tin nhắn SMS/Zalo lịch sự và đúng chuẩn sẽ hiển thị tại đây...</p>
+                </div>
+                <div class="message-meta" id="msg-meta" style="display: none;">
+                    <span id="char-count">Độ dài: 0 ký tự</span>
+                    <button class="btn btn-outline btn-sm" onclick="copyMessage()">📋 Sao chép tin nhắn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Subtab 3: Diễn Giải Lỗi & Dịch Vụ -->
+    <div id="subtab-explain" class="ai-subpane">
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Thông Tin Hạng Mục Cần Tư Vấn Khách</h4>
+                    <span class="badge badge-info">Hình Ảnh So Sánh (Metaphor)</span>
+                </div>
+                <div class="form-group">
+                    <label>Dịch vụ đề xuất:</label>
+                    <input type="text" id="ai-exp-service" class="form-control" value="Xử lý chập nguồn mainboard & Thay IC sạc USB">
+                </div>
+                <div class="form-group">
+                    <label>Tên linh kiện thay thế:</label>
+                    <input type="text" id="ai-exp-part" class="form-control" value="IC Sạc USB U3300 Chính Hãng & Tụ C2301">
+                </div>
+                <div class="form-group">
+                    <label>Hiện tượng lỗi thực tế:</label>
+                    <textarea id="ai-exp-fault" class="form-control" rows="3">Cắm sạc không lên nguồn, sườn máy nóng bất thường, đo đường VDD_MAIN bị chạm.</textarea>
+                </div>
+                <button class="btn btn-gradient btn-block" onclick="runExplainService()">
+                    <span>💡 Tạo Lời Giải Thích Dễ Hiểu Cho Khách Hàng</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h4>Lời Tư Vấn Đời Thường Minh Bạch</h4>
+                    <span class="badge badge-purple">Cổng Khách Hàng</span>
+                </div>
+                <div id="ai-exp-result" class="ai-output-box">
+                    <p class="placeholder-text">Đoạn giải thích bằng hình ảnh so sánh đời thường giúp khách hàng dễ hiểu và tin tưởng sẽ xuất hiện tại đây...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

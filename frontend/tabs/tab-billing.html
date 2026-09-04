@@ -1,0 +1,77 @@
+<!-- Tab 5: Quản Lý Hóa Đơn & Bảo Hành Điện Tử -->
+<div id="tab-billing" class="tab-pane">
+    <div class="panel-header">
+        <div class="filter-controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="billing-search-input" placeholder="Tra cứu Mã HĐ, Mã BH, SĐT, IMEI..." onkeyup="filterBillingLive()">
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button class="btn btn-outline" onclick="loadBillingData()">
+                <span>🔄</span> Tải Lại Dữ Liệu
+            </button>
+        </div>
+    </div>
+
+    <div class="grid-2-col" style="gap: 20px;">
+        <!-- Danh sách Hóa Đơn -->
+        <div class="card">
+            <div class="card-header">
+                <h3>🧾 Danh Sách Hóa Đơn Thanh Toán</h3>
+            </div>
+            <div class="card-body" style="padding: 0;">
+                <div class="table-container" style="max-height: 520px; overflow-y: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Mã HĐ / Phiếu</th>
+                                <th>Khách Hàng</th>
+                                <th>Tổng Tiền</th>
+                                <th>Phương Thức</th>
+                                <th>Ngày TT</th>
+                                <th style="text-align: center;">In HĐ</th>
+                            </tr>
+                        </thead>
+                        <tbody id="invoices-tbody">
+                            <tr>
+                                <td colspan="6" style="text-align: center; padding: 30px; color: var(--text-muted);">
+                                    Đang tải danh sách hóa đơn...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danh sách Bảo Hành Điện Tử -->
+        <div class="card">
+            <div class="card-header">
+                <h3>🛡️ Sổ Bảo Hành Điện Tử</h3>
+            </div>
+            <div class="card-body" style="padding: 0;">
+                <div class="table-container" style="max-height: 520px; overflow-y: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Mã BH & Thiết Bị</th>
+                                <th>Linh Kiện BH</th>
+                                <th>Hạn Bảo Hành</th>
+                                <th>Trạng Thái</th>
+                                <th style="text-align: center;">Thẻ BH</th>
+                            </tr>
+                        </thead>
+                        <tbody id="warranties-tbody">
+                            <tr>
+                                <td colspan="5" style="text-align: center; padding: 30px; color: var(--text-muted);">
+                                    Đang tải dữ liệu bảo hành...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

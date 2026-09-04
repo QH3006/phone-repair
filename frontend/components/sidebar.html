@@ -1,0 +1,55 @@
+<!-- Sidebar Navigation -->
+<aside class="sidebar">
+    <div class="brand">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">
+            <h2>PhoneCare AI</h2>
+            <span>Hệ Thống Quản Lý Sửa Chữa</span>
+        </div>
+    </div>
+
+    <nav class="nav-menu">
+        <div class="nav-section-title" id="nav-title-core">NGHIỆP VỤ CỐT LÕI (KT2)</div>
+        <button class="nav-item active" data-tab="tab-dashboard" data-roles="QuanLy,LeTan,KyThuatVien,ThuNgan">
+            <span class="icon">📊</span> 1. Dashboard Thống Kê
+        </button>
+        <button class="nav-item" data-tab="tab-repairs" data-roles="QuanLy,LeTan,KyThuatVien,ThuNgan">
+            <span class="icon">📱</span> 2. Phiếu Sửa Chữa
+        </button>
+        <button class="nav-item" data-tab="tab-customers" data-roles="QuanLy,LeTan">
+            <span class="icon">👥</span> 3. Khách Hàng & Thiết Bị
+        </button>
+        <button class="nav-item" data-tab="tab-inventory" data-roles="QuanLy,KyThuatVien,LeTan">
+            <span class="icon">📦</span> 4. Kho Linh Kiện & Dịch Vụ
+        </button>
+        <button class="nav-item" data-tab="tab-billing" data-roles="QuanLy,ThuNgan,LeTan">
+            <span class="icon">🧾</span> 5. Hóa Đơn & Bảo Hành
+        </button>
+        <button class="nav-item" data-tab="tab-users" data-roles="QuanLy">
+            <span class="icon">🛡️</span> 6. Nhân Sự & RBAC <span class="role-only-badge">Chỉ Admin</span>
+        </button>
+
+        <div class="nav-section-title" id="nav-title-ai">PHÂN HỆ TRỢ LÝ AI</div>
+        <button class="nav-item" data-tab="tab-ai-sandbox" data-roles="QuanLy,LeTan,KyThuatVien">
+            <span class="icon">✨</span> 7. AI Copilot (Demo)
+        </button>
+        <button class="nav-item" data-tab="tab-ai-logs" data-roles="QuanLy">
+            <span class="icon">📝</span> 8. Nhật Ký Audit Logs <span class="role-only-badge">Chỉ Admin</span>
+        </button>
+        <button class="nav-item" data-tab="tab-architecture" data-roles="QuanLy">
+            <span class="icon">🏛️</span> 9. Kiến Trúc & Use Case <span class="role-only-badge">Chỉ Admin</span>
+        </button>
+    </nav>
+
+    <div class="sidebar-footer">
+        <!-- Thẻ hiển thị tài khoản đang đăng nhập, click để mở modal đổi vai trò -->
+        <div class="user-chip" id="current-user-chip" onclick="openLoginModal()" style="cursor: pointer;" title="Nhấp để đổi tài khoản hoặc đăng nhập vai trò khác">
+            <div class="avatar" id="current-user-avatar">QL</div>
+            <div class="user-info">
+                <strong id="current-user-name">Nguyễn Văn Quản Lý</strong>
+                <small id="current-user-role">Vai trò: Quản Lý (Admin)</small>
+            </div>
+            <span style="margin-left: auto; font-size: 0.8rem; color: var(--text-muted);">🔄</span>
+        </div>
+    </div>
+</aside>

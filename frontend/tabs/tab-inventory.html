@@ -1,0 +1,86 @@
+<!-- Tab 4: Quản Lý Kho Linh Kiện & Dịch Vụ -->
+<div id="tab-inventory" class="tab-pane">
+    <div class="panel-header">
+        <div class="filter-controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="inventory-search-input" placeholder="Tìm tên linh kiện, mã linh kiện, dịch vụ..." onkeyup="filterInventoryLive()">
+            </div>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-muted); cursor: pointer;">
+                <input type="checkbox" id="inventory-low-stock-checkbox" onchange="loadInventoryData()">
+                <span>Chỉ hiện linh kiện sắp hết (&le; 5)</span>
+            </label>
+        </div>
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="openPartModal()" data-roles="QuanLy">
+                <span>➕</span> Nhập Linh Kiện Mới
+            </button>
+            <button class="btn btn-secondary" onclick="openServiceModal()" data-roles="QuanLy">
+                <span>➕</span> Thêm Dịch Vụ Công
+            </button>
+            <button class="btn btn-outline" onclick="loadInventoryData()">
+                <span>🔄</span> Tải Lại
+            </button>
+        </div>
+    </div>
+
+    <div class="grid-2-col" style="gap: 20px;">
+        <!-- Danh sách Linh Kiện Kho -->
+        <div class="card">
+            <div class="card-header">
+                <h3>📦 Danh Mục Linh Kiện Tồn Kho</h3>
+            </div>
+            <div class="card-body" style="padding: 0;">
+                <div class="table-container" style="max-height: 520px; overflow-y: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Mã & Tên Linh Kiện</th>
+                                <th>Dòng Máy</th>
+                                <th>Giá Bán</th>
+                                <th style="text-align: center;">Tồn Kho</th>
+                                <th style="text-align: center;">Bảo Hành</th>
+                                <th style="text-align: center;">Thao Tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="parts-tbody">
+                            <tr>
+                                <td colspan="6" style="text-align: center; padding: 30px; color: var(--text-muted);">
+                                    Đang tải dữ liệu linh kiện...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danh mục Dịch Vụ Sửa Chữa -->
+        <div class="card">
+            <div class="card-header">
+                <h3>🛠️ Bảng Giá Dịch Vụ Kỹ Thuật (Công Thợ)</h3>
+            </div>
+            <div class="card-body" style="padding: 0;">
+                <div class="table-container" style="max-height: 520px; overflow-y: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Mã & Tên Dịch Vụ</th>
+                                <th>Giá Công</th>
+                                <th>Mô Tả Quy Trình</th>
+                                <th style="text-align: center;">Thao Tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="services-tbody">
+                            <tr>
+                                <td colspan="4" style="text-align: center; padding: 30px; color: var(--text-muted);">
+                                    Đang tải dữ liệu dịch vụ...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

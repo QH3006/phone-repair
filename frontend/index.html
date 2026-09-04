@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneCare AI - Quản Lý Trung Tâm Sửa Chữa Điện Thoại (Giai Đoạn KT2)</title>
+    
+    <!-- Ngăn chặn hiện tượng giật sáng khi load trang -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('phonecare_theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/base.css?v=51">
+    <link rel="stylesheet" href="/static/css/layout.css?v=51">
+    <link rel="stylesheet" href="/static/css/components.css?v=51">
+    <link rel="stylesheet" href="/static/css/ai-sandbox.css?v=51">
+    <link rel="stylesheet" href="/static/css/style.css?v=51">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        {% include "components/sidebar.html" %}
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Bar -->
+            {% include "components/header.html" %}
+
+            <div class="content-body">
+                <!-- Role Switcher & Permission Banner -->
+                {% include "components/role-banner.html" %}
+
+                <!-- Tab 1: Dashboard Thống Kê -->
+                {% include "tabs/tab-dashboard.html" %}
+
+                <!-- Tab 2: Danh sách Phiếu sửa & CSDL -->
+                {% include "tabs/tab-repairs.html" %}
+
+                <!-- Tab 3: Khách hàng & Thiết bị -->
+                {% include "tabs/tab-customers.html" %}
+
+                <!-- Tab 4: Kho linh kiện & Dịch vụ -->
+                {% include "tabs/tab-inventory.html" %}
+
+                <!-- Tab 5: Hóa đơn & Bảo hành điện tử -->
+                {% include "tabs/tab-billing.html" %}
+
+                <!-- Tab 6: Quản lý Nhân sự & Phân quyền RBAC -->
+                {% include "tabs/tab-users.html" %}
+
+                <!-- Tab 7: Phân hệ Trợ lý AI Demo -->
+                {% include "tabs/tab-ai-sandbox.html" %}
+
+                <!-- Tab 8: Nhật ký AI Audit Logs -->
+                {% include "tabs/tab-ai-logs.html" %}
+
+                <!-- Tab 9: Kiến trúc hệ thống & RBAC -->
+                {% include "tabs/tab-architecture.html" %}
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    {% include "components/modal.html" %}
+
+    <!-- Client Script Modules -->
+    <script src="/static/js/modules/theme.js?v=51"></script>
+    <script src="/static/js/modules/auth.js?v=51"></script>
+    <script src="/static/js/modules/navigation.js?v=51"></script>
+    <script src="/static/js/modules/dashboard.js?v=51"></script>
+    <script src="/static/js/modules/repairs.js?v=51"></script>
+    <script src="/static/js/modules/customers.js?v=51"></script>
+    <script src="/static/js/modules/inventory.js?v=51"></script>
+    <script src="/static/js/modules/billing.js?v=51"></script>
+    <script src="/static/js/modules/users.js?v=51"></script>
+    <script src="/static/js/modules/intake.js?v=51"></script>
+    <script src="/static/js/modules/ai-sandbox.js?v=51"></script>
+    <script src="/static/js/modules/ai-logs.js?v=51"></script>
+    <script src="/static/js/app.js?v=51"></script>
+</body>
+</html>

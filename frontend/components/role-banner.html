@@ -1,0 +1,35 @@
+﻿<!-- Banner Phân Quyền & Chuyển Nhanh Vai Trò Trực Quan (RBAC Live Bar) -->
+<div class="role-banner" id="role-banner">
+    <div class="role-banner-left">
+        <div class="role-badge-wrapper">
+            <span class="role-badge role-badge-admin" id="role-banner-badge">👑 Quản Lý (Admin)</span>
+        </div>
+        <div class="role-banner-text">
+            <div class="role-banner-title">
+                Đang đăng nhập: <strong id="role-banner-user">Nguyễn Văn Quản Lý</strong> 
+                <span style="color:var(--text-muted); font-size:0.8rem;" id="role-banner-username">(user: admin)</span>
+            </div>
+            <div class="role-banner-desc" id="role-banner-desc">
+                🛡️ <strong>Quyền hạn:</strong> Toàn quyền quản trị hệ thống, quản lý tài khoản nhân viên, xem doanh thu, kho linh kiện & audit logs.
+            </div>
+        </div>
+    </div>
+    
+    <div class="role-banner-right">
+        <span class="role-switch-label">⚡ Chuyển vai trò test:</span>
+        <div class="role-pill-group">
+            <button type="button" class="role-pill active" id="pill-role-admin" onclick="switchRoleLive('admin')" title="Đăng nhập tài khoản Quản Lý">
+                👑 Quản Lý
+            </button>
+            <button type="button" class="role-pill" id="pill-role-letan" onclick="switchRoleLive('letan')" title="Đăng nhập tài khoản Lễ Tân">
+                💁 Lễ Tân
+            </button>
+            <button type="button" class="role-pill" id="pill-role-ktv" onclick="switchRoleLive('ktv')" title="Đăng nhập tài khoản Kỹ Thuật Viên">
+                🔧 Kỹ Thuật Viên
+            </button>
+            <button type="button" class="role-pill" id="pill-role-thungan" onclick="switchRoleLive('thungan')" title="Đăng nhập tài khoản Thu Ngân">
+                💳 Thu Ngân
+            </button>
+        </div>
+    </div>
+</div>
