@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from backend.app.db.database import engine, Base, SessionLocal
 from backend.app.db.models import (
     NguoiDung, KhachHang, ThietBi, LinhKien, DichVu, PhieuSuaChua,
@@ -101,6 +101,7 @@ def init_db():
         db.flush()
 
         # 6. Phiếu sửa chữa mẫu (Mỗi phiếu ở 1 trạng thái khác nhau)
+        now = datetime.now(timezone.utc).replace(tzinfo=None)
         # Phiếu 1: Đang sửa chữa & có dữ liệu AI Tóm Tắt
         psc1 = PhieuSuaChua(
             ma_phieu="PSC-20260814-001",
@@ -114,8 +115,8 @@ def init_db():
             ai_giai_thich_dv="Thiết bị của bạn bị hỏng linh kiện điều phối dòng điện sạc giống như cầu chì trong nhà bị chập, khiến pin không thể nạp và nóng ran. Việc thay thế IC sạc và làm sạch tụ chập sẽ giúp nguồn điện ổn định, bảo vệ an toàn cho bo mạch chủ.",
             trang_thai="DangSuaChua",
             tong_tien_du_kien=1250000,
-            ngay_tiep_nhan=datetime.utcnow() - timedelta(days=1),
-            ngay_hen_tra=datetime.utcnow() + timedelta(hours=4)
+            ngay_tiep_nhan=now - timedelta(days=1),
+            ngay_hen_tra=now + timedelta(hours=4)
         )
 
         # Phiếu 2: Đã sửa xong chờ thanh toán
@@ -131,8 +132,8 @@ def init_db():
             ai_giai_thich_dv="Màn hình điện thoại hoạt động như tấm gương điện tử, khi bị chấn động mạnh sẽ đứt các vi mạch siêu nhỏ dẫn đến sọc màn hình. Việc thay cụm màn hình mới sẽ khôi phục 100% độ sắc nét và độ nhạy cảm ứng.",
             trang_thai="DaSuaXong",
             tong_tien_du_kien=3850000,
-            ngay_tiep_nhan=datetime.utcnow() - timedelta(hours=10),
-            ngay_hen_tra=datetime.utcnow() + timedelta(hours=2)
+            ngay_tiep_nhan=now - timedelta(hours=10),
+            ngay_hen_tra=now + timedelta(hours=2)
         )
 
         # Phiếu 3: Mới tiếp nhận
@@ -148,7 +149,7 @@ def init_db():
             ai_giai_thich_dv=None,
             trang_thai="TiepNhan",
             tong_tien_du_kien=220000,
-            ngay_tiep_nhan=datetime.utcnow()
+            ngay_tiep_nhan=now
         )
         db.add_all([psc1, psc2, psc3])
         db.flush()
@@ -172,8 +173,8 @@ def init_db():
             ma_bao_hanh="BH-S22U-001",
             phieu_sua_chua_id=psc2.id,
             linh_kien_id=p2.id,
-            ngay_bat_dau=datetime.utcnow(),
-            ngay_het_han=datetime.utcnow() + timedelta(days=180),
+            ngay_bat_dau=now,
+            ngay_het_han=now + timedelta(days=180),
             dieu_kien_bh="Bảo hành cảm ứng và hiển thị 6 tháng. Không bảo hành rơi vỡ, vào nước.",
             trang_thai="ConHan"
         )

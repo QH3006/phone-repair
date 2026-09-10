@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from backend.app.db.database import get_db
 from backend.app.db.models import HoaDon, PhieuSuaChua, NguoiDung, BaoHanh
@@ -119,7 +119,8 @@ def create_invoice(
     total = sum(ct.thanh_tien for ct in p.chi_tiet) if p.chi_tiet else (p.tong_tien_du_kien or 0.0)
 
     # Sinh mã hóa đơn
-    today_str = datetime.utcnow().strftime("%Y%m%d")
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
+    today_str = now.strftime("%Y%m%d")
     count_today = db.query(HoaDon).filter(HoaDon.ma_hoa_don.like(f"HD-{today_str}-%")).count()
     ma_hoa_don = f"HD-{today_str}-{count_today + 1:03d}"
 
@@ -130,7 +131,7 @@ def create_invoice(
         tong_tien=total,
         phuong_thuc_tt=req.phuong_thuc_tt,
         trang_thai_tt="DaThanhToan",
-        ngay_thanh_toan=datetime.utcnow()
+        ngay_thanh_toan=now
     )
     db.add(inv)
 
@@ -148,8 +149,8 @@ def create_invoice(
                 ma_bao_hanh=ma_bh,
                 phieu_sua_chua_id=p.id,
                 linh_kien_id=lk.id,
-                ngay_bat_dau=datetime.utcnow(),
-                ngay_het_han=datetime.utcnow() + timedelta(days=thoi_han * 30),
+                ngay_bat_dau=now,
+                ngay_het_han=now + timedelta(days=thoi_han * 30),
                 dieu_kien_bh=f"Bảo hành chính hãng {thoi_han} tháng cho {lk.ten_linh_kien}. Không bảo hành rơi vỡ, ngâm nước.",
                 trang_thai="ConHan"
             )

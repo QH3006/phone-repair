@@ -1,4 +1,5 @@
 import os
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -10,12 +11,19 @@ from backend.app.core.config import settings
 from backend.app.db.init_db import init_db
 from backend.app.api.endpoints import router as api_router
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Tự động khởi tạo database SQLite và nạp dữ liệu mẫu khi backend khởi động."""
+    init_db()
+    yield
+
 app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
     description="Hệ thống Quản lý Trung tâm Sửa chữa Điện thoại Tích hợp AI",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    lifespan=lifespan
 )
 
 # Cấu hình CORS
@@ -55,11 +63,6 @@ if os.path.exists(frontend_dir):
     def read_customer_tracking(request: Request):
         """Cổng tra cứu tiến độ sửa chữa và bảo hành công khai riêng biệt dành cho khách hàng."""
         return templates.TemplateResponse(request=request, name="tracking.html")
-
-@app.on_event("startup")
-def on_startup():
-    """Tự động khởi tạo database SQLite và nạp dữ liệu mẫu khi backend khởi động."""
-    init_db()
 
 if __name__ == "__main__":
     import uvicorn

@@ -141,7 +141,10 @@ class GeminiAIService:
         # Thử kết nối Google Gemini API nếu có cấu hình API KEY
         if settings.GEMINI_API_KEY and settings.GEMINI_API_KEY != "YOUR_GEMINI_API_KEY_HERE":
             try:
-                import google.generativeai as genai
+                import warnings
+                with warnings.catch_warnings():
+                    warnings.filterwarnings("ignore", category=FutureWarning)
+                    import google.generativeai as genai
                 genai.configure(api_key=settings.GEMINI_API_KEY)
                 model = genai.GenerativeModel(settings.GEMINI_MODEL_NAME)
                 response = model.generate_content(prompt)

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from backend.app.db.database import get_db
 from backend.app.db.models import BaoHanh, PhieuSuaChua, LinhKien, NguoiDung, ThietBi, KhachHang
@@ -35,7 +35,7 @@ def list_warranties(
     
     warranties = query.order_by(BaoHanh.id.desc()).offset(skip).limit(limit).all()
     result = []
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
     for bh in warranties:
         p = bh.phieu_sua_chua
         # Tự động cập nhật trạng thái nếu đã hết hạn
@@ -110,7 +110,8 @@ def create_warranty(
     if not lk:
         raise HTTPException(status_code=404, detail="Không tìm thấy linh kiện.")
 
-    today_str = datetime.utcnow().strftime("%Y%m%d")
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
+    today_str = now.strftime("%Y%m%d")
     count_bh = db.query(BaoHanh).count()
     ma_bh = f"BH-{today_str}-{count_bh + 1:03d}"
 
@@ -119,8 +120,8 @@ def create_warranty(
         ma_bao_hanh=ma_bh,
         phieu_sua_chua_id=p.id,
         linh_kien_id=lk.id,
-        ngay_bat_dau=datetime.utcnow(),
-        ngay_het_han=datetime.utcnow() + timedelta(days=thoi_han * 30),
+        ngay_bat_dau=now,
+        ngay_het_han=now + timedelta(days=thoi_han * 30),
         dieu_kien_bh=req.dieu_kien_bh or f"Bảo hành {thoi_han} tháng cho {lk.ten_linh_kien}.",
         trang_thai="ConHan"
     )

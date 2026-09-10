@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Optional, Any, Dict
 from datetime import datetime
 
@@ -46,8 +46,7 @@ class UserOut(UserBase):
     id: int
     ngay_tao: Optional[datetime] = None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= CUSTOMER SCHEMAS =================
 class CustomerBase(BaseModel):
@@ -69,8 +68,7 @@ class CustomerOut(CustomerBase):
     so_thiet_bi: Optional[int] = 0
     so_phieu_sua: Optional[int] = 0
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= DEVICE SCHEMAS =================
 class DeviceBase(BaseModel):
@@ -95,8 +93,7 @@ class DeviceOut(DeviceBase):
     ten_khach_hang: Optional[str] = None
     so_dien_thoai_khach: Optional[str] = None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= INVENTORY / PART SCHEMAS =================
 class PartBase(BaseModel):
@@ -124,8 +121,7 @@ class PartOut(PartBase):
     id: int
     ngay_cap_nhat: Optional[datetime] = None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= SERVICE CATALOG SCHEMAS =================
 class ServiceBase(BaseModel):
@@ -146,8 +142,7 @@ class ServiceUpdate(BaseModel):
 class ServiceOut(ServiceBase):
     id: int
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= REPAIR DETAIL (ITEMS) SCHEMAS =================
 class RepairDetailCreate(BaseModel):
@@ -167,19 +162,18 @@ class RepairDetailOut(BaseModel):
     don_gia: float
     thanh_tien: float
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= REPAIR TICKET SCHEMAS =================
 class CreateRepairTicketRequest(BaseModel):
-    ho_ten: str = Field(..., example="Hoàng Đức Minh")
-    so_dien_thoai: str = Field(..., example="0988123456")
-    dia_chi: Optional[str] = Field(None, example="123 Cầu Giấy, Hà Nội")
-    hang_san_xuat: str = Field(..., example="Apple")
-    model_may: str = Field(..., example="iPhone 14 Pro Max")
-    so_imei: Optional[str] = Field(None, example="354892091234567")
-    mat_khau_may: Optional[str] = Field(None, example="112233")
-    mo_ta_loi_khach: str = Field(..., example="Màn hình nứt vỡ, cảm ứng đơ")
+    ho_ten: str = Field(..., examples=["Hoàng Đức Minh"])
+    so_dien_thoai: str = Field(..., examples=["0988123456"])
+    dia_chi: Optional[str] = Field(None, examples=["123 Cầu Giấy, Hà Nội"])
+    hang_san_xuat: str = Field(..., examples=["Apple"])
+    model_may: str = Field(..., examples=["iPhone 14 Pro Max"])
+    so_imei: Optional[str] = Field(None, examples=["354892091234567"])
+    mat_khau_may: Optional[str] = Field(None, examples=["112233"])
+    mo_ta_loi_khach: str = Field(..., examples=["Màn hình nứt vỡ, cảm ứng đơ"])
     ghi_chu_ky_thuat: Optional[str] = None
     tong_tien_du_kien: Optional[float] = 0.0
     hinh_anh: Optional[str] = None
@@ -188,7 +182,7 @@ class CreateRepairTicketRequest(BaseModel):
     ngay_hen_tra: Optional[datetime] = None
 
 class UpdateRepairStatusRequest(BaseModel):
-    trang_thai: str = Field(..., example="DangKiemTra")
+    trang_thai: str = Field(..., examples=["DangKiemTra"])
     ghi_chu_ky_thuat: Optional[str] = None
     ktv_id: Optional[int] = None
     tong_tien_du_kien: Optional[float] = None
@@ -243,8 +237,7 @@ class InvoiceOut(BaseModel):
     ngay_thanh_toan: Optional[str] = None
     chi_tiet_items: List[Dict[str, Any]] = []
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= WARRANTY SCHEMAS =================
 class WarrantyCreate(BaseModel):
@@ -268,30 +261,29 @@ class WarrantyOut(BaseModel):
     dieu_kien_bh: Optional[str] = None
     trang_thai: str
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 # ================= AI SCHEMAS =================
 class FaultSummaryRequest(BaseModel):
     phieu_id: Optional[int] = None
-    model_may: str = Field(..., example="iPhone 13 Pro Max")
-    mo_ta_loi_khach: str = Field(..., example="Máy sập nguồn khi cắm sạc, máy nóng ran")
-    ghi_chu_ky_thuat: str = Field(..., example="Chập đường VDD_MAIN do rỉ sét tụ C2301, IC sạc U3300 nóng bất thường")
+    model_may: str = Field(..., examples=["iPhone 13 Pro Max"])
+    mo_ta_loi_khach: str = Field(..., examples=["Máy sập nguồn khi cắm sạc, máy nóng ran"])
+    ghi_chu_ky_thuat: str = Field(..., examples=["Chập đường VDD_MAIN do rỉ sét tụ C2301, IC sạc U3300 nóng bất thường"])
 
 class ProgressMessageRequest(BaseModel):
     phieu_id: Optional[int] = None
-    ten_khach: str = Field(..., example="Hoàng Đức Minh")
-    model_may: str = Field(..., example="iPhone 13 Pro Max")
-    trang_thai: str = Field(..., example="DaSuaXong")
-    chi_phi: float = Field(..., example=1250000)
-    ngay_hen: str = Field(..., example="Trước 18h hôm nay")
-    kenh_gui: str = Field(default="SMS", example="SMS")
+    ten_khach: str = Field(..., examples=["Hoàng Đức Minh"])
+    model_may: str = Field(..., examples=["iPhone 13 Pro Max"])
+    trang_thai: str = Field(..., examples=["DaSuaXong"])
+    chi_phi: float = Field(..., examples=[1250000])
+    ngay_hen: str = Field(..., examples=["Trước 18h hôm nay"])
+    kenh_gui: str = Field(default="SMS", examples=["SMS"])
 
 class ServiceExplainRequest(BaseModel):
     phieu_id: Optional[int] = None
-    ten_dich_vu: str = Field(..., example="Xử lý chập nguồn mainboard")
-    ten_linh_kien: str = Field(..., example="IC Sạc USB U3300 & Tụ lọc")
-    loi_thuc_te: str = Field(..., example="Máy cắm sạc không lên nguồn, sườn máy nóng ran")
+    ten_dich_vu: str = Field(..., examples=["Xử lý chập nguồn mainboard"])
+    ten_linh_kien: str = Field(..., examples=["IC Sạc USB U3300 & Tụ lọc"])
+    loi_thuc_te: str = Field(..., examples=["Máy cắm sạc không lên nguồn, sườn máy nóng ran"])
 
 class ApproveAIDataRequest(BaseModel):
     phieu_id: int

@@ -242,3 +242,7 @@ def test_database_backup_nfr08():
     assert len(backups) >= 1
     assert any(b["path"] == backup_file for b in backups)
 
+    # Dọn dẹp file backup tạo ra trong lúc test để giải phóng dung lượng ổ đĩa
+    if os.path.exists(backup_file):
+        os.remove(backup_file)
+

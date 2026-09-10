@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from datetime import datetime
+from datetime import datetime, timezone
 
 from backend.app.db.database import get_db
 from backend.app.db.models import (
@@ -148,8 +148,8 @@ def create_repair_ticket(
             khach_hang.dia_chi = req.dia_chi.strip()
         db.flush()
 
-    # 2. Tạo thiết bị
-    imei = req.so_imei.strip() if req.so_imei else f"IMEI-{int(datetime.utcnow().timestamp())}"
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
+    imei = req.so_imei.strip() if req.so_imei else f"IMEI-{int(now.timestamp())}"
     thiet_bi = db.query(ThietBi).filter(ThietBi.so_imei == imei).first()
     if not thiet_bi:
         thiet_bi = ThietBi(
@@ -163,7 +163,7 @@ def create_repair_ticket(
         db.flush()
 
     # 3. Sinh mã phiếu tự động
-    today_str = datetime.utcnow().strftime("%Y%m%d")
+    today_str = now.strftime("%Y%m%d")
     count_today = db.query(PhieuSuaChua).filter(PhieuSuaChua.ma_phieu.like(f"PSC-{today_str}-%")).count()
     ma_phieu = f"PSC-{today_str}-{count_today + 1:03d}"
 
@@ -188,7 +188,7 @@ def create_repair_ticket(
         hinh_anh=req.hinh_anh,
         trang_thai="TiepNhan",
         tong_tien_du_kien=req.tong_tien_du_kien or 0.0,
-        ngay_tiep_nhan=datetime.utcnow(),
+        ngay_tiep_nhan=now,
         ngay_hen_tra=req.ngay_hen_tra
     )
     db.add(phieu)
@@ -229,7 +229,7 @@ def update_repair_status(
     if req.tong_tien_du_kien is not None:
         phieu.tong_tien_du_kien = req.tong_tien_du_kien
     if req.trang_thai == "DaSuaXong":
-        phieu.ngay_hoan_tat = datetime.utcnow()
+        phieu.ngay_hoan_tat = datetime.now(timezone.utc).replace(tzinfo=None)
 
     db.commit()
     db.refresh(phieu)

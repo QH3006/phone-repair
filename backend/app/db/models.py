@@ -1,9 +1,13 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import (
     Column, Integer, String, Float, Text, DateTime, ForeignKey
 )
 from sqlalchemy.orm import relationship
 from backend.app.db.database import Base
+
+def utc_now():
+    return datetime.now(timezone.utc).replace(tzinfo=None)
+
 
 class NguoiDung(Base):
     """Bảng lưu thông tin tài khoản nhân viên và ban quản lý."""
@@ -16,7 +20,7 @@ class NguoiDung(Base):
     vai_tro = Column(String(30), nullable=False)  # 'QuanLy', 'LeTan', 'KyThuatVien', 'ThuNgan'
     so_dien_thoai = Column(String(15), nullable=True)
     trang_thai = Column(String(20), default="HoatDong")
-    ngay_tao = Column(DateTime, default=datetime.utcnow)
+    ngay_tao = Column(DateTime, default=utc_now)
 
     # Relationships
     phieu_tiep_nhan = relationship("PhieuSuaChua", foreign_keys="PhieuSuaChua.le_tan_id", back_populates="le_tan")
@@ -32,7 +36,7 @@ class KhachHang(Base):
     ho_ten = Column(String(100), nullable=False)
     so_dien_thoai = Column(String(15), unique=True, index=True, nullable=False)
     dia_chi = Column(String(255), nullable=True)
-    ngay_tao = Column(DateTime, default=datetime.utcnow)
+    ngay_tao = Column(DateTime, default=utc_now)
 
     # Relationships
     thiet_bi = relationship("ThietBi", back_populates="khach_hang", cascade="all, delete-orphan")
@@ -49,7 +53,7 @@ class ThietBi(Base):
     model_may = Column(String(100), nullable=False)
     so_imei = Column(String(30), unique=True, index=True, nullable=False)
     mat_khau_may = Column(String(50), nullable=True)
-    ngay_tao = Column(DateTime, default=datetime.utcnow)
+    ngay_tao = Column(DateTime, default=utc_now)
 
     # Relationships
     khach_hang = relationship("KhachHang", back_populates="thiet_bi")
@@ -68,7 +72,7 @@ class LinhKien(Base):
     gia_ban = Column(Float, nullable=False)
     so_luong_ton = Column(Integer, default=0, nullable=False)
     thoi_han_bao_hanh_thang = Column(Integer, default=6)
-    ngay_cap_nhat = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    ngay_cap_nhat = Column(DateTime, default=utc_now, onupdate=utc_now)
 
     # Relationships
     chi_tiet = relationship("ChiTietSuaChua", back_populates="linh_kien")
@@ -110,7 +114,7 @@ class PhieuSuaChua(Base):
     trang_thai = Column(String(30), default="TiepNhan", nullable=False)
     tong_tien_du_kien = Column(Float, default=0.0)
     
-    ngay_tiep_nhan = Column(DateTime, default=datetime.utcnow)
+    ngay_tiep_nhan = Column(DateTime, default=utc_now)
     ngay_hen_tra = Column(DateTime, nullable=True)
     ngay_hoan_tat = Column(DateTime, nullable=True)
 
@@ -155,7 +159,7 @@ class HoaDon(Base):
     tong_tien = Column(Float, nullable=False)
     phuong_thuc_tt = Column(String(30), default="TienMat")  # 'TienMat', 'ChuyenKhoan'
     trang_thai_tt = Column(String(30), default="DaThanhToan")
-    ngay_thanh_toan = Column(DateTime, default=datetime.utcnow)
+    ngay_thanh_toan = Column(DateTime, default=utc_now)
 
     # Relationships
     phieu_sua_chua = relationship("PhieuSuaChua", back_populates="hoa_don")
@@ -170,7 +174,7 @@ class BaoHanh(Base):
     ma_bao_hanh = Column(String(30), unique=True, index=True, nullable=False)
     phieu_sua_chua_id = Column(Integer, ForeignKey("phieu_sua_chua.id"), nullable=False)
     linh_kien_id = Column(Integer, ForeignKey("linh_kien.id"), nullable=False)
-    ngay_bat_dau = Column(DateTime, default=datetime.utcnow)
+    ngay_bat_dau = Column(DateTime, default=utc_now)
     ngay_het_han = Column(DateTime, nullable=False)
     dieu_kien_bh = Column(Text, nullable=True)
     trang_thai = Column(String(20), default="ConHan")  # 'ConHan', 'HetHan', 'TuChoi'
@@ -193,7 +197,7 @@ class NhatKyAI(Base):
     ai_parsed_json = Column(Text, nullable=True)
     execution_time_ms = Column(Float, nullable=True)
     trang_thai = Column(String(30), default="ThanhCong")  # 'ThanhCong', 'Fallback', 'Loi'
-    ngay_thuc_hien = Column(DateTime, default=datetime.utcnow)
+    ngay_thuc_hien = Column(DateTime, default=utc_now)
 
     # Relationships
     phieu_sua_chua = relationship("PhieuSuaChua", back_populates="nhat_ky_ai")

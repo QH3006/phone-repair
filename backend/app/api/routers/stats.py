@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from datetime import datetime
+from datetime import datetime, timezone
 
 from backend.app.db.database import get_db
 from backend.app.db.models import (
@@ -53,7 +53,7 @@ def get_dashboard_overview(db: Session = Depends(get_db), current_user: NguoiDun
 
     return {
         "status": "Healthy",
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "summary": {
             "total_repairs": total_repairs,
             "active_repairs": active_repairs,
