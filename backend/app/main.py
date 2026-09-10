@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.responses import FileResponse
 from fastapi import Request
 
 from backend.app.core.config import settings
@@ -35,6 +36,15 @@ frontend_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__fi
 if os.path.exists(frontend_dir):
     app.mount("/static", StaticFiles(directory=frontend_dir), name="static")
     templates = Jinja2Templates(directory=frontend_dir)
+
+    @app.get("/favicon.ico", include_in_schema=False)
+    def favicon():
+        favicon_path = os.path.join(frontend_dir, "favicon.ico")
+        if os.path.exists(favicon_path):
+            return FileResponse(favicon_path, media_type="image/x-icon")
+        svg_path = os.path.join(frontend_dir, "favicon.svg")
+        if os.path.exists(svg_path):
+            return FileResponse(svg_path, media_type="image/svg+xml")
 
     @app.get("/", include_in_schema=False)
     def read_root(request: Request):
