@@ -111,7 +111,7 @@
                     <input type="text" id="ai-msg-time" class="form-control" value="Trước 18h hôm nay">
                 </div>
                 <button class="btn btn-gradient btn-block" onclick="runGenerateMessage()">
-                    <span>📩 Sinh Tin Nhắn Tự Động</span>
+                    <span>Sinh Tin Nhắn Tự Động</span>
                 </button>
             </div>
 
@@ -125,7 +125,7 @@
                 </div>
                 <div class="message-meta" id="msg-meta" style="display: none;">
                     <span id="char-count">Độ dài: 0 ký tự</span>
-                    <button class="btn btn-outline btn-sm" onclick="copyMessage()">📋 Sao chép tin nhắn</button>
+                    <button class="btn btn-outline btn-sm" onclick="copyMessage()">Sao chép tin nhắn</button>
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
                     <textarea id="ai-exp-fault" class="form-control" rows="3">Cắm sạc không lên nguồn, sườn máy nóng bất thường, đo đường VDD_MAIN bị chạm.</textarea>
                 </div>
                 <button class="btn btn-gradient btn-block" onclick="runExplainService()">
-                    <span>💡 Tạo Lời Giải Thích Dễ Hiểu Cho Khách Hàng</span>
+                    <span>Tạo Bản Tư Vấn Khách Hàng</span>
                 </button>
             </div>
 
@@ -190,23 +190,23 @@
             <!-- 4-Stage Visual Stepper -->
             <div class="rag-stepper">
                 <div class="rag-step active">
-                    <span>1. 📁 Ingestion</span>
-                    <small style="color:var(--text-muted);">(Kho 5 Files TXT)</small>
+                    <span>1. Ingestion</span>
+                    <small style="color:var(--text-muted);">(5 Tài Liệu Chuẩn)</small>
                 </div>
                 <span class="rag-step-arrow">➔</span>
                 <div class="rag-step active">
-                    <span>2. ✂️ Chunking</span>
-                    <small style="color:var(--text-muted);">(Cắt nhỏ + Metadata)</small>
+                    <span>2. Semantic Chunking</span>
+                    <small style="color:var(--text-muted);">(Ranh giới câu + Metadata)</small>
                 </div>
                 <span class="rag-step-arrow">➔</span>
                 <div class="rag-step active">
-                    <span>3. 🔍 Top-K Retrieval</span>
-                    <small style="color:var(--text-muted);">(So khớp trước khi gọi LLM)</small>
+                    <span>3. Vector Retrieval</span>
+                    <small style="color:var(--text-muted);">(Cosine Similarity TF-IDF)</small>
                 </div>
                 <span class="rag-step-arrow">➔</span>
                 <div class="rag-step active">
-                    <span>4. 🤖 Grounded Gen</span>
-                    <small style="color:var(--text-muted);">(Prompt + Nguồn trích dẫn)</small>
+                    <span>4. Grounded Generation</span>
+                    <small style="color:var(--text-muted);">(Augmented Prompt + Nguồn)</small>
                 </div>
             </div>
         </div>
@@ -215,7 +215,7 @@
         <div class="card" style="margin-bottom:20px;">
             <div class="card-header" style="flex-wrap:wrap; gap:10px;">
                 <div>
-                    <h4 style="margin:0;">1. Kho Tài Liệu & Phân Đoạn Chunk (Ingestion & Chunking)</h4>
+                    <h4 style="margin:0;">1. Kho Tài Liệu & Phân Đoạn Tri Thức (Ingestion & Chunking)</h4>
                     <small style="color:var(--text-muted);">Chuẩn bị 5 file TXT chuẩn tiếng Việt UTF-8: Chính sách bảo hành, đổi trả, hướng dẫn sản phẩm, quy trình</small>
                 </div>
                 <div style="display:flex; gap:12px; align-items:center;">
@@ -254,7 +254,7 @@
                             <input type="text" class="form-control" value="TXT (UTF-8 chuẩn 100%)" readonly style="background:rgba(255,255,255,0.04); color:var(--success); font-weight:600;">
                         </div>
                         <button class="btn btn-outline" onclick="loadRAGChunks()" style="white-space:nowrap;">
-                            🔄 Tái cấu trúc Chunks
+                            Tái Cấu Trúc Chunks
                         </button>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
             <!-- Tab con xem danh sách file hoặc xem mẫu chunks -->
             <details open style="margin-bottom:12px;">
                 <summary style="cursor:pointer; font-weight:600; color:var(--text-main); font-size:0.9rem; margin-bottom:8px;">
-                    📂 Danh Sách 5 Tài Liệu Nghiệp Vụ Trong Kho (Nhấp để ẩn/hiện)
+                    Danh Sách 5 Tài Liệu Nghiệp Vụ Trong Kho (Nhấp để ẩn/hiện)
                 </summary>
                 <div id="rag-docs-list">
                     <p class="placeholder-text">Đang tải danh sách tài liệu...</p>
@@ -272,7 +272,7 @@
 
             <details open>
                 <summary style="cursor:pointer; font-weight:600; color:var(--text-main); font-size:0.9rem; margin-bottom:8px;">
-                    📋 Chunks Mẫu Kèm Đầy Đủ Metadata (Chunk ID, File, Vị trí Pos, Số từ)
+                    Chunks Phân Đoạn Mẫu Kèm Đầy Đủ Metadata (Chunk ID, File, Vị trí Pos, Số từ)
                 </summary>
                 <div id="rag-sample-chunks">
                     <p class="placeholder-text">Đang phân đoạn chunks...</p>
@@ -292,20 +292,20 @@
                 <!-- Các câu hỏi mẫu 1-click -->
                 <div style="margin-bottom:12px;">
                     <label style="font-size:0.8rem; color:var(--text-muted); display:block; margin-bottom:6px;">
-                        💡 Chọn câu hỏi mẫu để kiểm tra nhanh kịch bản:
+                        Các tình huống tra cứu nghiệp vụ mẫu:
                     </label>
                     <div style="display:flex; flex-wrap:wrap; gap:6px;">
                         <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Máy bị rơi vào nước hoặc vỡ màn hình có được bảo hành miễn phí không?')">
-                            💧 Rơi nước / Vỡ màn hình
+                            Rơi nước & Vỡ màn hình
                         </button>
                         <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Điều kiện để được đổi mới 1-1 trong 7 ngày và hoàn tiền 100% là gì?')">
-                            🔄 Đổi trả 7 ngày & Hoàn tiền
+                            Đổi trả 7 ngày & Hoàn tiền
                         </button>
                         <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Thời hạn bảo hành pin mới là bao lâu và sạc pin đúng cách thế nào?')">
-                            🔋 Bảo hành & Sạc pin
+                            Bảo hành & Sạc pin
                         </button>
                         <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Quy trình 5 bước tiếp nhận và việc khách hàng ký tên lên linh kiện?')">
-                            📝 Quy trình & Ký tên linh kiện
+                            Quy trình & Ký tên linh kiện
                         </button>
                     </div>
                 </div>
@@ -330,7 +330,7 @@
                     </div>
                     <div style="flex:1 1 200px; min-width:180px;">
                         <button class="btn btn-primary" onclick="runRAGRetrieveOnly()" style="width:100%; white-space:normal; line-height:1.3; padding:9px 12px;">
-                            <span>🔍 Bước 1: Trích Xuất Top-K Chunks</span>
+                            <span>Bước 1: Trích Xuất Top-K Chunks</span>
                         </button>
                     </div>
                 </div>
@@ -354,17 +354,17 @@
 
                 <div class="rag-step2-row" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
                     <button class="btn btn-gradient" id="btn-rag-step2" onclick="runRAGGenerateOnly()" style="flex:1 1 230px; min-width:200px; white-space:normal; line-height:1.3; padding:9px 12px;">
-                        <span>🚀 Bước 2: Ghép Prompt & Gọi LLM Sinh Câu Trả Lời</span>
+                        <span>Bước 2: Ghép Prompt & Gọi LLM</span>
                     </button>
                     <button class="btn btn-outline" onclick="runFullRAGPipeline()" title="Tự động chạy Bước 1 rồi Bước 2" style="white-space:nowrap; flex:0 0 auto;">
-                        <span>⚡ Chạy Tự Động</span>
+                        <span>Chạy Tự Động (Auto)</span>
                     </button>
                 </div>
 
                 <!-- Khung xem trước Augmented Prompt thực tế được ghép -->
                 <details style="margin-bottom:12px; background:rgba(0,0,0,0.15); border-radius:var(--radius-sm); padding:6px 10px; border:1px solid var(--border-subtle);">
                     <summary style="cursor:pointer; font-size:0.82rem; font-weight:600; color:var(--primary);">
-                        👁️ Xem Augmented Prompt thực tế gửi cho LLM (Ghép Ngữ Cảnh + Câu Hỏi)
+                        Xem Cấu Trúc Augmented Prompt Thực Tế (Ngữ Cảnh + Câu Hỏi)
                     </summary>
                     <div id="rag-augmented-prompt-view" style="margin-top:8px;">
                         <p style="font-size:0.75rem; color:var(--text-dim); margin:0;">Chưa ghép prompt. Vui lòng chạy Bước 2.</p>

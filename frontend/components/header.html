@@ -7,16 +7,32 @@
     <div class="header-actions">
         <!-- Nút chuyển đổi Dark/Light Mode -->
         <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleTheme()" title="Chuyển chế độ Giao diện Sáng / Tối">
-            <span id="theme-icon">🌙</span>
+            <span id="theme-icon" style="display:inline-flex; align-items:center;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </span>
             <span id="theme-text">Dark Mode</span>
         </button>
 
-        <a href="/tracking" target="_blank" class="btn btn-outline" title="Mở Cổng tra cứu tiến độ công khai dành riêng cho khách hàng (không cần đăng nhập)">
-            <span>🔍 Cổng Khách Hàng ↗</span>
+        <a href="/tracking" target="_blank" class="btn btn-outline" title="Mở Cổng tra cứu tiến độ công khai dành riêng cho khách hàng (không cần đăng nhập)" style="display:inline-flex; align-items:center; gap:6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <span>Cổng Khách Hàng</span>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7;">
+                <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+            </svg>
         </a>
         <span class="badge badge-success" id="server-status">Backend Online</span>
-        <a href="/docs" target="_blank" class="btn btn-outline">
-            <span>API Swagger Docs ↗</span>
+        <a href="/docs" target="_blank" class="btn btn-outline" style="display:inline-flex; align-items:center; gap:6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <span>API Docs</span>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7;">
+                <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+            </svg>
         </a>
     </div>
 </header>

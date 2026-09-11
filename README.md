@@ -1,5 +1,15 @@
-# 📱 HỆ THỐNG QUẢN LÝ TRUNG TÂM SỬA CHỮA ĐIỆN THOẠI TÍCH HỢP AI
-> **HỆ THỐNG QUẢN LÝ VẬN HÀNH & CHĂM SÓC KHÁCH HÀNG TÍCH HỢP TRỢ LÝ AI CHUYÊN SÂU**
+# 📱 PHONECARE AI — HỆ THỐNG QUẢN LÝ TRUNG TÂM SỬA CHỮA ĐIỆN THOẠI TÍCH HỢP AI
+
+> Hệ thống Quản lý Dịch vụ Sửa chữa Thiết bị Di động Toàn diện được xây dựng trên nền tảng **FastAPI (Python 3.12)**, **Modular Web Architecture (ES6+ & Modern CSS3)**, **SQLite / SQLAlchemy ORM** và **Google Gemini AI**.
+
+[![Backend FastAPI](https://img.shields.io/badge/Backend-FastAPI_0.115-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Frontend Modern](https://img.shields.io/badge/Frontend-ES6+_|_CSS3_Modular-61DAFB?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org)
+[![Server Uvicorn](https://img.shields.io/badge/Server-Uvicorn_ASGI-495057?style=flat-square&logo=gunicorn&logoColor=white)](https://www.uvicorn.org/)
+[![Database SQLite](https://img.shields.io/badge/Database-SQLite_3_|_SQLAlchemy-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
+[![AI Engine Gemini](https://img.shields.io/badge/AI_Engine-Google_Gemini-8E75C2?style=flat-square&logo=googlegemini&logoColor=white)](https://ai.google.dev)
+[![Architecture RAG](https://img.shields.io/badge/Architecture-Enterprise_RAG_Pipeline-4CAF50?style=flat-square&logo=probot&logoColor=white)](#)
+[![Tests Passed](https://img.shields.io/badge/Tests-22_Passed-brightgreen?style=flat-square&logo=pytest&logoColor=white)](#)
+[![License MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 Dự án phát triển nền tảng phần mềm quản lý toàn diện trung tâm bảo hành, sửa chữa thiết bị di động tích hợp trợ lý Trí tuệ Nhân tạo (Google Gemini AI), áp dụng mô hình phát triển phần mềm hiện đại có AI đồng hành (**AI-Augmented SDLC**) theo chuẩn kiến trúc doanh nghiệp kết hợp kỹ thuật Prompt Engineering & Guardrails an toàn dữ liệu.
 
