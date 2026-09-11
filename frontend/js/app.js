@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Tải dữ liệu ban đầu
     if (typeof loadDashboardData === 'function') loadDashboardData();
     if (typeof loadRepairsData === 'function') loadRepairsData();
+    if (typeof initRAGDemo === 'function') initRAGDemo();
 
     // 3. Đóng modal khi click ra ngoài backdrop hoặc bấm phím Escape
     window.addEventListener('click', (e) => {

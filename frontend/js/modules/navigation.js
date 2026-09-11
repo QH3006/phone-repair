@@ -63,6 +63,10 @@ function initAISubtabs() {
             document.querySelectorAll('.ai-subpane').forEach(pane => pane.classList.remove('active'));
             const targetPane = document.getElementById(subtabId);
             if (targetPane) targetPane.classList.add('active');
+
+            if (subtabId === 'subtab-rag' && typeof initRAGDemo === 'function') {
+                initRAGDemo();
+            }
         });
     });
 }

@@ -1,0 +1,297 @@
+/* ==========================================================================
+   RAG Pipeline Styles (Retrieval-Augmented Generation Architecture)
+   ========================================================================== */
+
+/* Pipeline Stepper */
+.rag-pipeline-banner {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.rag-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.rag-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-main);
+    flex: 1;
+    min-width: 170px;
+}
+
+.rag-step.active {
+    border-color: var(--primary);
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary);
+}
+
+.rag-step-arrow {
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+/* Document & Chunk Cards */
+.rag-docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.rag-doc-card {
+    background: var(--bg-box);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.rag-doc-card:hover {
+    border-color: var(--primary);
+    background: var(--bg-card-hover);
+}
+
+.rag-doc-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rag-doc-icon {
+    font-size: 1.4rem;
+}
+
+.rag-doc-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.rag-doc-title strong {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rag-doc-title small {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+}
+
+.rag-doc-snippet {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    line-height: 1.4;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+/* Sample Chunks Grid */
+.rag-chunks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rag-chunk-card {
+    background: var(--bg-box);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.rag-chunk-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.rag-chunk-body {
+    font-size: 0.8rem;
+    color: var(--text-main);
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border-radius: 4px;
+    max-height: 120px;
+    overflow-y: auto;
+    font-family: var(--font-sans);
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Top-K Retrieval Items */
+.rag-topk-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rag-topk-item {
+    background: var(--bg-box);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    transition: all 0.25s ease;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.rag-topk-item:hover {
+    border-color: var(--primary);
+    background: rgba(56, 189, 248, 0.04);
+}
+
+.rag-topk-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+    max-width: 100%;
+}
+
+.rag-rank-badge {
+    background: var(--primary);
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+}
+
+.rag-topk-content {
+    font-size: 0.84rem;
+    color: var(--text-main);
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 10px 12px;
+    border-radius: 4px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.rag-highlight {
+    background: rgba(250, 204, 21, 0.35);
+    color: #fef08a;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+/* Answer & Citations Box */
+.rag-answer-box {
+    background: rgba(56, 189, 248, 0.04);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.rag-answer-text {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    margin-bottom: 14px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.rag-citations-box {
+    background: rgba(192, 132, 252, 0.08);
+    border-left: 3px solid var(--purple);
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    color: var(--text-main);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.rag-citations-box ul {
+    margin: 8px 0 0 16px;
+    padding: 0;
+}
+
+.rag-citations-box li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Glowing Pulse Animation for Step 2 Button */
+.btn-pulse {
+    animation: pulseGlow 1.8s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(56, 189, 248, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+    }
+}
+
+/* 3-Column Grid for A/B Testing */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+@media (max-width: 992px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,26 @@
+QUY TRÌNH 5 BƯỚC TIẾP NHẬN VÀ TRẢ MÁY SỬA CHỮA - PHONECARE
+
+Để đảm bảo tính minh bạch, trung thực và quyền lợi cao nhất của khách hàng, PhoneCare tuân thủ nghiêm ngặt quy trình tiếp nhận và bàn giao thiết bị qua 5 bước tiêu chuẩn:
+
+BƯỚC 1: TIẾP NHẬN VÀ KIỂM TRA SƠ BỘ NGOẠI QUAN TẠI QUẦY LỄ TÂN
+- Lễ tân tiếp nhận thiết bị từ khách hàng, ghi nhận họ tên, số điện thoại liên lạc và tình trạng lỗi do khách hàng mô tả ban đầu.
+- Nhân viên kiểm tra và lập biên bản ghi nhận chi tiết ngoại quan vỏ máy (vết xước, cấn móp kính, nắp lưng).
+- Chụp ảnh 4 góc máy và lưu ảnh hiện trạng lên phần mềm quản lý phiếu sửa chữa.
+
+BƯỚC 2: KHÁCH HÀNG KÝ TÊN LÊN LINH KIỆN NỘI BỘ TRƯỚC KHI BÀN GIAO
+- Đối với các trường hợp máy cần giữ lại kiểm tra chuyên sâu, kỹ thuật viên hỗ trợ tháo máy trước sự chứng kiến trực tiếp của khách hàng.
+- Khách hàng tự tay ký tên xác nhận lên các linh kiện giá trị cao: cụm màn hình, viên pin, camera trước/sau, loa chuông và bo mạch chủ.
+- Việc này nhằm triệt tiêu hoàn toàn nỗi lo bị tráo đổi linh kiện ("luộc đồ").
+
+BƯỚC 3: CHẨN ĐOÁN KỸ THUẬT VÀ BÁO GIÁ MINH BẠCH
+- Kỹ thuật viên đo đạc dòng điện, kiểm tra bo mạch và xác định chính xác nguyên nhân gây hỏng hóc.
+- Bộ phận chăm sóc khách hàng hoặc kỹ thuật viên gọi điện thoại/gửi tin nhắn thông báo phương án xử lý cùng mức giá trọn gói (bao gồm tiền công tháo lắp + giá linh kiện niêm yết, cam kết không phát sinh bất kỳ khoản phụ phí nào).
+- Chỉ khi khách hàng đồng ý phê duyệt báo giá, kỹ thuật viên mới bắt đầu tiến hành sửa chữa.
+
+BƯỚC 4: TIẾN HÀNH SỬA CHỮA VÀ KIỂM ĐỊNH CHẤT LƯỢNG (QC)
+- Kỹ thuật viên tay nghề cao thực hiện thay thế linh kiện hoặc sửa mạch theo đúng quy chuẩn an toàn tĩnh điện (ESD).
+- Sau khi hoàn thành thao tác, máy được chuyển qua khâu kiểm định chất lượng (QC Checklist 12 bước): kiểm tra màn hình cảm ứng, sạc vào pin, camera, loa trong/ngoài, mic đàm thoại, sóng di động, Wi-Fi, Bluetooth, Face ID / Vân tay, cảm biến tiệm cận.
+
+BƯỚC 5: BÀN GIAO THIẾT BỊ, KÍCH HOẠT BẢO HÀNH VÀ XUẤT HÓA ĐƠN
+- Khách hàng nhận lại máy, trực tiếp trải nghiệm và kiểm tra lại toàn bộ chữ ký linh kiện và các chức năng của thiết bị.
+- Thu ngân xuất hóa đơn dịch vụ, cấp mã tra cứu bảo hành điện tử và hướng dẫn khách hàng cách tra cứu trạng thái online qua website.

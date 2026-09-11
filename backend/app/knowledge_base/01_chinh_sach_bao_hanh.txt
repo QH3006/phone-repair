@@ -1,0 +1,20 @@
+CHÍNH SÁCH BẢO HÀNH LINH KIỆN VÀ DỊCH VỤ SỬA CHỮA - PHONECARE
+
+1. PHẠM VI VÀ THỜI HẠN BẢO HÀNH
+Trung tâm sửa chữa PhoneCare áp dụng chế độ bảo hành điện tử theo số điện thoại và số IMEI/Serial của thiết bị sau khi hoàn tất sửa chữa:
+- Màn hình linh kiện thay mới: Bảo hành 06 tháng đối với lỗi cảm ứng, loạn cảm ứng, đơ cảm ứng hoặc lỗi hở sáng do keo dán.
+- Pin điện thoại chính hãng: Bảo hành 12 tháng theo cơ chế 1 đổi 1 nếu pin có hiện tượng phồng rộp, pin ảo, tụt pin quá 20% dung lượng trong 500 chu kỳ sạc đầu tiên, hoặc máy sập nguồn đột ngột khi còn trên 20% pin.
+- Bo mạch chủ (Mainboard) và IC nguồn, IC sạc: Bảo hành 03 tháng đối với các lỗi phát sinh liên quan trực tiếp đến đường mạch hoặc linh kiện IC đã được xử lý kỹ thuật.
+- Cụm cáp sạc, loa trong, loa ngoài, mic thoại, camera: Bảo hành 06 tháng 1 đổi 1.
+
+2. ĐIỀU KIỆN TIẾP NHẬN BẢO HÀNH HỢP LỆ
+Thiết bị được chấp nhận bảo hành miễn phí khi đáp ứng đầy đủ các tiêu chuẩn sau:
+- Tem niêm phong bảo hành dán trên ốc máy và linh kiện bên trong còn nguyên vẹn, không có dấu hiệu bị rách, chắp vá, cạo sửa hoặc tẩy xóa.
+- Số IMEI/Serial trên bo mạch trùng khớp với thông tin lưu trữ trên hệ thống phần mềm quản lý bảo hành điện tử của PhoneCare.
+- Thiết bị còn trong thời hạn bảo hành tính từ ngày in hóa đơn bàn giao máy.
+- Lỗi phát sinh được kỹ thuật viên xác định là do chất lượng linh kiện hoặc khiếm khuyết kỹ thuật trong quá trình thao tác lắp ráp của trung tâm.
+
+3. THỜI GIAN VÀ TIẾN ĐỘ XỬ LÝ BẢO HÀNH
+- Đối với các lỗi thay thế linh kiện đơn giản (pin, loa, mic, camera, cụm cáp sạc): Thời gian xử lý từ 30 đến 60 phút, khách hàng có thể đợi lấy máy ngay tại quầy tiếp tân.
+- Đối với lỗi liên quan đến màn hình hoặc can thiệp vi mạch bo mạch chủ: Thời gian kiểm tra và khắc phục từ 24 giờ đến tối đa 72 giờ làm việc (không tính ngày Chủ nhật và ngày lễ Tết).
+- Trong thời gian chờ bảo hành vượt quá 48 giờ, PhoneCare hỗ trợ khách hàng mượn điện thoại dự phòng miễn phí để duy trì liên lạc.

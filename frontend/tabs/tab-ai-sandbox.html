@@ -10,6 +10,9 @@
         <button class="ai-tab-btn" data-subtab="subtab-explain">
             <span>3. Diễn Giải Kỹ Thuật & Tư Vấn Dịch Vụ</span>
         </button>
+        <button class="ai-tab-btn" data-subtab="subtab-rag">
+            <span>4. 🧠 Phân Hệ RAG - Tra Cứu Tri Thức Doanh Nghiệp</span>
+        </button>
     </div>
 
     <!-- AI Subtab 1: Tóm Tắt Lỗi KTV -->
@@ -161,6 +164,243 @@
                 <div id="ai-exp-result" class="ai-output-box">
                     <p class="placeholder-text">Đoạn giải thích bằng hình ảnh so sánh đời thường giúp khách hàng dễ hiểu và tin tưởng sẽ xuất hiện tại đây...</p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Subtab 4: Phân Hệ Tra Cứu Tri Thức Tự Động RAG (Retrieval-Augmented Generation) -->
+    <div id="subtab-rag" class="ai-subpane">
+        <!-- Banner Pipeline Stepper -->
+        <div class="rag-pipeline-banner">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <div>
+                    <h3 style="margin:0; color:var(--text-main); font-size:1.15rem; display:flex; align-items:center; gap:8px;">
+                        <span>🧠 Phân Hệ RAG - Tra Cứu Tri Thức Doanh Nghiệp</span>
+                        <span class="badge badge-primary">Kiến Trúc Production</span>
+                    </h3>
+                    <p style="margin:4px 0 0 0; font-size:0.85rem; color:var(--text-muted);">
+                        <em>Hệ thống minh bạch hóa toàn bộ quy trình: Ingestion ➔ Semantic Chunking ➔ Vector Retrieval ➔ Grounded Generation.</em>
+                    </p>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="runRAGParameterComparison()">
+                    <span>🧪 Phân Tích & Tối Ưu Tham Số (A/B Testing)</span>
+                </button>
+            </div>
+
+            <!-- 4-Stage Visual Stepper -->
+            <div class="rag-stepper">
+                <div class="rag-step active">
+                    <span>1. 📁 Ingestion</span>
+                    <small style="color:var(--text-muted);">(Kho 5 Files TXT)</small>
+                </div>
+                <span class="rag-step-arrow">➔</span>
+                <div class="rag-step active">
+                    <span>2. ✂️ Chunking</span>
+                    <small style="color:var(--text-muted);">(Cắt nhỏ + Metadata)</small>
+                </div>
+                <span class="rag-step-arrow">➔</span>
+                <div class="rag-step active">
+                    <span>3. 🔍 Top-K Retrieval</span>
+                    <small style="color:var(--text-muted);">(So khớp trước khi gọi LLM)</small>
+                </div>
+                <span class="rag-step-arrow">➔</span>
+                <div class="rag-step active">
+                    <span>4. 🤖 Grounded Gen</span>
+                    <small style="color:var(--text-muted);">(Prompt + Nguồn trích dẫn)</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối 1: Kho Tài Liệu & Cấu Hình Chunking (Yêu cầu 1 & 2) -->
+        <div class="card" style="margin-bottom:20px;">
+            <div class="card-header" style="flex-wrap:wrap; gap:10px;">
+                <div>
+                    <h4 style="margin:0;">1. Kho Tài Liệu & Phân Đoạn Chunk (Ingestion & Chunking)</h4>
+                    <small style="color:var(--text-muted);">Chuẩn bị 5 file TXT chuẩn tiếng Việt UTF-8: Chính sách bảo hành, đổi trả, hướng dẫn sản phẩm, quy trình</small>
+                </div>
+                <div style="display:flex; gap:12px; align-items:center;">
+                    <span class="badge badge-info" id="rag-stat-files">5 files TXT</span>
+                    <span class="badge badge-purple" id="rag-stat-chunks">Đang tải chunks...</span>
+                    <span class="badge badge-success" id="rag-stat-size">Đang tải...</span>
+                </div>
+            </div>
+
+            <!-- Bảng tham số Chunking -->
+            <div style="background:var(--bg-box); padding:14px; border-radius:var(--radius-sm); margin-bottom:16px; border:1px solid var(--border-color);">
+                <div class="grid-3" style="gap:16px; align-items:flex-end;">
+                    <div class="form-group" style="margin-bottom:0;">
+                        <label style="display:flex; justify-content:space-between;">
+                            <span>Kích thước Chunk (Chunk Size):</span>
+                            <strong id="lbl-chunk-size" style="color:var(--primary);">300 ký tự</strong>
+                        </label>
+                        <input type="range" id="rag-chunk-size" min="60" max="1200" step="20" value="300" 
+                               oninput="document.getElementById('lbl-chunk-size').innerText = this.value + ' ký tự'" 
+                               onchange="loadRAGChunks()" style="width:100%;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom:0;">
+                        <label style="display:flex; justify-content:space-between;">
+                            <span>Độ gối đầu (Chunk Overlap):</span>
+                            <strong id="lbl-chunk-overlap" style="color:var(--primary);">50 ký tự</strong>
+                        </label>
+                        <input type="range" id="rag-chunk-overlap" min="0" max="200" step="10" value="50" 
+                               oninput="document.getElementById('lbl-chunk-overlap').innerText = this.value + ' ký tự'" 
+                               onchange="loadRAGChunks()" style="width:100%;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom:0; display:flex; gap:8px; align-items:flex-end;">
+                        <div style="flex:1;">
+                            <label>Định dạng:</label>
+                            <input type="text" class="form-control" value="TXT (UTF-8 chuẩn 100%)" readonly style="background:rgba(255,255,255,0.04); color:var(--success); font-weight:600;">
+                        </div>
+                        <button class="btn btn-outline" onclick="loadRAGChunks()" style="white-space:nowrap;">
+                            🔄 Tái cấu trúc Chunks
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab con xem danh sách file hoặc xem mẫu chunks -->
+            <details open style="margin-bottom:12px;">
+                <summary style="cursor:pointer; font-weight:600; color:var(--text-main); font-size:0.9rem; margin-bottom:8px;">
+                    📂 Danh Sách 5 Tài Liệu Nghiệp Vụ Trong Kho (Nhấp để ẩn/hiện)
+                </summary>
+                <div id="rag-docs-list">
+                    <p class="placeholder-text">Đang tải danh sách tài liệu...</p>
+                </div>
+            </details>
+
+            <details open>
+                <summary style="cursor:pointer; font-weight:600; color:var(--text-main); font-size:0.9rem; margin-bottom:8px;">
+                    📋 Chunks Mẫu Kèm Đầy Đủ Metadata (Chunk ID, File, Vị trí Pos, Số từ)
+                </summary>
+                <div id="rag-sample-chunks">
+                    <p class="placeholder-text">Đang phân đoạn chunks...</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Khối 2 & 3: Truy Vấn, Hiển Thị Top-K Trước LLM và Sinh Câu Trả Lời (Yêu cầu 3 & 4) -->
+        <div class="grid-2 rag-grid-main" style="gap:20px;">
+            <!-- Cột trái: Nhập câu hỏi & Bước 1 (Retrieval Top-K Chunks) -->
+            <div class="card" style="min-width:0; box-sizing:border-box;">
+                <div class="card-header" style="flex-wrap:wrap; gap:8px;">
+                    <h4 style="margin:0;">Bước 1: Truy Vấn & Trích Xuất Top-K Chunks</h4>
+                    <span class="badge badge-warning" id="rag-retrieval-badge">Chờ Kích Hoạt</span>
+                </div>
+
+                <!-- Các câu hỏi mẫu 1-click -->
+                <div style="margin-bottom:12px;">
+                    <label style="font-size:0.8rem; color:var(--text-muted); display:block; margin-bottom:6px;">
+                        💡 Chọn câu hỏi mẫu để kiểm tra nhanh kịch bản:
+                    </label>
+                    <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                        <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Máy bị rơi vào nước hoặc vỡ màn hình có được bảo hành miễn phí không?')">
+                            💧 Rơi nước / Vỡ màn hình
+                        </button>
+                        <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Điều kiện để được đổi mới 1-1 trong 7 ngày và hoàn tiền 100% là gì?')">
+                            🔄 Đổi trả 7 ngày & Hoàn tiền
+                        </button>
+                        <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Thời hạn bảo hành pin mới là bao lâu và sạc pin đúng cách thế nào?')">
+                            🔋 Bảo hành & Sạc pin
+                        </button>
+                        <button class="btn btn-outline btn-sm" onclick="fillRAGSampleQuery('Quy trình 5 bước tiếp nhận và việc khách hàng ký tên lên linh kiện?')">
+                            📝 Quy trình & Ký tên linh kiện
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Nội dung câu hỏi của khách hàng:</label>
+                    <textarea id="rag-query-input" class="form-control" rows="3" 
+                              placeholder="Nhập câu hỏi bất kỳ về chính sách, đổi trả hoặc hướng dẫn sử dụng...">Máy bị rơi vào nước hoặc vỡ màn hình có được bảo hành miễn phí không?</textarea>
+                </div>
+
+                <!-- Hàng điều khiển Top-K và nút Bước 1: Linh hoạt, không bị chèn chữ -->
+                <div class="rag-controls-flex" style="display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; margin-bottom:14px;">
+                    <div class="form-group" style="margin-bottom:0; flex:1 1 180px; min-width:160px;">
+                        <label>Số lượng Top-K cần trích:</label>
+                        <select id="rag-top-k" class="form-control">
+                            <option value="1">Top-K = 1 chunk</option>
+                            <option value="2">Top-K = 2 chunks</option>
+                            <option value="3" selected>Top-K = 3 chunks (Khuyên dùng)</option>
+                            <option value="4">Top-K = 4 chunks</option>
+                            <option value="5">Top-K = 5 chunks</option>
+                        </select>
+                    </div>
+                    <div style="flex:1 1 200px; min-width:180px;">
+                        <button class="btn btn-primary" onclick="runRAGRetrieveOnly()" style="width:100%; white-space:normal; line-height:1.3; padding:9px 12px;">
+                            <span>🔍 Bước 1: Trích Xuất Top-K Chunks</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bảng hiển thị Top-K Chunks TRƯỚC KHI GỌI LLM -->
+                <div style="font-size:0.85rem; font-weight:700; color:var(--text-main); margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+                    <span>Kết Quả Retrieval (Cosine Similarity):</span>
+                    <small style="color:var(--text-muted); font-weight:normal;">(Dữ liệu trước khi gọi LLM)</small>
+                </div>
+                <div id="rag-retrieval-result" class="ai-output-box" style="min-height:260px;">
+                    <p class="placeholder-text">Nhấn nút "Bước 1: Trích Xuất Top-K Chunks" để xem các đoạn tài liệu được lọc ra bằng Cosine Similarity trước khi gửi tới LLM...</p>
+                </div>
+            </div>
+
+            <!-- Cột phải: Bước 2 (Ghép Augmented Prompt & Gọi LLM Sinh Câu Trả Lời Có Nguồn) -->
+            <div class="card" style="min-width:0; box-sizing:border-box;">
+                <div class="card-header" style="flex-wrap:wrap; gap:8px;">
+                    <h4 style="margin:0;">Bước 2: Ghép Prompt & Gọi LLM Sinh Câu Trả Lời</h4>
+                    <span class="badge badge-info" id="rag-generate-badge">Chờ Dữ Liệu Bước 1</span>
+                </div>
+
+                <div class="rag-step2-row" style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
+                    <button class="btn btn-gradient" id="btn-rag-step2" onclick="runRAGGenerateOnly()" style="flex:1 1 230px; min-width:200px; white-space:normal; line-height:1.3; padding:9px 12px;">
+                        <span>🚀 Bước 2: Ghép Prompt & Gọi LLM Sinh Câu Trả Lời</span>
+                    </button>
+                    <button class="btn btn-outline" onclick="runFullRAGPipeline()" title="Tự động chạy Bước 1 rồi Bước 2" style="white-space:nowrap; flex:0 0 auto;">
+                        <span>⚡ Chạy Tự Động</span>
+                    </button>
+                </div>
+
+                <!-- Khung xem trước Augmented Prompt thực tế được ghép -->
+                <details style="margin-bottom:12px; background:rgba(0,0,0,0.15); border-radius:var(--radius-sm); padding:6px 10px; border:1px solid var(--border-subtle);">
+                    <summary style="cursor:pointer; font-size:0.82rem; font-weight:600; color:var(--primary);">
+                        👁️ Xem Augmented Prompt thực tế gửi cho LLM (Ghép Ngữ Cảnh + Câu Hỏi)
+                    </summary>
+                    <div id="rag-augmented-prompt-view" style="margin-top:8px;">
+                        <p style="font-size:0.75rem; color:var(--text-dim); margin:0;">Chưa ghép prompt. Vui lòng chạy Bước 2.</p>
+                    </div>
+                </details>
+
+                <!-- Kết quả câu trả lời của LLM có trích dẫn nguồn -->
+                <div style="font-size:0.85rem; font-weight:700; color:var(--text-main); margin-bottom:6px;">
+                    Phản Hồi Chính Thức Có Trích Dẫn Nguồn (Grounding Citations):
+                </div>
+                <div id="rag-generate-result" class="ai-output-box" style="min-height:260px;">
+                    <p class="placeholder-text">Câu trả lời có kèm nguồn trích dẫn cụ thể sẽ xuất hiện tại đây sau khi Bước 2 hoàn thành...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Phân Tích & Tối Ưu Tham Số RAG (A/B Parameter Tuning) -->
+    <div id="modal-rag-compare" class="modal-overlay">
+        <div class="modal-container" style="max-width:1050px; width:95%;">
+            <div class="modal-header">
+                <h3>🧪 Phân Tích Đa Tham Số RAG: Kích Thước Chunk & Top-K</h3>
+                <button class="modal-close" onclick="closeRAGCompareModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:14px;">
+                    Đánh giá tác động của tham số cấu hình: Khi <strong>Chunk Size quá nhỏ (80 ký tự)</strong>, câu văn bị phân mảnh và mất ngữ cảnh. 
+                    Khi <strong>Chunk Size quá lớn (1200 ký tự)</strong>, chứa nhiều thông tin ngoài lề làm loãng câu trả lời. 
+                    Cấu hình <strong>Chuẩn mực (300 ký tự, Top-K=3)</strong> mang lại độ chính xác và mạch lạc cao nhất!
+                </p>
+                <div id="rag-compare-results">
+                    <!-- Kết quả 3 cột A/B test nạp bằng JS -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeRAGCompareModal()">Đóng Cửa Sổ</button>
             </div>
         </div>
     </div>

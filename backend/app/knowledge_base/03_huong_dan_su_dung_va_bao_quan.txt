@@ -1,0 +1,15 @@
+HƯỚNG DẪN SỬ DỤNG VÀ BẢO QUẢN THIẾT BỊ SAU SỬA CHỮA - PHONECARE
+
+1. HƯỚNG DẪN BẢO QUẢN THIẾT BỊ VỪA ÉP KÍNH HOẶC THAY MÀN HÌNH
+- Cố định keo dán trong 48 giờ đầu: Sau khi thay màn hình hoặc ép kính, keo chuyên dụng cần tối thiểu 24 đến 48 giờ để khô hoàn toàn và đạt độ liên kết tối đa. Khách hàng không nên để máy trong túi quần quá chật, tránh đè nén mạnh lên bề mặt kính.
+- Không tháo dây thun cố định (nếu có) trước thời gian kỹ thuật viên khuyến cáo (thông thường từ 2 đến 3 tiếng sau khi nhận máy).
+- Sử dụng kèm ốp lưng chống sốc và dán kính cường lực chất lượng cao để bảo vệ tấm nền hiển thị khỏi các va đập cơ học bất ngờ.
+
+2. HƯỚNG DẪN SẠC PIN VÀ KÉO DÀI TUỔI THỌ PIN THAY MỚI
+- Quy tắc 3 lần sạc đầu tiên: Đối với pin lithium-ion mới thay, khách hàng nên dùng máy đến khi pin còn khoảng 15% - 20% rồi cắm sạc liên tục cho đến khi đầy 100%, duy trì thêm khoảng 15-30 phút rồi rút sạc. Không nên để pin cạn kiệt về mức 0% sập nguồn.
+- Tuyệt đối không vừa cắm sạc vừa chơi game đồ họa nặng hoặc xem video độ phân giải cao, vì nhiệt lượng tăng cao đột ngột là nguyên nhân chính làm suy giảm tuổi thọ cell pin và gây phồng rộp.
+- Luôn sử dụng củ sạc và cáp sạc đạt chứng chỉ an toàn (như MFi cho iPhone hoặc chuẩn sạc nhanh PD/PPS/QC được hãng công nhận). Tránh các củ sạc trôi nổi kém chất lượng dễ gây chập IC nguồn bo mạch.
+
+3. KHẢ NĂNG CHỐNG NƯỚC SAU KHI THÁO MÁY SỬA CHỮA
+- Lưu ý đặc biệt: Mọi thiết bị điện thoại khi đã mở máy để sửa chữa phần cứng sẽ không còn duy trì được 100% khả năng chống nước chuẩn IP67/IP68 như xuất xưởng nguyên bản từ nhà máy, mặc dù PhoneCare luôn dán lại ron chống bụi và kháng nước mới cho khách hàng.
+- Do đó, khách hàng tuyệt đối không ngâm máy vào nước, không mang máy vào phòng tắm hơi, không chụp ảnh dưới nước và tránh sử dụng thiết bị dưới trời mưa lớn.

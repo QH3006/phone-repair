@@ -1,0 +1,21 @@
+DANH MỤC CÁC TRƯỜNG HỢP TỪ CHỐI BẢO HÀNH - PHONECARE
+
+Trung tâm sửa chữa PhoneCare có quyền từ chối bảo hành miễn phí và chuyển sang chế độ sửa chữa dịch vụ có tính phí ưu đãi hỗ trợ (giảm 15% - 20%) trong các trường hợp sau:
+
+1. THIỆT HẠI DO TÁC ĐỘNG VẬT LÝ VÀ NGOẠI LỰC
+- Thiết bị có dấu hiệu bị va chạm mạnh, rơi rớt, cấn móp vỏ khung sườn kim loại, cong vênh bo mạch chính.
+- Màn hình bị nứt vỡ kính ngoài, chảy mực tím, loang đốm mực đen, xuất hiện sọc dọc/ngang đa màu sắc do tấm nền AMOLED/OLED bị va đập hoặc tì đè lực mạnh sau thời điểm bàn giao.
+- Kính camera, nắp lưng hoặc viền benzen bị trầy xước, nứt vỡ trong quá trình khách hàng sử dụng.
+
+2. THIỆT HẠI DO NƯỚC VÀ CHẤT LỎNG
+- Thiết bị có dấu hiệu ngấm nước, ẩm ướt, mốc rỉ sét chân linh kiện bên trong bo mạch.
+- Quỳ tím chỉ thị chất lỏng bên trong thân máy đã chuyển sang màu đỏ hoặc hồng đậm.
+- Linh kiện bị chập cháy do chập đường điện khi máy tiếp xúc với môi trường hóa chất, dung dịch muối hoặc độ ẩm cao.
+
+3. CAN THIỆP TỰ Ý VÀ VI PHẠM NIÊM PHONG
+- Tem bảo hành niêm phong trên ốc hoặc bo mạch bị rách rời, bị tẩy xóa hoặc có dấu vết cạy mở từ bên ngoài.
+- Thiết bị đã được tháo lắp hoặc sửa chữa tại một cơ sở kỹ thuật khác không thuộc hệ thống ủy quyền của PhoneCare.
+
+4. CAN THIỆP PHẦN MỀM VÀ BẢO MẬT
+- Thiết bị bị brick, treo logo vĩnh viễn do khách hàng tự ý cài đặt Custom ROM, can thiệp Root hệ điều hành Android hoặc Jailbreak iOS sai cách.
+- Thiết bị bị khóa tài khoản bảo mật cá nhân (iCloud, Google Account, Mi Account, mật khẩu màn hình) mà khách hàng không cung cấp được quyền mở khóa để kỹ thuật viên kiểm tra chức năng.

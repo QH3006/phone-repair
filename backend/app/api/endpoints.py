@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from backend.app.api.routers import auth, users, customers, devices, parts, services, repairs, invoices, warranties, stats, ai
+from backend.app.api.routers import auth, users, customers, devices, parts, services, repairs, invoices, warranties, stats, ai, rag
 
 router = APIRouter()
 
@@ -15,6 +15,7 @@ router.include_router(invoices.router)
 router.include_router(warranties.router)
 router.include_router(stats.router)
 router.include_router(ai.router)
+router.include_router(rag.router)
 
 # Endpoint kiểm tra sức khỏe hệ thống & tương thích ngược
 @router.get("/system/stats", tags=["Hệ thống & Thống kê"])
