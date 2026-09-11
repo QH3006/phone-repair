@@ -68,18 +68,26 @@
 .nav-menu {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
     flex: 1 1 auto;
     min-height: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    padding-right: 4px;
-    margin-right: -4px;
+    padding-right: 2px;
+    /* Auto-hide scrollbar by default (Firefox & IE) */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-/* Custom scrollbar for sidebar menu */
+/* Reveal slim indicator on hover (Firefox) */
+.nav-menu:hover {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
+}
+
+/* Modern sleek auto-hide scrollbar (Webkit) */
 .nav-menu::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
 }
 
 .nav-menu::-webkit-scrollbar-track {
@@ -87,12 +95,23 @@
 }
 
 .nav-menu::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 4px;
+    background: transparent;
+    border-radius: 9999px;
+    transition: background 0.2s ease;
+}
+
+.nav-menu:hover::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.25);
 }
 
 .nav-menu::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
+}
+
+.nav-menu::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 .nav-item {

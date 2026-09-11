@@ -229,6 +229,8 @@
     box-shadow: var(--shadow-sm);
     width: 100%;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
 }
 
 .table-container::-webkit-scrollbar {
@@ -237,16 +239,22 @@
 }
 
 .table-container::-webkit-scrollbar-track {
-    background: var(--bg-input);
+    background: transparent;
 }
 
 .table-container::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 4px;
+    background: rgba(148, 163, 184, 0.25);
+    border-radius: 9999px;
 }
 
 .table-container::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
+}
+
+.table-container::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 .data-table {
