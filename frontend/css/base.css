@@ -80,37 +80,67 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Firefox & Modern W3C Standard Scrollbar */
+}
+
+/* ==========================================================================
+   Scrollbar Rules:
+   - Main page right-edge scrollbar (html, body): Keep native/default as requested.
+   - ALL other inner elements: Auto-hidden by default, slim modern bar on hover.
+   ========================================================================== */
+
+/* Main page scrollbar (right edge) stays standard */
+html, body {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+}
+
+/* All inner scrollable containers: Auto-hide by default (Firefox & IE) */
+*:not(html):not(body) {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-color: rgba(148, 163, 184, 0.3) transparent;
+}
+
+/* Reveal slim scrollbar when hovering/focusing the inner container (Firefox) */
+*:not(html):not(body):hover,
+*:not(html):not(body):focus-within {
     scrollbar-width: thin;
-    scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
 }
 
-/* Webkit (Chrome, Edge, Safari, Opera) Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+/* Webkit (Chrome, Edge, Safari, Opera) - All inner scrollable containers */
+*:not(html):not(body)::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
 }
 
-::-webkit-scrollbar-track {
+*:not(html):not(body)::-webkit-scrollbar-track {
     background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
-    background: rgba(148, 163, 184, 0.25);
+*:not(html):not(body)::-webkit-scrollbar-thumb {
+    background: transparent;
     border-radius: 9999px;
+    transition: background 0.2s ease;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(56, 189, 248, 0.5);
+/* Reveal slim thumb on container hover or focus */
+*:not(html):not(body):hover::-webkit-scrollbar-thumb,
+*:not(html):not(body):focus-within::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.28);
 }
 
-::-webkit-scrollbar-button {
+*:not(html):not(body)::-webkit-scrollbar-thumb:hover {
+    background: rgba(56, 189, 248, 0.6);
+}
+
+/* Never show clumsy arrow buttons on inner containers */
+*:not(html):not(body)::-webkit-scrollbar-button {
     display: none;
     width: 0;
     height: 0;
 }
 
-::-webkit-scrollbar-corner {
+*:not(html):not(body)::-webkit-scrollbar-corner {
     background: transparent;
 }
 
