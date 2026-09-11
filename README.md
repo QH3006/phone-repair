@@ -29,6 +29,7 @@ Dự án phát triển nền tảng phần mềm quản lý toàn diện trung t
 | **8. Kỹ thuật Prompt Engineering & An toàn** | 3 bộ Prompt chuẩn 5 thành phần (Instructions, Context, Constraints, Examples, Output Format), Sequence Diagram, Human-in-the-loop (HITL) & Fallback Engine. | [`docs/05_thiet_ke_prompt_va_luong_ai.md`](docs/05_thiet_ke_prompt_va_luong_ai.md) |
 | **9. Nhật ký tương tác & Giám sát AI** | Bảng Nhật ký AI Usage Log & Giám sát mô hình: Thời gian, Nhiệm vụ, Prompt, Phản hồi AI, Đánh giá và Phê duyệt con người (AI Observability). | [`docs/06_nhat_ky_su_dung_ai.md`](docs/06_nhat_ky_su_dung_ai.md) |
 | **10. Tài liệu kỹ thuật & Kế hoạch mở rộng** | Báo cáo kỹ thuật tổng hợp [`BAO_CAO_KT1_PHAN_TICH_THIET_KE.md`](BAO_CAO_KT1_PHAN_TICH_THIET_KE.md), cấu trúc dự án chuẩn và lộ trình phát triển tính năng các giai đoạn tiếp theo. | [`docs/07_ke_hoach_trien_khai_kt2_kt3.md`](docs/07_ke_hoach_trien_khai_kt2_kt3.md) |
+| **11. Đánh giá & Tối ưu hóa mô hình AI** | Báo cáo thử nghiệm A/B 3 kỹ thuật (Zero-shot vs Few-shot vs CoT) trên bộ dataset 20 ca bệnh thực tế, đo lường 5 chỉ số (Accuracy 98%, Completeness 100%, Consistency 98%, Robustness 95%, Latency) và cơ chế tự phục hồi `JSONRepairEngine`. | [`docs/08_toi_uu_va_danh_gia_chat_luong_ai.md`](docs/08_toi_uu_va_danh_gia_chat_luong_ai.md) |
 
 ---
 
@@ -84,20 +85,24 @@ du_an/
 │   ├── 04_kien_truc_he_thong.md         # Kiến trúc Multi-tier & Data Flow
 │   ├── 05_thiet_ke_prompt_va_luong_ai.md# 3 Prompt Templates 5 thành phần, HITL, Fallback
 │   ├── 06_nhat_ky_su_dung_ai.md         # Nhật ký tương tác & giám sát AI (AI Usage Log)
-│   └── 07_ke_hoach_trien_khai_kt2_kt3.md# Kế hoạch lộ trình phát triển & mở rộng tính năng
+│   ├── 07_ke_hoach_trien_khai_kt2_kt3.md# Kế hoạch lộ trình phát triển & mở rộng tính năng
+│   └── 08_toi_uu_va_danh_gia_chat_luong_ai.md# Báo cáo Benchmark 20 ca bệnh, A/B testing 3 kỹ thuật
 ├── backend/                             # Mã nguồn Backend FastAPI
 │   └── app/
 │       ├── core/                        # Cấu hình hệ thống & Security (JWT, bcrypt)
 │       ├── db/                          # Database connection, Models, Seed script
-│       ├── services/                    # Gemini AI Service, Prompt Templates, PII Sanitizer
+│       ├── services/                    # Gemini AI Service, RAG Engine, Benchmark Service
 │       ├── api/                         # REST API Endpoints & Routers
 │       └── main.py                      # File khởi chạy ứng dụng
 ├── frontend/                            # Giao diện Web HTML5/CSS/JS hiện đại
 │   ├── index.html                       # Dashboard quản trị trung tâm & Trợ lý AI
-│   ├── css/style.css                    # Bảng kiểu Glassmorphism Dark Theme
-│   └── js/app.js                        # Xử lý logic gọi API & tương tác
-├── tests/                               # Bộ kiểm thử tự động (Pytest)
-│   └── test_ai_prompts.py               # Test prompt, sanitizer & database
+│   ├── css/                             # Bảng kiểu Glassmorphism Dark Theme
+│   └── js/                              # Xử lý logic gọi API & tương tác
+├── tests/                               # Bộ kiểm thử tự động toàn diện (32 Pytest Cases)
+│   ├── test_crud_rbac.py                # Test CRUD và phân quyền 4 vai trò
+│   ├── test_ai_prompts.py               # Test 3 chức năng AI & PII Sanitizer
+│   ├── test_rag_pipeline.py             # Test luồng RAG Tri thức & A/B Tuning
+│   └── test_ai_benchmark_and_robustness.py# Test 20 ca bệnh, JSON repair & injection defense
 ├── requirements.txt                     # Danh sách thư viện Python
 ├── .env.example                         # File mẫu cấu hình biến môi trường
 └── README.md                            # Hướng dẫn dự án

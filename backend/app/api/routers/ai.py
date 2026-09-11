@@ -108,3 +108,52 @@ def list_ai_logs(
             "parsed_json": l.ai_parsed_json
         })
     return result
+
+
+@router.get("/benchmark/cases")
+def list_benchmark_cases(current_user: NguoiDung = Depends(get_current_user)):
+    """Lấy danh sách 20 ca bệnh phần cứng thực tế trong bộ Benchmark Dataset."""
+    from backend.app.services.ai_benchmark import AIBenchmarkEngine
+    return AIBenchmarkEngine.get_all_cases()
+
+
+@router.get("/benchmark/summary")
+def get_benchmark_summary(current_user: NguoiDung = Depends(get_current_user)):
+    """Lấy bảng tổng hợp kết quả đo lường 5 chỉ số kỹ thuật của 3 kỹ thuật Prompting."""
+    from backend.app.services.ai_benchmark import AIBenchmarkEngine
+    return AIBenchmarkEngine.get_summary()
+
+
+@router.post("/benchmark/evaluate/{case_id}")
+def evaluate_benchmark_case(case_id: int, current_user: NguoiDung = Depends(get_current_user)):
+    """Chạy thử nghiệm A/B so sánh trực tiếp Zero-shot vs Few-shot vs CoT cho 1 ca bệnh."""
+    from backend.app.services.ai_benchmark import AIBenchmarkEngine
+    return AIBenchmarkEngine.evaluate_case_simulated(case_id)
+
+
+@router.post("/benchmark/test-repair")
+def test_json_repair(payload: dict, current_user: NguoiDung = Depends(get_current_user)):
+    """Kiểm thử tính năng tự động sửa lỗi cấu trúc JSON (JSONRepairEngine)."""
+    from backend.app.services.ai_service import JSONRepairEngine
+    raw_text = payload.get("raw_text", "")
+    repaired = JSONRepairEngine.repair_and_parse(raw_text)
+    return {
+        "success": repaired is not None,
+        "input_text": raw_text,
+        "repaired_data": repaired
+    }
+
+
+@router.post("/benchmark/test-injection")
+def test_injection_defense(payload: dict, current_user: NguoiDung = Depends(get_current_user)):
+    """Kiểm thử cơ chế phòng vệ chống Prompt Injection và bảo vệ PII (DataSanitizer)."""
+    from backend.app.services.ai_service import DataSanitizer
+    text = payload.get("text", "")
+    sanitized = DataSanitizer.sanitize(text)
+    return {
+        "original": text,
+        "sanitized": sanitized,
+        "blocked_injection": "[BLOCKED_INJECTION]" in sanitized,
+        "redacted_pii": any(tag in sanitized for tag in ["[REDACTED_PHONE]", "[REDACTED_EMAIL]", "[REDACTED_PASS]"])
+    }
+

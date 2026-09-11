@@ -67,6 +67,9 @@ function initAISubtabs() {
             if (subtabId === 'subtab-rag' && typeof initRAGDemo === 'function') {
                 initRAGDemo();
             }
+            if (subtabId === 'subtab-benchmark' && typeof initBenchmarkSubtab === 'function') {
+                initBenchmarkSubtab();
+            }
         });
     });
 }

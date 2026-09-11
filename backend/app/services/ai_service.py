@@ -7,10 +7,21 @@ from backend.app.db.database import SessionLocal
 from backend.app.db.models import NhatKyAI
 
 class DataSanitizer:
-    """Lớp làm sạch và ẩn danh hóa dữ liệu (PII Data Sanitization) trước khi gửi qua Cloud LLM."""
+    """Lớp làm sạch và ẩn danh hóa dữ liệu (PII Sanitization & Prompt Injection Defense)."""
     
-    @staticmethod
-    def sanitize(text: str) -> str:
+    INJECTION_PATTERNS = [
+        r'(ignore\s+(all\s+)?previous\s+instructions)',
+        r'(system\s+prompt|override\s+system|bypass\s+safety)',
+        r'(you\s+are\s+now\s+[a-zA-Z0-9_\-]+)',
+        r'(dan\s+mode|jailbreak|developer\s+mode)',
+        r'(forget\s+(all\s+)?(rules|instructions))',
+        r'(\bact\s+as\s+an\s+unrestricted)',
+        r'(reveal\s+(internal|system)\s+instructions)',
+        r'(!\[.*?\]\(https?://[^\s)]+\))'  # Markdown data exfiltration link
+    ]
+
+    @classmethod
+    def sanitize(cls, text: str) -> str:
         if not text:
             return ""
         # 1. Ẩn số điện thoại Việt Nam (10-11 số)
@@ -19,9 +30,63 @@ class DataSanitizer:
         sanitized = re.sub(r'(pass|mật khẩu|passcode|pin):\s*[^\s,]+', r'\1: [REDACTED_PASS]', sanitized, flags=re.IGNORECASE)
         # 3. Ẩn email
         sanitized = re.sub(r'[\w\.-]+@[\w\.-]+\.\w+', '[REDACTED_EMAIL]', sanitized)
-        # 4. Loại bỏ các từ khóa tấn công Prompt Injection tiềm ẩn
-        sanitized = re.sub(r'(ignore previous instructions|system prompt|override system)', '[BLOCKED_INJECTION]', sanitized, flags=re.IGNORECASE)
+        # 4. Triệt tiêu các vector tấn công Prompt Injection / Prompt Leaking
+        for pattern in cls.INJECTION_PATTERNS:
+            sanitized = re.sub(pattern, '[BLOCKED_INJECTION]', sanitized, flags=re.IGNORECASE)
         return sanitized
+
+
+class JSONRepairEngine:
+    """Bộ phục hồi và tự sửa lỗi cấu trúc JSON khi LLM trả về chuỗi bị lỗi cú pháp."""
+
+    @staticmethod
+    def repair_and_parse(text: str) -> Optional[Dict[str, Any]]:
+        if not text or not text.strip():
+            return None
+        
+        # Bước 1: Trích xuất khối nằm giữa '{' đầu tiên và '}' cuối cùng
+        start_idx = text.find('{')
+        if start_idx == -1:
+            return None
+        
+        end_idx = text.rfind('}')
+        if end_idx != -1 and end_idx > start_idx:
+            candidate = text[start_idx:end_idx + 1]
+        else:
+            # Nếu bị cắt cụt do giới hạn token, lấy từ start_idx đến hết và bổ sung '}'
+            candidate = text[start_idx:].strip() + "\n}"
+        
+        # Thử parse trực tiếp
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            pass
+
+        # Bước 2: Sửa lỗi trailing comma (dấu phẩy thừa trước '}' hoặc ']')
+        fixed = re.sub(r',\s*([\}\]])', r'\1', candidate)
+        try:
+            return json.loads(fixed)
+        except json.JSONDecodeError:
+            pass
+
+        # Bước 3: Thay thế single quote bọc quanh keys/values thành double quotes
+        fixed_quotes = re.sub(r"(?<!\\)'", '"', fixed)
+        try:
+            return json.loads(fixed_quotes)
+        except json.JSONDecodeError:
+            pass
+
+        # Bước 4: Tự động cân bằng ngoặc nhọn nếu bị thiếu
+        open_braces = fixed.count('{')
+        close_braces = fixed.count('}')
+        if open_braces > close_braces:
+            fixed_braces = fixed + ('}' * (open_braces - close_braces))
+            try:
+                return json.loads(fixed_braces)
+            except json.JSONDecodeError:
+                pass
+
+        return None
 
 
 class PromptTemplates:
@@ -200,16 +265,8 @@ class GeminiAIService:
 
     @staticmethod
     def _extract_json(text: str) -> Optional[Dict[str, Any]]:
-        """Sử dụng Regex để trích xuất và sửa lỗi khối JSON từ văn bản phản hồi."""
-        try:
-            # Tìm khối giữa ```json và ``` hoặc giữa { và }
-            json_match = re.search(r'\{[\s\S]*\}', text)
-            if json_match:
-                json_str = json_match.group(0)
-                return json.loads(json_str)
-            return None
-        except Exception:
-            return None
+        """Sử dụng JSONRepairEngine để trích xuất và tự động sửa lỗi cú pháp JSON."""
+        return JSONRepairEngine.repair_and_parse(text)
 
     @staticmethod
     def _generate_local_fallback(task_type: str, data: Dict[str, Any]) -> str:
