@@ -2,7 +2,8 @@
    PhoneCare AI - Modal Dialogs & Backdrop Styles
    ========================================================================== */
 
-.modal {
+.modal,
+.modal-overlay {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -21,7 +22,9 @@
 }
 
 .modal.active,
-.modal.show {
+.modal.show,
+.modal-overlay.active,
+.modal-overlay.show {
     display: flex !important;
 }
 

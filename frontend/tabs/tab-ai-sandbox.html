@@ -387,15 +387,15 @@
 
     <!-- AI Subtab 5: Benchmark & Đánh Giá Chất Lượng AI (20 Ca Bệnh) -->
     <div id="subtab-benchmark" class="ai-subpane">
-        <!-- Nội dung nạp động từ subtab-ai-benchmark.html -->
+        {% include "tabs/subtab-ai-benchmark.html" %}
     </div>
 
     <!-- Modal Phân Tích & Tối Ưu Tham Số RAG (A/B Parameter Tuning) -->
-    <div id="modal-rag-compare" class="modal-overlay">
-        <div class="modal-container" style="max-width:1050px; width:95%;">
+    <div id="modal-rag-compare" class="modal">
+        <div class="modal-content" style="max-width:1050px; width:95%;">
             <div class="modal-header">
-                <h3>🧪 Phân Tích Đa Tham Số RAG: Kích Thước Chunk & Top-K</h3>
-                <button class="modal-close" onclick="closeRAGCompareModal()">&times;</button>
+                <h3>Phân Tích Đa Tham Số RAG: Kích Thước Chunk & Top-K</h3>
+                <span class="close-btn" onclick="closeRAGCompareModal()">&times;</span>
             </div>
             <div class="modal-body">
                 <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:14px;">
@@ -407,7 +407,7 @@
                     <!-- Kết quả 3 cột A/B test nạp bằng JS -->
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer" style="padding-top:14px; border-top:1px solid var(--border-color); display:flex; justify-content:flex-end;">
                 <button class="btn btn-outline" onclick="closeRAGCompareModal()">Đóng Cửa Sổ</button>
             </div>
         </div>

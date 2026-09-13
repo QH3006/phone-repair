@@ -232,21 +232,26 @@ async function initBenchmarkSubtab() {
     const pane = document.getElementById('subtab-benchmark');
     if (!pane) return;
 
-    if (!pane.innerHTML.trim() || pane.children.length === 0) {
+    // Nếu pane chưa có nội dung (ví dụ khi chạy static không qua Jinja2)
+    if (!pane.querySelector('.benchmark-container')) {
         try {
-            const res = await fetch('tabs/subtab-ai-benchmark.html');
-            pane.innerHTML = await res.text();
-            await loadBenchmarkCasesList();
+            const res = await fetch('/static/tabs/subtab-ai-benchmark.html');
+            if (res.ok) {
+                pane.innerHTML = await res.text();
+            }
         } catch (e) {
-            pane.innerHTML = `<p style="color:var(--danger)">Lỗi nạp giao diện Benchmark: ${e.message}</p>`;
+            console.warn('Không thể nạp subtab benchmark:', e);
         }
     }
+    await loadBenchmarkCasesList();
 }
 
 async function loadBenchmarkCasesList() {
     try {
         const res = await fetch(`${API_BASE}/ai/benchmark/cases`);
-        benchmarkCasesData = await res.json();
+        if (res.ok) {
+            benchmarkCasesData = await res.json();
+        }
     } catch (e) {
         console.warn('Chưa lấy được cases qua API, sử dụng cache cục bộ.');
     }
