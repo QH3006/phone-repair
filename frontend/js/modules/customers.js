@@ -71,11 +71,23 @@ function renderDevicesTable(data) {
                 <td><strong>${d.hang_san_xuat} ${d.model_may}</strong></td>
                 <td><code>${d.so_imei}</code></td>
                 <td>${d.ten_khach_hang} (${d.so_dien_thoai_khach})</td>
-                <td>${d.mat_khau_may ? `<span class="badge badge-warning">${d.mat_khau_may}</span>` : '<span style="color:var(--text-muted)">Không có</span>'}</td>
+                <td>${formatDevicePassword(d.mat_khau_may)}</td>
             </tr>
         `;
     });
     tbody.innerHTML = html;
+}
+
+function formatDevicePassword(pass) {
+    if (!pass || pass.trim() === '' || pass.toLowerCase() === 'none' || pass.toLowerCase() === 'null') {
+        return '<span style="color:var(--text-muted); font-size:0.8rem;">🔓 Không khóa</span>';
+    }
+    const p = pass.trim();
+    const isPattern = /vẽ|hình|pattern|chữ|[1-9]-[1-9]/i.test(p);
+    if (isPattern) {
+        return `<span class="badge badge-purple" style="display:inline-flex; align-items:center; gap:4px; font-weight:600;" title="Mật khẩu vẽ mẫu hình (Pattern Lock)"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M5 5h14L5 19h14"/></svg> ${p}</span>`;
+    }
+    return `<span class="badge badge-warning" style="display:inline-flex; align-items:center; gap:4px; font-weight:600;" title="Mã PIN / Mật khẩu số">🔢 ${p}</span>`;
 }
 
 function populateCustomerSelect(customers) {
@@ -99,7 +111,14 @@ function filterCustomersLive() {
 }
 
 // Modal Handlers
+function editCustomer(id) {
+    openCustomerModal(id);
+}
+
 function openCustomerModal(id = null) {
+    const modal = document.getElementById('customer-modal');
+    if (!modal) return;
+
     document.getElementById('cust-form-id').value = id || '';
     if (id) {
         const c = allCustomersData.find(x => x.id === id);
@@ -115,11 +134,16 @@ function openCustomerModal(id = null) {
         document.getElementById('cust-form-phone').value = '';
         document.getElementById('cust-form-address').value = '';
     }
-    document.getElementById('customer-modal').style.display = 'flex';
+    modal.classList.add('active');
+    modal.style.display = 'flex';
 }
 
 function closeCustomerModal() {
-    document.getElementById('customer-modal').style.display = 'none';
+    const modal = document.getElementById('customer-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+    }
 }
 
 async function submitCustomerForm(e) {
@@ -154,14 +178,26 @@ async function submitCustomerForm(e) {
 }
 
 function openDeviceModal() {
+    const modal = document.getElementById('device-modal');
+    if (!modal) return;
     document.getElementById('dev-form-model').value = '';
     document.getElementById('dev-form-imei').value = '';
     document.getElementById('dev-form-pass').value = '';
-    document.getElementById('device-modal').style.display = 'flex';
+    modal.classList.add('active');
+    modal.style.display = 'flex';
 }
 
 function closeDeviceModal() {
-    document.getElementById('device-modal').style.display = 'none';
+    const modal = document.getElementById('device-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+    }
+}
+
+function setDevicePassPattern(patternText) {
+    const input = document.getElementById('dev-form-pass');
+    if (input) input.value = patternText;
 }
 
 async function submitDeviceForm(e) {

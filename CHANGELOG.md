@@ -5,6 +5,26 @@ Toàn bộ các thay đổi, bổ sung tính năng, tối ưu hóa kiến trúc 
 
 ---
 
+## [v2.5.1] - 2026-09-14 (Hoàn Thiện Quản Lý Khách Hàng & Mật Khẩu Vẽ Hình Pattern Lock)
+
+Bản cập nhật tối ưu hóa trải nghiệm thực tế tại quầy tiếp nhận thiết bị, xử lý tương thích mật khẩu bảo mật smartphone đa dạng.
+
+### 🚀 Tính năng mới & Cải tiến (Added & Changed)
+* **Hỗ Trợ Mật Khẩu Vẽ Mẫu Hình (Pattern Lock 9 Điểm):**
+  - Tự động nhận diện và phân loại mật khẩu màn hình: Dạng vẽ hình (Pattern Lock), Mã số PIN, hoặc Không đặt khóa.
+  - Hiển thị badge màu sắc trực quan: Badge tím sang trọng kèm icon ma trận 9 điểm cho dạng vẽ hình (ví dụ: `Vẽ hình: Chữ Z (1-2-3-5-7-8-9)`, `Vẽ hình: Chữ L`), Badge vàng cho mã PIN, Badge xám cho thiết bị không khóa.
+  - Bổ sung bộ nút chọn nhanh các mẫu vẽ hình phổ biến (`📐 Chữ Z`, `📐 Chữ L`, `📐 Chữ U`, `🔓 Không khóa`) ngay tại Form Lập Phiếu Tiếp Nhận và Form Đăng Ký Thiết Bị.
+* **Đa Dạng Hóa Dữ Liệu Thiết Bị Android Mẫu:**
+  - Cập nhật cơ sở dữ liệu mẫu trong `phone_repair.db` và `init_db.py` với dữ liệu thực tế gồm các kiểu khóa đa dạng cho các dòng máy Samsung, Xiaomi, Oppo, Asus.
+
+### 🛠️ Sửa lỗi (Fixed)
+* **Sửa Lỗi Nút "Sửa" Khách Hàng:**
+  - Bổ sung hàm điều phối `editCustomer(id)` kết nối chuẩn xác với `openCustomerModal(id)`, kích hoạt modal cập nhật thông tin khách hàng tức thì.
+* **Tối Ưu Cấu Trúc Giao Diện (Quy Tắc Dưới 500 Dòng):**
+  - Tách `modal-intake.html` độc lập khỏi `modal.html`, đảm bảo 100% các file code trong dự án duy trì nghiêm ngặt dưới 500 dòng.
+
+---
+
 ## [v2.5.0] - 2026-09-11 (Tối Ưu Hóa & Đánh Giá Chất Lượng AI - Production Grade)
 
 Bản phát hành đánh dấu sự hoàn thiện toàn diện của phân hệ Trợ lý AI và Khung đánh giá chất lượng mô hình theo chuẩn kỹ thuật doanh nghiệp thực tế.

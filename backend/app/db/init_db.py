@@ -73,14 +73,14 @@ def init_db():
             hang_san_xuat="Samsung",
             model_may="Galaxy S22 Ultra",
             so_imei="359124089876543",
-            mat_khau_may="000000"
+            mat_khau_may="Vẽ hình: Chữ Z (1-2-3-5-7-8-9)"
         )
         d3 = ThietBi(
             khach_hang_id=c3.id,
             hang_san_xuat="Xiaomi",
             model_may="Redmi Note 12 Pro",
             so_imei="867530912384756",
-            mat_khau_may="2580"
+            mat_khau_may="Vẽ hình: Chữ L (1-4-7-8-9)"
         )
         db.add_all([d1, d2, d3])
         db.flush()

@@ -21,6 +21,11 @@ function closeIntakeModal() {
     if (modal) modal.style.display = 'none';
 }
 
+function setIntakePassPattern(patternText) {
+    const input = document.getElementById('intake-device-pass');
+    if (input) input.value = patternText;
+}
+
 function fillSampleIntake(type) {
     if (type === 'iphone') {
         document.getElementById('intake-customer-name').value = 'Hoàng Đức Minh';
