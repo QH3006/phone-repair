@@ -30,3 +30,7 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local temporary guides & notes
+HUONG_DAN_CHINH_SUA_BAO_CAO_PDF.md
+HUONG_DAN_*.md
