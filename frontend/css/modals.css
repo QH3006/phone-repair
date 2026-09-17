@@ -30,7 +30,7 @@
 
 .modal-content {
     background: var(--bg-sidebar);
-    padding: 24px;
+    padding: 20px 24px;
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     width: 95%;
@@ -52,16 +52,52 @@
     align-items: center;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     flex-shrink: 0;
+}
+
+.modal-form,
+.modal-content > form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
 }
 
 .modal-body {
     overflow-y: auto;
     overflow-x: hidden;
-    padding-right: 4px;
+    padding-right: 6px;
+    padding-bottom: 4px;
     flex: 1 1 auto;
     min-height: 0;
+}
+
+/* Tinh chỉnh thanh cuộn đẹp mắt cho modal body */
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+.modal-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+.modal-body::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    padding-top: 14px;
+    margin-top: 14px;
+    border-top: 1px solid var(--border-color);
+    flex-shrink: 0;
 }
 
 .close-btn {

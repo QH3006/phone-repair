@@ -227,10 +227,79 @@ function printWarranty(id) {
         </div>
     `;
 
-    document.getElementById('print-modal-body').innerHTML = bodyHtml;
-    document.getElementById('print-modal').style.display = 'flex';
+    const bodyEl = document.getElementById('print-modal-body');
+    if (bodyEl) bodyEl.innerHTML = bodyHtml;
+
+    const modal = document.getElementById('print-modal');
+    if (modal) {
+        modal.classList.add('active', 'show');
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
 }
 
 function closePrintModal() {
-    document.getElementById('print-modal').style.display = 'none';
+    const m1 = document.getElementById('print-modal');
+    if (m1) {
+        m1.classList.remove('active', 'show');
+        m1.style.setProperty('display', 'none', 'important');
+    }
+    const m2 = document.getElementById('modal-print-view');
+    if (m2) {
+        m2.classList.remove('active', 'show');
+        m2.style.setProperty('display', 'none', 'important');
+    }
+    document.body.style.overflow = '';
 }
+
+function closeWarrantyModal() {
+    closePrintModal();
+}
+
+function printModalContent() {
+    const bodyEl = document.getElementById('print-modal-body');
+    if (!bodyEl) {
+        window.print();
+        return;
+    }
+
+    const printWin = window.open('', '_blank', 'width=820,height=650');
+    if (!printWin) {
+        window.print();
+        return;
+    }
+
+    printWin.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Chứng Từ - PhoneCare AI</title>
+            <style>
+                body { font-family: 'Plus Jakarta Sans', Arial, sans-serif; padding: 24px; color: #111; background: #fff; line-height: 1.5; }
+                @media print {
+                    @page { margin: 10mm; }
+                    body { padding: 0; }
+                }
+            </style>
+        </head>
+        <body>
+            ${bodyEl.innerHTML}
+            <script>
+                window.onload = function() {
+                    window.print();
+                    setTimeout(function() { window.close(); }, 500);
+                };
+            <\/script>
+        </body>
+        </html>
+    `);
+    printWin.document.close();
+}
+
+// Gắn toàn cục đảm bảo các sự kiện onclick trên HTML luôn tìm thấy hàm
+window.printWarranty = printWarranty;
+window.printInvoice = printInvoice;
+window.closePrintModal = closePrintModal;
+window.closeWarrantyModal = closeWarrantyModal;
+window.printModalContent = printModalContent;
+

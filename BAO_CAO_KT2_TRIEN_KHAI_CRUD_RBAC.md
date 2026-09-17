@@ -31,7 +31,9 @@
 
 ## 1. TỔNG QUAN GIAI ĐOẠN KT2 & MỤC TIÊU CỐT LÕI
 
-Kiểm tra Thường xuyên 1 (KT1) đã hoàn thành phân tích bài toán, thiết kế CSDL quan hệ 8 thực thể và thiết kế 3 prompt AI chuẩn hóa theo cấu trúc 5 thành phần.
+> 📌 **Tài liệu Nhật ký Sử dụng AI chuẩn:** Xem chi tiết toàn bộ các phiên làm việc với AI theo mô hình Human-in-the-Loop tại 👉 **[`ai_log.md`](ai_log.md)**.
+
+Kiểm tra Thường xuyên 1 (KT1) đã hoàn thành phân tích bài toán, thiết kế CSDL quan hệ và 3 prompt AI chuẩn hóa 5 thành phần.
 
 Bước sang **Kiểm tra Thường xuyên 2 (KT2)**, mục tiêu trọng tâm là hiện thực hóa toàn bộ các phân hệ nghiệp vụ cốt lõi thành mã nguồn chạy thực tế với độ tin cậy cao:
 - **Kiến trúc Module hóa:** Phân tách rõ ràng các tầng Router, Schema, Model, Service và Security.
@@ -39,7 +41,17 @@ Bước sang **Kiểm tra Thường xuyên 2 (KT2)**, mục tiêu trọng tâm l
 - **Hoàn thiện CRUD 100% Thực thể:** Tạo, đọc, cập nhật, xóa, tìm kiếm đa trường, lọc theo trạng thái và phân trang.
 - **Vòng đời Phiếu Sửa Chữa 8 Trạng Thái:** Từ *Tiếp nhận $\rightarrow$ Phân công KTV $\rightarrow$ Đang kiểm tra $\rightarrow$ Báo giá $\rightarrow$ Đang sửa chữa $\rightarrow$ Đã sửa xong $\rightarrow$ Đã thanh toán $\rightarrow$ Hoàn tất trả máy*.
 - **Tự động hóa Nghiệp vụ:** Tự động tính toán tổng tiền khi thêm linh kiện/công thợ; tự động kích hoạt cấp thẻ Bảo hành điện tử khi lập hóa đơn.
-- **Kiểm thử Tự động:** Xây dựng bộ test suite `pytest` kiểm thử 100% các luồng Auth, RBAC, CRUD và xử lý ngoại lệ HTTP chuẩn.
+- **Kiểm thử Tự động:** Xây dựng bộ test suite `pytest` (35 test cases) kiểm thử 100% các luồng Auth, RBAC, CRUD và xử lý ngoại lệ HTTP chuẩn.
+
+### 1.1. Phân Định Ranh Giới Phạm Vi Đồ Án (Khắc Phục "Tham Phạm Vi")
+Nhằm tập trung tối đa nguồn lực vào các yêu cầu cốt lõi của bài kiểm tra và khắc phục nhược điểm "tham phạm vi", đồ án xác lập ranh giới kỹ thuật minh bạch:
+1. **Phạm vi CỐT LÕI (Core In-Scope — Trọng tâm đánh giá KT2):**
+   - 100% hoàn thiện API CRUD cho 5 phân hệ: Khách hàng & Thiết bị, Kho linh kiện & Dịch vụ, Phiếu sửa chữa & Chi tiết thay thế, Hóa đơn & Sổ bảo hành điện tử, Quản trị người dùng & Phân quyền.
+   - Xác thực JWT Bearer Token, băm mật khẩu bảo mật và cơ chế chặn quyền RBAC Guard (401/403).
+   - 3 tính năng trợ lý AI phục vụ trực tiếp nghiệp vụ (Tóm tắt ghi chú KTV, Diễn giải lỗi/dịch vụ, Soạn tin nhắn SMS/Zalo cập nhật tiến độ).
+   - Nhật ký sử dụng AI minh chứng năng lực Human-in-the-loop tại file [`ai_log.md`](ai_log.md).
+2. **Phần Nghiên cứu Mở rộng (Experimental / Out-of-Scope — Tùy chọn):**
+   - Các tính năng thử nghiệm mở rộng như RAG Vector Search tra cứu tài liệu hay AI Sandbox đa mô hình là phần tìm hiểu học thuật bổ sung, được cô lập thành module phụ trợ và **hoàn toàn không bắt buộc hay làm ảnh hưởng đến tính toàn vẹn của nghiệp vụ CRUD & RBAC cốt lõi**.
 
 ```mermaid
 graph LR

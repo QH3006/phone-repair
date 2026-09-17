@@ -1,6 +1,8 @@
 # 6. NHẬT KÝ SỬ DỤNG AI TRONG PHÂN TÍCH VÀ THIẾT KẾ (AI USAGE & AUDIT LOG)
 
-Tuân thủ quy trình phát triển phần mềm hiện đại có AI đồng hành (AI-Augmented SDLC) và kiểm soát chất lượng kỹ thuật, bảng dưới đây ghi chép chi tiết toàn bộ các phiên làm việc cùng các công cụ AI trong giai đoạn phân tích & thiết kế hệ thống.
+> 📌 **Tài liệu chính thức:** Xem bảng nhật ký toàn diện các giai đoạn (KT1 & KT2) tại file chuẩn ở thư mục gốc: 👉 **[`ai_log.md`](../ai_log.md)**
+
+Tuân thủ quy trình phát triển phần mềm hiện đại có AI đồng hành (AI-Augmented SDLC) và kiểm soát chất lượng kỹ thuật, bảng dưới đây ghi chép chi tiết toàn bộ các phiên làm việc cùng các công cụ AI trong giai đoạn phân tích, thiết kế và hiện thực hóa hệ thống.
 
 ---
 

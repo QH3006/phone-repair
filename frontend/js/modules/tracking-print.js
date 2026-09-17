@@ -153,7 +153,7 @@ async function printRepairReceipt(ticketId) {
         return;
     }
 
-    const titleEl = document.getElementById('print-modal-title');
+    const titleEl = document.getElementById('print-receipt-modal-title') || document.getElementById('print-modal-title');
     if (titleEl) titleEl.innerText = `🖨️ Bản In Phiếu Tiếp Nhận (${ticket.ma_phieu})`;
 
     const contentEl = document.getElementById('printable-receipt-content');
@@ -239,7 +239,7 @@ async function printInvoice(invoiceId) {
         return;
     }
 
-    const titleEl = document.getElementById('print-modal-title');
+    const titleEl = document.getElementById('print-receipt-modal-title') || document.getElementById('print-modal-title');
     if (titleEl) titleEl.innerText = `🖨️ Bản In Hóa Đơn Thanh Toán (${inv.ma_hoa_don})`;
 
     const contentEl = document.getElementById('printable-receipt-content');
@@ -295,12 +295,20 @@ async function printInvoice(invoiceId) {
 }
 
 function closePrintModal() {
-    const modal = document.getElementById('modal-print-view');
-    if (modal) {
-        modal.style.display = 'none';
-        modal.classList.remove('active');
+    const m1 = document.getElementById('print-modal');
+    if (m1) {
+        m1.classList.remove('active', 'show');
+        m1.style.setProperty('display', 'none', 'important');
     }
+    const m2 = document.getElementById('modal-print-view');
+    if (m2) {
+        m2.classList.remove('active', 'show');
+        m2.style.setProperty('display', 'none', 'important');
+    }
+    document.body.style.overflow = '';
 }
+
+window.closePrintModal = closePrintModal;
 
 function executePrintDocument() {
     const printableContent = document.getElementById('printable-receipt-content');

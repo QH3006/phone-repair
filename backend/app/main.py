@@ -56,7 +56,11 @@ if os.path.exists(frontend_dir):
 
     @app.get("/", include_in_schema=False)
     def read_root(request: Request):
-        return templates.TemplateResponse(request=request, name="index.html")
+        response = templates.TemplateResponse(request=request, name="index.html")
+        response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
+        return response
 
     @app.get("/tracking", include_in_schema=False)
     @app.get("/tra-cuu", include_in_schema=False)

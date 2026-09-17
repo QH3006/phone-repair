@@ -107,21 +107,23 @@
             <h3 id="customer-modal-title">➕ Thêm Khách Hàng Mới</h3>
             <span class="close-btn" onclick="closeCustomerModal()">&times;</span>
         </div>
-        <form id="customer-form" onsubmit="submitCustomerForm(event)" style="padding: 20px;">
+        <form id="customer-form" onsubmit="submitCustomerForm(event)" class="modal-form">
             <input type="hidden" id="cust-form-id">
-            <div class="form-group">
-                <label>Họ và tên khách hàng *</label>
-                <input type="text" id="cust-form-name" class="form-control" required placeholder="Ví dụ: Nguyễn Văn A">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Họ và tên khách hàng *</label>
+                    <input type="text" id="cust-form-name" class="form-control" required placeholder="Ví dụ: Nguyễn Văn A">
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại *</label>
+                    <input type="tel" id="cust-form-phone" class="form-control" required placeholder="Ví dụ: 0988123456">
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input type="text" id="cust-form-address" class="form-control" placeholder="Ví dụ: Cầu Giấy, Hà Nội">
+                </div>
             </div>
-            <div class="form-group">
-                <label>Số điện thoại *</label>
-                <input type="tel" id="cust-form-phone" class="form-control" required placeholder="Ví dụ: 0988123456">
-            </div>
-            <div class="form-group">
-                <label>Địa chỉ</label>
-                <input type="text" id="cust-form-address" class="form-control" placeholder="Ví dụ: Cầu Giấy, Hà Nội">
-            </div>
-            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <div class="modal-footer">
                 <button type="button" class="btn btn-outline" onclick="closeCustomerModal()">Hủy</button>
                 <button type="submit" class="btn btn-gradient">💾 Lưu Khách Hàng</button>
             </div>
@@ -131,48 +133,50 @@
 
 <!-- Modal 5: Đăng ký Thiết Bị -->
 <div id="device-modal" class="modal">
-    <div class="modal-content" style="max-width: 500px;">
+    <div class="modal-content" style="max-width: 520px;">
         <div class="modal-header">
             <h3>📱 Đăng Ký Thiết Bị Mới</h3>
             <span class="close-btn" onclick="closeDeviceModal()">&times;</span>
         </div>
-        <form id="device-form" onsubmit="submitDeviceForm(event)" style="padding: 20px;">
-            <div class="form-group">
-                <label>Chọn Khách Hàng Sở Hữu *</label>
-                <select id="dev-form-customer-select" class="form-control" required>
-                    <!-- Loaded dynamically -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Hãng sản xuất *</label>
-                <select id="dev-form-brand" class="form-control" required>
-                    <option value="Apple">Apple</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Xiaomi">Xiaomi</option>
-                    <option value="Oppo">Oppo</option>
-                    <option value="Vivo">Vivo</option>
-                    <option value="Khac">Khác</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Model máy *</label>
-                <input type="text" id="dev-form-model" class="form-control" required placeholder="Ví dụ: iPhone 14 Pro Max">
-            </div>
-            <div class="form-group">
-                <label>Số IMEI / Serial *</label>
-                <input type="text" id="dev-form-imei" class="form-control" required placeholder="15 chữ số IMEI">
-            </div>
-            <div class="form-group">
-                <label>Mật khẩu màn hình (PIN hoặc Vẽ mẫu hình 9 điểm)</label>
-                <input type="text" id="dev-form-pass" class="form-control" placeholder="Ví dụ: 112233 hoặc Vẽ hình: Chữ L (1-4-7-8-9)">
-                <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:6px;">
-                    <span style="font-size:0.75rem; color:var(--text-muted); align-self:center;">Mẫu nhanh:</span>
-                    <button type="button" class="btn btn-outline btn-sm" style="padding:2px 8px; font-size:0.75rem;" onclick="setDevicePassPattern('Vẽ hình: Chữ Z (1-2-3-5-7-8-9)')">📐 Vẽ chữ Z</button>
-                    <button type="button" class="btn btn-outline btn-sm" style="padding:2px 8px; font-size:0.75rem;" onclick="setDevicePassPattern('Vẽ hình: Chữ L (1-4-7-8-9)')">📐 Vẽ chữ L</button>
-                    <button type="button" class="btn btn-outline btn-sm" style="padding:2px 8px; font-size:0.75rem;" onclick="setDevicePassPattern('Không có')">🔓 Không khóa</button>
+        <form id="device-form" onsubmit="submitDeviceForm(event)" class="modal-form">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Chọn Khách Hàng Sở Hữu *</label>
+                    <select id="dev-form-customer-select" class="form-control" required>
+                        <!-- Loaded dynamically -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Hãng sản xuất *</label>
+                    <select id="dev-form-brand" class="form-control" required>
+                        <option value="Apple">Apple</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Oppo">Oppo</option>
+                        <option value="Vivo">Vivo</option>
+                        <option value="Khac">Khác</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Model máy *</label>
+                    <input type="text" id="dev-form-model" class="form-control" required placeholder="Ví dụ: iPhone 14 Pro Max">
+                </div>
+                <div class="form-group">
+                    <label>Số IMEI / Serial *</label>
+                    <input type="text" id="dev-form-imei" class="form-control" required placeholder="15 chữ số IMEI">
+                </div>
+                <div class="form-group" style="margin-bottom: 4px;">
+                    <label>Mật khẩu màn hình (PIN hoặc Vẽ mẫu hình 9 điểm)</label>
+                    <input type="text" id="dev-form-pass" class="form-control" placeholder="Ví dụ: 112233 hoặc Vẽ hình: Chữ L (1-4-7-8-9)">
+                    <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:6px;">
+                        <span style="font-size:0.75rem; color:var(--text-muted); align-self:center;">Mẫu nhanh:</span>
+                        <button type="button" class="btn btn-outline btn-sm" style="padding:2px 8px; font-size:0.75rem;" onclick="setDevicePassPattern('Vẽ hình: Chữ Z (1-2-3-5-7-8-9)')">📐 Vẽ chữ Z</button>
+                        <button type="button" class="btn btn-outline btn-sm" style="padding:2px 8px; font-size:0.75rem;" onclick="setDevicePassPattern('Vẽ hình: Chữ L (1-4-7-8-9)')">📐 Vẽ chữ L</button>
+                        <button type="button" class="btn btn-outline btn-sm" style="padding:2px 8px; font-size:0.75rem;" onclick="setDevicePassPattern('Không có')">🔓 Không khóa</button>
+                    </div>
                 </div>
             </div>
-            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <div class="modal-footer">
                 <button type="button" class="btn btn-outline" onclick="closeDeviceModal()">Hủy</button>
                 <button type="submit" class="btn btn-gradient">💾 Đăng Ký Thiết Bị</button>
             </div>
@@ -187,43 +191,45 @@
             <h3 id="part-modal-title">📦 Nhập Linh Kiện Mới</h3>
             <span class="close-btn" onclick="closePartModal()">&times;</span>
         </div>
-        <form id="part-form" onsubmit="submitPartForm(event)" style="padding: 20px;">
+        <form id="part-form" onsubmit="submitPartForm(event)" class="modal-form">
             <input type="hidden" id="part-form-id">
-            <div class="grid-2">
-                <div class="form-group">
-                    <label>Mã linh kiện *</label>
-                    <input type="text" id="part-form-code" class="form-control" required placeholder="LK-PIN-IP14">
+            <div class="modal-body">
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Mã linh kiện *</label>
+                        <input type="text" id="part-form-code" class="form-control" required placeholder="LK-PIN-IP14">
+                    </div>
+                    <div class="form-group">
+                        <label>Dòng máy áp dụng</label>
+                        <input type="text" id="part-form-model" class="form-control" placeholder="iPhone 14 Series">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label>Dòng máy áp dụng</label>
-                    <input type="text" id="part-form-model" class="form-control" placeholder="iPhone 14 Series">
+                    <label>Tên linh kiện *</label>
+                    <input type="text" id="part-form-name" class="form-control" required placeholder="Pin Dung Lượng Cao iPhone 14 Pro">
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Giá nhập (VNĐ) *</label>
+                        <input type="number" id="part-form-cost" class="form-control" required value="200000" step="10000">
+                    </div>
+                    <div class="form-group">
+                        <label>Giá bán ra (VNĐ) *</label>
+                        <input type="number" id="part-form-price" class="form-control" required value="450000" step="10000">
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Số lượng tồn kho *</label>
+                        <input type="number" id="part-form-qty" class="form-control" required value="10">
+                    </div>
+                    <div class="form-group">
+                        <label>Bảo hành (tháng) *</label>
+                        <input type="number" id="part-form-warranty" class="form-control" required value="6">
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label>Tên linh kiện *</label>
-                <input type="text" id="part-form-name" class="form-control" required placeholder="Pin Dung Lượng Cao iPhone 14 Pro">
-            </div>
-            <div class="grid-2">
-                <div class="form-group">
-                    <label>Giá nhập (VNĐ) *</label>
-                    <input type="number" id="part-form-cost" class="form-control" required value="200000" step="10000">
-                </div>
-                <div class="form-group">
-                    <label>Giá bán ra (VNĐ) *</label>
-                    <input type="number" id="part-form-price" class="form-control" required value="450000" step="10000">
-                </div>
-            </div>
-            <div class="grid-2">
-                <div class="form-group">
-                    <label>Số lượng tồn kho *</label>
-                    <input type="number" id="part-form-qty" class="form-control" required value="10">
-                </div>
-                <div class="form-group">
-                    <label>Bảo hành (tháng) *</label>
-                    <input type="number" id="part-form-warranty" class="form-control" required value="6">
-                </div>
-            </div>
-            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <div class="modal-footer">
                 <button type="button" class="btn btn-outline" onclick="closePartModal()">Hủy</button>
                 <button type="submit" class="btn btn-gradient">💾 Lưu Linh Kiện</button>
             </div>
@@ -238,25 +244,27 @@
             <h3 id="service-modal-title">🛠️ Thêm Dịch Vụ Kỹ Thuật</h3>
             <span class="close-btn" onclick="closeServiceModal()">&times;</span>
         </div>
-        <form id="service-form" onsubmit="submitServiceForm(event)" style="padding: 20px;">
+        <form id="service-form" onsubmit="submitServiceForm(event)" class="modal-form">
             <input type="hidden" id="service-form-id">
-            <div class="form-group">
-                <label>Mã dịch vụ *</label>
-                <input type="text" id="service-form-code" class="form-control" required placeholder="DV-THAY-PIN">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Mã dịch vụ *</label>
+                    <input type="text" id="service-form-code" class="form-control" required placeholder="DV-THAY-PIN">
+                </div>
+                <div class="form-group">
+                    <label>Tên dịch vụ *</label>
+                    <input type="text" id="service-form-name" class="form-control" required placeholder="Công thay Pin & Test sạc xả">
+                </div>
+                <div class="form-group">
+                    <label>Giá công thợ (VNĐ) *</label>
+                    <input type="number" id="service-form-price" class="form-control" required value="150000" step="10000">
+                </div>
+                <div class="form-group">
+                    <label>Mô tả quy trình</label>
+                    <textarea id="service-form-desc" class="form-control" rows="2" placeholder="Dán keo chống nước, test sạc dòng tiêu chuẩn..."></textarea>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Tên dịch vụ *</label>
-                <input type="text" id="service-form-name" class="form-control" required placeholder="Công thay Pin & Test sạc xả">
-            </div>
-            <div class="form-group">
-                <label>Giá công thợ (VNĐ) *</label>
-                <input type="number" id="service-form-price" class="form-control" required value="150000" step="10000">
-            </div>
-            <div class="form-group">
-                <label>Mô tả quy trình</label>
-                <textarea id="service-form-desc" class="form-control" rows="2" placeholder="Dán keo chống nước, test sạc dòng tiêu chuẩn..."></textarea>
-            </div>
-            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <div class="modal-footer">
                 <button type="button" class="btn btn-outline" onclick="closeServiceModal()">Hủy</button>
                 <button type="submit" class="btn btn-gradient">💾 Lưu Dịch Vụ</button>
             </div>
@@ -271,43 +279,45 @@
             <h3 id="user-modal-title">👥 Thêm Tài Khoản Nhân Viên</h3>
             <span class="close-btn" onclick="closeUserModal()">&times;</span>
         </div>
-        <form id="user-form" onsubmit="submitUserForm(event)" style="padding: 20px;">
+        <form id="user-form" onsubmit="submitUserForm(event)" class="modal-form">
             <input type="hidden" id="user-form-id">
-            <div class="form-group">
-                <label>Tên đăng nhập *</label>
-                <input type="text" id="user-form-username" class="form-control" required placeholder="letan_02">
-            </div>
-            <div class="form-group">
-                <label>Mật khẩu (để trống nếu không đổi)</label>
-                <input type="password" id="user-form-password" class="form-control" placeholder="123456">
-            </div>
-            <div class="form-group">
-                <label>Họ và tên nhân viên *</label>
-                <input type="text" id="user-form-fullname" class="form-control" required placeholder="Nguyễn Văn A">
-            </div>
-            <div class="grid-2">
+            <div class="modal-body">
                 <div class="form-group">
-                    <label>Vai trò (RBAC) *</label>
-                    <select id="user-form-role" class="form-control" required>
-                        <option value="QuanLy">👑 Quản Lý (Admin)</option>
-                        <option value="LeTan">💁 Lễ Tân (Tiếp nhận)</option>
-                        <option value="KyThuatVien">🔧 Kỹ Thuật Viên</option>
-                        <option value="ThuNgan">💳 Thu Ngân</option>
-                    </select>
+                    <label>Tên đăng nhập *</label>
+                    <input type="text" id="user-form-username" class="form-control" required placeholder="letan_02">
                 </div>
                 <div class="form-group">
-                    <label>Trạng thái</label>
-                    <select id="user-form-status" class="form-control">
-                        <option value="HoatDong">Hoạt Động</option>
-                        <option value="TamKhoa">Tạm Khóa</option>
-                    </select>
+                    <label>Mật khẩu (để trống nếu không đổi)</label>
+                    <input type="password" id="user-form-password" class="form-control" placeholder="123456">
+                </div>
+                <div class="form-group">
+                    <label>Họ và tên nhân viên *</label>
+                    <input type="text" id="user-form-fullname" class="form-control" required placeholder="Nguyễn Văn A">
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Vai trò (RBAC) *</label>
+                        <select id="user-form-role" class="form-control" required>
+                            <option value="QuanLy">👑 Quản Lý (Admin)</option>
+                            <option value="LeTan">💁 Lễ Tân (Tiếp nhận)</option>
+                            <option value="KyThuatVien">🔧 Kỹ Thuật Viên</option>
+                            <option value="ThuNgan">💳 Thu Ngân</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Trạng thái</label>
+                        <select id="user-form-status" class="form-control">
+                            <option value="HoatDong">Hoạt Động</option>
+                            <option value="TamKhoa">Tạm Khóa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại liên hệ</label>
+                    <input type="tel" id="user-form-phone" class="form-control" placeholder="0901234567">
                 </div>
             </div>
-            <div class="form-group">
-                <label>Số điện thoại liên hệ</label>
-                <input type="tel" id="user-form-phone" class="form-control" placeholder="0901234567">
-            </div>
-            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <div class="modal-footer">
                 <button type="button" class="btn btn-outline" onclick="closeUserModal()">Hủy</button>
                 <button type="submit" class="btn btn-gradient">💾 Lưu Tài Khoản</button>
             </div>
@@ -322,32 +332,34 @@
             <h3>➕ Thêm Linh Kiện / Dịch Vụ Vào Phiếu Sửa</h3>
             <span class="close-btn" onclick="closeAddItemModal()">&times;</span>
         </div>
-        <form id="add-item-form" onsubmit="submitAddItemToRepair(event)" style="padding: 20px;">
+        <form id="add-item-form" onsubmit="submitAddItemToRepair(event)" class="modal-form">
             <input type="hidden" id="add-item-repair-id">
-            <div class="form-group">
-                <label>Loại mục *</label>
-                <select id="add-item-type" class="form-control" onchange="toggleItemTypeSelect()">
-                    <option value="linhkien">📦 Linh Kiện Thay Thế</option>
-                    <option value="dichvu">🛠️ Dịch Vụ Công Kỹ Thuật</option>
-                </select>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Loại mục *</label>
+                    <select id="add-item-type" class="form-control" onchange="toggleItemTypeSelect()">
+                        <option value="linhkien">📦 Linh Kiện Thay Thế</option>
+                        <option value="dichvu">🛠️ Dịch Vụ Công Kỹ Thuật</option>
+                    </select>
+                </div>
+                <div class="form-group" id="group-select-part">
+                    <label>Chọn Linh Kiện Kho *</label>
+                    <select id="add-item-part-select" class="form-control">
+                        <!-- Dynamic -->
+                    </select>
+                </div>
+                <div class="form-group" id="group-select-service" style="display:none;">
+                    <label>Chọn Dịch Vụ Kỹ Thuật *</label>
+                    <select id="add-item-service-select" class="form-control">
+                        <!-- Dynamic -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Số lượng *</label>
+                    <input type="number" id="add-item-qty" class="form-control" value="1" min="1">
+                </div>
             </div>
-            <div class="form-group" id="group-select-part">
-                <label>Chọn Linh Kiện Kho *</label>
-                <select id="add-item-part-select" class="form-control">
-                    <!-- Dynamic -->
-                </select>
-            </div>
-            <div class="form-group" id="group-select-service" style="display:none;">
-                <label>Chọn Dịch Vụ Kỹ Thuật *</label>
-                <select id="add-item-service-select" class="form-control">
-                    <!-- Dynamic -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Số lượng *</label>
-                <input type="number" id="add-item-qty" class="form-control" value="1" min="1">
-            </div>
-            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+            <div class="modal-footer">
                 <button type="button" class="btn btn-outline" onclick="closeAddItemModal()">Hủy</button>
                 <button type="submit" class="btn btn-gradient">➕ Thêm Vào Phiếu</button>
             </div>
@@ -362,12 +374,12 @@
             <h3 id="print-modal-title">🧾 Hóa Đơn / Phiếu Bảo Hành</h3>
             <span class="close-btn" onclick="closePrintModal()">&times;</span>
         </div>
-        <div class="modal-body" id="print-modal-body" style="padding: 20px; font-family: monospace;">
+        <div class="modal-body" id="print-modal-body" style="padding: 8px 4px; font-family: inherit;">
             <!-- Render print template -->
         </div>
-        <div style="display: flex; justify-content: flex-end; gap: 10px; padding: 16px 20px; border-top: 1px solid var(--border-color);">
-            <button class="btn btn-outline" onclick="closePrintModal()">Đóng</button>
-            <button class="btn btn-gradient" onclick="window.print()">🖨️ In Ngay</button>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline" onclick="closePrintModal()">Đóng</button>
+            <button type="button" class="btn btn-gradient" onclick="printModalContent()">🖨️ In Ngay</button>
         </div>
     </div>
 </div>

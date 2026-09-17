@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="/static/css/base.css?v=57">
     <link rel="stylesheet" href="/static/css/layout.css?v=57">
     <link rel="stylesheet" href="/static/css/components.css?v=57">
-    <link rel="stylesheet" href="/static/css/modals.css?v=58">
+    <link rel="stylesheet" href="/static/css/modals.css?v=65">
     <link rel="stylesheet" href="/static/css/rbac.css?v=58">
     <link rel="stylesheet" href="/static/css/ai-sandbox.css?v=58">
     <link rel="stylesheet" href="/static/css/rag-demo.css?v=58">
@@ -40,9 +40,6 @@
             {% include "components/header.html" %}
 
             <div class="content-body">
-                <!-- Role Switcher & Permission Banner -->
-                {% include "components/role-banner.html" %}
-
                 <!-- Tab 1: Dashboard Thống Kê -->
                 {% include "tabs/tab-dashboard.html" %}
 
@@ -78,21 +75,21 @@
     {% include "components/modal-intake.html" %}
     {% include "components/modal-tracking-print.html" %}
 
-    <!-- Client Script Modules -->
-    <script src="/static/js/modules/theme.js?v=55"></script>
-    <script src="/static/js/modules/auth.js?v=55"></script>
-    <script src="/static/js/modules/navigation.js?v=55"></script>
-    <script src="/static/js/modules/dashboard.js?v=55"></script>
-    <script src="/static/js/modules/repairs.js?v=55"></script>
-    <script src="/static/js/modules/customers.js?v=55"></script>
-    <script src="/static/js/modules/inventory.js?v=55"></script>
-    <script src="/static/js/modules/billing.js?v=55"></script>
-    <script src="/static/js/modules/users.js?v=55"></script>
-    <script src="/static/js/modules/intake.js?v=55"></script>
-    <script src="/static/js/modules/ai-sandbox.js?v=55"></script>
-    <script src="/static/js/modules/rag-demo.js?v=57"></script>
-    <script src="/static/js/modules/ai-logs.js?v=55"></script>
-    <script src="/static/js/modules/tracking-print.js?v=56"></script>
-    <script src="/static/js/app.js?v=55"></script>
+    <!-- Client Script Modules (v=62 Cache Buster) -->
+    <script src="/static/js/modules/theme.js?v=62"></script>
+    <script src="/static/js/modules/auth.js?v=62"></script>
+    <script src="/static/js/modules/navigation.js?v=62"></script>
+    <script src="/static/js/modules/dashboard.js?v=62"></script>
+    <script src="/static/js/modules/repairs.js?v=62"></script>
+    <script src="/static/js/modules/customers.js?v=62"></script>
+    <script src="/static/js/modules/inventory.js?v=62"></script>
+    <script src="/static/js/modules/billing.js?v=62"></script>
+    <script src="/static/js/modules/users.js?v=62"></script>
+    <script src="/static/js/modules/intake.js?v=62"></script>
+    <script src="/static/js/modules/ai-sandbox.js?v=62"></script>
+    <script src="/static/js/modules/rag-demo.js?v=62"></script>
+    <script src="/static/js/modules/ai-logs.js?v=62"></script>
+    <script src="/static/js/modules/tracking-print.js?v=62"></script>
+    <script src="/static/js/app.js?v=62"></script>
 </body>
 </html>

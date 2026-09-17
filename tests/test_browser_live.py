@@ -26,6 +26,7 @@ def test_browser_static_assets_and_tabs():
         '/static/css/modals.css',
         '/static/css/rbac.css',
         '/static/css/ai-sandbox.css',
+        '/static/css/rag-demo.css',
         '/static/css/style.css',
         '/static/js/modules/theme.js',
         '/static/js/modules/auth.js',
@@ -38,6 +39,7 @@ def test_browser_static_assets_and_tabs():
         '/static/js/modules/users.js',
         '/static/js/modules/intake.js',
         '/static/js/modules/ai-sandbox.js',
+        '/static/js/modules/rag-demo.js',
         '/static/js/modules/ai-logs.js',
         '/static/js/modules/tracking-print.js',
         '/static/js/app.js'
