@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: phonecare-ai
+    env: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.5
+      - key: PROJECT_NAME
+        value: "Hệ thống Quản lý Trung tâm Sửa chữa Điện thoại AI"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALGORITHM
+        value: "HS256"
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 480
+      - key: DATABASE_URL
+        value: "sqlite:///./phone_repair.db"
+      - key: GEMINI_MODEL_NAME
+        value: "gemini-1.5-flash"
+      - key: AI_TIMEOUT_SECONDS
+        value: 5.0
+      - key: GEMINI_API_KEY
+        sync: false

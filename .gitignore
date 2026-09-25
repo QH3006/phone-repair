@@ -15,6 +15,7 @@ env/
 
 # Database & Backups
 phone_repair.db
+*.db
 *.sqlite
 *.sqlite3
 *.bak

@@ -69,6 +69,12 @@ function renderRepairsTable(data) {
             actionBtnHtml = `<button class="btn btn-outline btn-sm" onclick="viewRepairDetail(${r.id})">🔍 Xem & Sửa</button>`;
         }
 
+        let slaBadge = '';
+        if (r.ngay_hen_tra) {
+            const isExpress = (r.mo_ta_loi_khach || '').includes('lấy ngay') || (r.mo_ta_loi_khach || '').includes('30 phút') || (r.mo_ta_loi_khach || '').includes('45 phút');
+            slaBadge = `<br><span style="display:inline-block; margin-top:4px; font-size:0.75rem; color:${isExpress ? '#d97706' : 'var(--primary)'}; font-weight:600; background:${isExpress ? 'rgba(245, 158, 11, 0.1)' : 'rgba(56, 189, 248, 0.1)'}; padding:2px 6px; border-radius:4px;">⏰ Hẹn: ${r.ngay_hen_tra} ${isExpress ? '⚡ (Lấy ngay)' : ''}</span>`;
+        }
+
         html += `
             <tr>
                 <td><strong>${r.ma_phieu}</strong></td>
@@ -80,7 +86,7 @@ function renderRepairsTable(data) {
                     <strong>${devModel}</strong><br>
                     <small style="color:var(--text-muted)">IMEI: ${devImei}</small>
                 </td>
-                <td><small>${r.mo_ta_loi_khach}</small></td>
+                <td><small>${r.mo_ta_loi_khach}</small>${slaBadge}</td>
                 <td><small>${r.ktv_phu_trach || 'Chưa phân công'}</small></td>
                 <td>${badge}</td>
                 <td><strong style="color:var(--primary);">${Number(r.tong_tien_du_kien || 0).toLocaleString('vi-VN')} đ</strong></td>
@@ -185,7 +191,7 @@ async function viewRepairDetail(phieuId) {
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">
                     <div>
                         <h3 style="margin:0; color:var(--primary);">Phiếu Sửa Chữa: ${r.ma_phieu}</h3>
-                        <small style="color:var(--text-muted);">Tiếp nhận: ${r.ngay_tiep_nhan || 'N/A'}</small>
+                        <small style="color:var(--text-muted);">⏱️ Tiếp nhận: <strong>${r.ngay_tiep_nhan || 'N/A'}</strong> | ⏰ Hẹn trả: <strong style="color:var(--primary);">${r.ngay_hen_tra || 'Chờ cập nhật'}</strong></small>
                     </div>
                     <div>${badge}</div>
                 </div>
@@ -221,7 +227,8 @@ async function viewRepairDetail(phieuId) {
                     <div style="background:var(--bg-input); padding:12px; border-radius:var(--radius-sm); font-size:0.85rem;">
                         <strong>📱 Thiết Bị:</strong> ${r.thiet_bi.hang_san_xuat} ${r.thiet_bi.model_may}<br>
                         <strong>🔢 IMEI:</strong> <code>${r.thiet_bi.so_imei}</code><br>
-                        <strong>🔐 Mật khẩu máy:</strong> ${r.thiet_bi.mat_khau_may || 'Không có'}
+                        <strong>🔐 Mật khẩu máy:</strong> ${r.thiet_bi.mat_khau_may || 'Không có'}<br>
+                        <strong>⏰ Cam kết hẹn trả:</strong> <span style="color:var(--primary); font-weight:bold;">${r.ngay_hen_tra || 'Trong ngày'}</span>
                     </div>
                 </div>
 

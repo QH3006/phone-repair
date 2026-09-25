@@ -10,10 +10,14 @@
         </div>
         <div class="modal-body">
             <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:15px;">
-                Khách hàng có thể tra cứu trạng thái sửa chữa, chi phí ước tính và giải thích kỹ thuật bằng <strong>Mã phiếu tiếp nhận</strong>, <strong>Số điện thoại</strong> hoặc <strong>Số IMEI</strong> thiết bị mà không cần đăng nhập.
+                Khách hàng có thể tra cứu trạng thái sửa chữa, chi phí ước tính và giải thích kỹ thuật bằng <strong>Mã
+                    phiếu tiếp nhận</strong>, <strong>Số điện thoại</strong> hoặc <strong>Số IMEI</strong> thiết bị mà
+                không cần đăng nhập.
             </p>
             <div style="display:flex; gap:10px; margin-bottom:20px;">
-                <input type="text" id="public-tracking-input" class="form-control" placeholder="Nhập Mã phiếu (vd: PSC-20260814-001) hoặc SĐT (vd: 0912345678)..." onkeydown="if(event.key==='Enter') doPublicTrackingSearch()">
+                <input type="text" id="public-tracking-input" class="form-control"
+                    placeholder="Nhập Mã phiếu (vd: PSC-20260814-001) hoặc SĐT (vd: 0912345678)..."
+                    onkeydown="if(event.key==='Enter') doPublicTrackingSearch()">
                 <button class="btn btn-gradient" onclick="doPublicTrackingSearch()" style="min-width:140px;">
                     <span>🔍 Tra Cứu</span>
                 </button>
@@ -35,7 +39,8 @@
             <span class="close-btn" onclick="closePrintModal()">&times;</span>
         </div>
         <div class="modal-body">
-            <div id="printable-receipt-content" style="background:#fff; color:#111; padding:24px; border-radius:8px; font-family:'Plus Jakarta Sans', Arial, sans-serif; line-height:1.5;">
+            <div id="printable-receipt-content"
+                style="background:#fff; color:#111; padding:24px; border-radius:8px; font-family:'Plus Jakarta Sans', Arial, sans-serif; line-height:1.5;">
                 <!-- Nội dung bản in sinh động qua JS -->
             </div>
             <div class="modal-footer">

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 from backend.app.db.database import get_db
 from backend.app.db.models import (
@@ -176,7 +176,18 @@ def create_repair_ticket(
         if ktv_user:
             ktv_id = ktv_user.id
 
-    # 5. Tạo Phiếu
+    # 5. Xác định mốc thời gian cam kết hoàn tất (SLA)
+    hen_tra = req.ngay_hen_tra
+    if not hen_tra:
+        desc = (req.mo_ta_loi_khach or "").lower()
+        if any(k in desc for k in ["lấy ngay", "thay pin", "ép kính", "chân sạc", "loa", "dán"]):
+            hen_tra = now + timedelta(minutes=45)
+        elif any(k in desc for k in ["chuyên sâu", "mất nguồn", "main", "chập", "rơi nước", "faceid"]):
+            hen_tra = now + timedelta(hours=36)
+        else:
+            hen_tra = now + timedelta(hours=4)
+
+    # 6. Tạo Phiếu
     phieu = PhieuSuaChua(
         ma_phieu=ma_phieu,
         khach_hang_id=khach_hang.id,
@@ -189,7 +200,7 @@ def create_repair_ticket(
         trang_thai="TiepNhan",
         tong_tien_du_kien=req.tong_tien_du_kien or 0.0,
         ngay_tiep_nhan=now,
-        ngay_hen_tra=req.ngay_hen_tra
+        ngay_hen_tra=hen_tra
     )
     db.add(phieu)
     db.commit()

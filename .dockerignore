@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env
+.venv
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+htmlcov/
+.coverage
+phone_repair_test.db
+backups/
+HUONG_DAN_*.md

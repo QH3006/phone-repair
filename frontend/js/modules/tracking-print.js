@@ -93,7 +93,15 @@ async function doPublicTrackingSearch() {
             const khTen = r.khach_hang ? r.khach_hang.ho_ten : 'Khách hàng';
             const may = r.thiet_bi ? `${r.thiet_bi.hang_san_xuat} ${r.thiet_bi.model_may}` : 'Thiết bị';
             const imeiMasked = r.thiet_bi && r.thiet_bi.so_imei ? r.thiet_bi.so_imei.slice(0, 4) + '******' + r.thiet_bi.so_imei.slice(-4) : 'N/A';
-            const costFormatted = Number(r.chi_phi_uoc_tinh || 0).toLocaleString('vi-VN') + ' đ';
+            const costFormatted = Number(r.tong_tien_du_kien || r.chi_phi_uoc_tinh || 0).toLocaleString('vi-VN') + ' đ';
+            const errorDesc = r.mo_ta_loi_khach || r.mo_ta_loi_ban_dau || 'Chưa cập nhật';
+
+            let slaBadge = '';
+            if (errorDesc.includes('lấy ngay') || errorDesc.includes('30 phút') || errorDesc.includes('45 phút')) {
+                slaBadge = '<span class="badge" style="background:#fef3c7; color:#b45309; font-size:0.75rem; padding:2px 6px; margin-left:6px;">⚡ Sửa lấy ngay 30-45p</span>';
+            } else if (errorDesc.includes('trong ngày') || errorDesc.includes('tiếng')) {
+                slaBadge = '<span class="badge" style="background:#e0f2fe; color:#0369a1; font-size:0.75rem; padding:2px 6px; margin-left:6px;">📅 Hẹn trong ngày</span>';
+            }
 
             html += `
                 <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px; margin-bottom:18px; box-shadow:var(--shadow-sm);">
@@ -118,7 +126,11 @@ async function doPublicTrackingSearch() {
                     </div>
 
                     <div style="background:var(--bg-hover); padding:12px; border-radius:var(--radius-sm); font-size:0.88rem; margin-bottom:12px;">
-                        <div><strong>Mô tả lỗi khách báo:</strong> ${r.mo_ta_loi_ban_dau || 'Chưa cập nhật'}</div>
+                        <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:6px; border-bottom:1px dashed var(--border); padding-bottom:6px;">
+                            <span>⏱️ Tiếp nhận: <strong>${r.ngay_tiep_nhan || 'Hôm nay'}</strong></span>
+                            <span>⏰ Hẹn trả: <strong style="color:var(--primary);">${r.ngay_hen_tra || 'Trong ngày'}</strong> ${slaBadge}</span>
+                        </div>
+                        <div><strong>Mô tả lỗi & Cam kết:</strong> ${errorDesc}</div>
                         ${r.ai_tom_tat_loi ? `<div style="margin-top:6px; color:var(--primary)"><strong>Chẩn đoán kỹ thuật:</strong> ${r.ai_tom_tat_loi}</div>` : ''}
                     </div>
 
@@ -188,9 +200,13 @@ async function printRepairReceipt(ticketId) {
         </div>
 
         <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; padding:12px; margin-bottom:16px; font-size:0.88rem;">
-            <div><strong>Tình trạng tiếp nhận / Lỗi khách báo:</strong> ${ticket.mo_ta_loi_ban_dau || 'Kiểm tra tổng thể'}</div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:8px; border-bottom:1px solid #e2e8f0; padding-bottom:8px;">
+                <div>⏱️ Giờ tiếp nhận: <strong>${ticket.ngay_tiep_nhan || nowStr}</strong></div>
+                <div>⏰ Giờ hẹn trả máy: <strong style="color:#0284c7;">${ticket.ngay_hen_tra || 'Trong ngày'}</strong></div>
+            </div>
+            <div><strong>Tình trạng tiếp nhận / Lỗi khách báo:</strong> ${ticket.mo_ta_loi_khach || ticket.mo_ta_loi_ban_dau || 'Kiểm tra tổng thể'}</div>
             ${ticket.ai_tom_tat_loi ? `<div style="margin-top:6px;"><strong>Chẩn đoán sơ bộ:</strong> ${ticket.ai_tom_tat_loi}</div>` : ''}
-            <div style="margin-top:6px;"><strong>Chi phí ước tính:</strong> <span style="font-size:1rem; font-weight:bold; color:#059669;">${Number(ticket.chi_phi_uoc_tinh || 0).toLocaleString('vi-VN')} đ</span></div>
+            <div style="margin-top:6px;"><strong>Chi phí ước tính:</strong> <span style="font-size:1rem; font-weight:bold; color:#059669;">${Number(ticket.tong_tien_du_kien || ticket.chi_phi_uoc_tinh || 0).toLocaleString('vi-VN')} đ</span></div>
         </div>
 
         <div style="font-size:0.8rem; color:#555; margin-bottom:20px; border-left:3px solid #0284c7; padding-left:8px;">

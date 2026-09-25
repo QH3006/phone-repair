@@ -1,0 +1,3956 @@
+{
+  "parts": [
+    {
+      "ma_linh_kien": "LK-PIN-IP11",
+      "ten_linh_kien": "Pin Deji Zin Dung Lượng Cao iPhone 11",
+      "loai_may": "iPhone 11",
+      "gia_nhap": 280000.0,
+      "gia_ban": 480000.0,
+      "so_luong_ton": 25,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-MAN-IP11",
+      "ten_linh_kien": "Màn hình LCD Zin Bóc Máy iPhone 11",
+      "loai_may": "iPhone 11",
+      "gia_nhap": 750000.0,
+      "gia_ban": 1150000.0,
+      "so_luong_ton": 12,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-IP12",
+      "ten_linh_kien": "Pin Dung Lượng Chuẩn iPhone 12 / 12 Pro",
+      "loai_may": "iPhone 12",
+      "gia_nhap": 350000.0,
+      "gia_ban": 580000.0,
+      "so_luong_ton": 20,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-MAN-IP12",
+      "ten_linh_kien": "Màn hình OLED GX Cao Cấp iPhone 12 / 12 Pro",
+      "loai_may": "iPhone 12",
+      "gia_nhap": 1250000.0,
+      "gia_ban": 1850000.0,
+      "so_luong_ton": 10,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-IP13PM",
+      "ten_linh_kien": "Pin Zin Dung Lượng Cao iPhone 13 Pro Max",
+      "loai_may": "iPhone 13 Pro Max",
+      "gia_nhap": 450000.0,
+      "gia_ban": 750000.0,
+      "so_luong_ton": 30,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-MAN-IP13PM",
+      "ten_linh_kien": "Màn hình Super Retina XDR 120Hz iPhone 13 Pro Max",
+      "loai_may": "iPhone 13 Pro Max",
+      "gia_nhap": 3800000.0,
+      "gia_ban": 4800000.0,
+      "so_luong_ton": 8,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-IP14PR",
+      "ten_linh_kien": "Pin Zin Dung Lượng Cao iPhone 14 Pro",
+      "loai_may": "iPhone 14 Pro",
+      "gia_nhap": 520000.0,
+      "gia_ban": 850000.0,
+      "so_luong_ton": 15,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-MAN-IP14PM",
+      "ten_linh_kien": "Màn hình OLED Dynamic Island iPhone 14 Pro Max",
+      "loai_may": "iPhone 14 Pro Max",
+      "gia_nhap": 4900000.0,
+      "gia_ban": 6200000.0,
+      "so_luong_ton": 6,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-IP15PM",
+      "ten_linh_kien": "Pin Zin New Seal iPhone 15 Pro Max",
+      "loai_may": "iPhone 15 Pro Max",
+      "gia_nhap": 650000.0,
+      "gia_ban": 1050000.0,
+      "so_luong_ton": 18,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-KINH-IP",
+      "ten_linh_kien": "Kính Cường Lực Ép Mặt Trước iPhone (Dòng X - 15PM)",
+      "loai_may": "iPhone Chung",
+      "gia_nhap": 60000.0,
+      "gia_ban": 220000.0,
+      "so_luong_ton": 50,
+      "thoi_han_bao_hanh_thang": 3
+    },
+    {
+      "ma_linh_kien": "LK-KINH-LUNG-IP",
+      "ten_linh_kien": "Kính Lưng Sau iPhone Khắc Laser Chuyên Dụng",
+      "loai_may": "iPhone Chung",
+      "gia_nhap": 90000.0,
+      "gia_ban": 320000.0,
+      "so_luong_ton": 35,
+      "thoi_han_bao_hanh_thang": 3
+    },
+    {
+      "ma_linh_kien": "LK-CAP-SAC-IP",
+      "ten_linh_kien": "Cụm Bo Cáp Sạc & Mic Thoại iPhone",
+      "loai_may": "iPhone Chung",
+      "gia_nhap": 140000.0,
+      "gia_ban": 350000.0,
+      "so_luong_ton": 28,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-IC-U3300",
+      "ten_linh_kien": "IC Quản Lý Sạc USB U3300 Chính Hãng",
+      "loai_may": "iPhone Chung",
+      "gia_nhap": 120000.0,
+      "gia_ban": 350000.0,
+      "so_luong_ton": 40,
+      "thoi_han_bao_hanh_thang": 3
+    },
+    {
+      "ma_linh_kien": "LK-CAM-IP13PM",
+      "ten_linh_kien": "Cụm Camera Sau 3 Mắt iPhone 13 Pro Max",
+      "loai_may": "iPhone 13 Pro Max",
+      "gia_nhap": 1200000.0,
+      "gia_ban": 1750000.0,
+      "so_luong_ton": 8,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-S22U",
+      "ten_linh_kien": "Pin Samsung Galaxy S22 Ultra 5000mAh Zin Hãng",
+      "loai_may": "Galaxy S22 Ultra",
+      "gia_nhap": 320000.0,
+      "gia_ban": 550000.0,
+      "so_luong_ton": 15,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-MAN-S22U",
+      "ten_linh_kien": "Màn hình Dynamic AMOLED 2X Galaxy S22 Ultra (Kèm Khung)",
+      "loai_may": "Galaxy S22 Ultra",
+      "gia_nhap": 2800000.0,
+      "gia_ban": 3600000.0,
+      "so_luong_ton": 7,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-S23U",
+      "ten_linh_kien": "Pin Galaxy S23 Ultra Chính Hãng",
+      "loai_may": "Galaxy S23 Ultra",
+      "gia_nhap": 360000.0,
+      "gia_ban": 590000.0,
+      "so_luong_ton": 14,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-MAN-S23U",
+      "ten_linh_kien": "Màn hình AMOLED Galaxy S23 Ultra 120Hz",
+      "loai_may": "Galaxy S23 Ultra",
+      "gia_nhap": 3200000.0,
+      "gia_ban": 4100000.0,
+      "so_luong_ton": 5,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-CAP-ZFLIP5",
+      "ten_linh_kien": "Cáp Gập Bản Lề Màn Hình Chính Galaxy Z Flip 5",
+      "loai_may": "Galaxy Z Flip 5",
+      "gia_nhap": 450000.0,
+      "gia_ban": 850000.0,
+      "so_luong_ton": 10,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-A54",
+      "ten_linh_kien": "Pin Galaxy A54 5G 5000mAh",
+      "loai_may": "Galaxy A54 5G",
+      "gia_nhap": 220000.0,
+      "gia_ban": 390000.0,
+      "so_luong_ton": 20,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-CAP-SAC-TYPEC",
+      "ten_linh_kien": "Cụm Bo Sạc Nhanh Type-C Samsung",
+      "loai_may": "Samsung Chung",
+      "gia_nhap": 110000.0,
+      "gia_ban": 280000.0,
+      "so_luong_ton": 30,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-MAN-MI13P",
+      "ten_linh_kien": "Màn hình LTPO OLED Xiaomi 13 Pro Leica",
+      "loai_may": "Xiaomi 13 Pro",
+      "gia_nhap": 2200000.0,
+      "gia_ban": 2950000.0,
+      "so_luong_ton": 6,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-RN12P",
+      "ten_linh_kien": "Pin Xiaomi Redmi Note 12 Pro 5000mAh 67W",
+      "loai_may": "Redmi Note 12 Pro",
+      "gia_nhap": 210000.0,
+      "gia_ban": 380000.0,
+      "so_luong_ton": 22,
+      "thoi_han_bao_hanh_thang": 12
+    },
+    {
+      "ma_linh_kien": "LK-CAP-SAC-RN12",
+      "ten_linh_kien": "Cụm Bo Cáp Sạc & Mic Redmi Note 12",
+      "loai_may": "Redmi Note 12",
+      "gia_nhap": 90000.0,
+      "gia_ban": 220000.0,
+      "so_luong_ton": 25,
+      "thoi_han_bao_hanh_thang": 6
+    },
+    {
+      "ma_linh_kien": "LK-PIN-OPPO-R10",
+      "ten_linh_kien": "Pin SuperVOOC Oppo Reno 10 5G",
+      "loai_may": "Oppo Reno 10",
+      "gia_nhap": 230000.0,
+      "gia_ban": 420000.0,
+      "so_luong_ton": 16,
+      "thoi_han_bao_hanh_thang": 12
+    }
+  ],
+  "services": [
+    {
+      "ma_dich_vu": "DV-THAY-PIN",
+      "ten_dich_vu": "Công thay Pin siêu tốc & Test sạc xả (Sửa lấy ngay 30 phút)",
+      "gia_cong": 150000.0,
+      "mo_ta": "Thao tác phòng kỹ thuật, dán seal pin chuẩn zin, kiểm tra chu kỳ sạc"
+    },
+    {
+      "ma_dich_vu": "DV-EP-KINH",
+      "ten_dich_vu": "Công ép kính chân không màn hình cong/phẳng (Sửa lấy ngay 45 phút)",
+      "gia_cong": 250000.0,
+      "mo_ta": "Tách kính bằng dây kim loại nano, ép nhiệt buồng chân không, hấp sạch bọt khí"
+    },
+    {
+      "ma_dich_vu": "DV-THAY-MAN",
+      "ten_dich_vu": "Công thay Màn hình nguyên bộ & Dán keo chống nước (Hẹn 2 giờ)",
+      "gia_cong": 200000.0,
+      "mo_ta": "Vệ sinh khung viền, dán ron chống ẩm chuẩn kháng nước, test cảm ứng đa điểm"
+    },
+    {
+      "ma_dich_vu": "DV-SUA-NGUON",
+      "ten_dich_vu": "Công xử lý chập nguồn bo mạch mainboard (Hẹn 24-48 giờ)",
+      "gia_cong": 350000.0,
+      "mo_ta": "Dò chạm đường VDD_MAIN bằng camera nhiệt hồng ngoại, khò hàn IC chuyên dụng"
+    },
+    {
+      "ma_dich_vu": "DV-CAU-DAY-13PM",
+      "ten_dich_vu": "Công câu dây đồng vi mạch xử lý màn hình trắng WSOD iPhone 13 Pro Max",
+      "gia_cong": 500000.0,
+      "mo_ta": "Kỹ thuật câu áp hiển thị chuyên sâu không cần thay màn hình tốn kém"
+    },
+    {
+      "ma_dich_vu": "DV-SUA-FACEID",
+      "ten_dich_vu": "Công phục hồi cảm biến FaceID / Dot Projector (Hẹn trong ngày)",
+      "gia_cong": 400000.0,
+      "mo_ta": "Căn chỉnh lăng kính quang học và nạp lại dữ liệu nhận diện gương mặt"
+    },
+    {
+      "ma_dich_vu": "DV-THAY-CAP-SAC",
+      "ten_dich_vu": "Công thay cụm cáp sạc Type-C / Lightning (Sửa lấy ngay 30 phút)",
+      "gia_cong": 120000.0,
+      "mo_ta": "Vệ sinh họng sạc, thay cụm bo sạc mới, test dòng sạc nhanh PD/PPS"
+    },
+    {
+      "ma_dich_vu": "DV-THAY-LUNG",
+      "ten_dich_vu": "Công bắn laser tách kính lưng iPhone chuyên nghiệp",
+      "gia_cong": 180000.0,
+      "mo_ta": "Bắn laser tách keo lưng an toàn không cạy phá, dán kính lưng khít như mới"
+    },
+    {
+      "ma_dich_vu": "DV-VESINH-SAY",
+      "ten_dich_vu": "Công vệ sinh sấy khô hấp sóng siêu âm máy vào nước",
+      "gia_cong": 150000.0,
+      "mo_ta": "Tháo rời linh kiện sấy buồng nhiệt 60 độ, tẩy rỉ sét hóa chất chuyên dụng"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "ho_ten": "Hoàng Đức Minh",
+      "so_dien_thoai": "0988123456",
+      "dia_chi": "123 Cầu Giấy, Q. Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": 2,
+      "ho_ten": "Nguyễn Thùy Linh",
+      "so_dien_thoai": "0977234567",
+      "dia_chi": "45 Hai Bà Trưng, Q. Hoàn Kiếm, Hà Nội"
+    },
+    {
+      "id": 3,
+      "ho_ten": "Phan Anh Tuấn",
+      "so_dien_thoai": "0911345678",
+      "dia_chi": "88 Nguyễn Trãi, Q. Thanh Xuân, Hà Nội"
+    },
+    {
+      "id": 4,
+      "ho_ten": "Đặng Mai Anh",
+      "so_dien_thoai": "0934567890",
+      "dia_chi": "15 Lê Văn Lương, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 5,
+      "ho_ten": "Vũ Hoàng Nam",
+      "so_dien_thoai": "0968112233",
+      "dia_chi": "72 Trần Phú, Q. Hà Đông, Hà Nội"
+    },
+    {
+      "id": 6,
+      "ho_ten": "Trần Bích Ngọc",
+      "so_dien_thoai": "0909445566",
+      "dia_chi": "234 Láng Hạ, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 7,
+      "ho_ten": "Đỗ Minh Trí",
+      "so_dien_thoai": "0982334455",
+      "dia_chi": "56 Hoàng Hoa Thám, Q. Ba Đình, Hà Nội"
+    },
+    {
+      "id": 8,
+      "ho_ten": "Lê Quỳnh Nga",
+      "so_dien_thoai": "0918776655",
+      "dia_chi": "102 Kim Mã, Q. Ba Đình, Hà Nội"
+    },
+    {
+      "id": 9,
+      "ho_ten": "Phạm Quang Huy",
+      "so_dien_thoai": "0945667788",
+      "dia_chi": "12 Chùa Bộc, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 10,
+      "ho_ten": "Bùi Thu Trang",
+      "so_dien_thoai": "0976554433",
+      "dia_chi": "89 Phố Huế, Q. Hai Bà Trưng, Hà Nội"
+    },
+    {
+      "id": 11,
+      "ho_ten": "Ngô Quốc Bảo",
+      "so_dien_thoai": "0938998877",
+      "dia_chi": "410 Nguyễn Đình Chiểu, P.4, Q.3, TP.HCM"
+    },
+    {
+      "id": 12,
+      "ho_ten": "Dương Thanh Vân",
+      "so_dien_thoai": "0903112244",
+      "dia_chi": "158 Lê Lợi, P. Bến Nghé, Q.1, TP.HCM"
+    },
+    {
+      "id": 13,
+      "ho_ten": "Tạ Đình Phong",
+      "so_dien_thoai": "0985223311",
+      "dia_chi": "90 Bạch Đằng, P.2, Q. Bình Thạnh, TP.HCM"
+    },
+    {
+      "id": 14,
+      "ho_ten": "Lý Gia Hân",
+      "so_dien_thoai": "0914889900",
+      "dia_chi": "25 Cộng Hòa, P.12, Q. Tân Bình, TP.HCM"
+    },
+    {
+      "id": 15,
+      "ho_ten": "Trịnh Xuân Bách",
+      "so_dien_thoai": "0971239874",
+      "dia_chi": "312 Xã Đàn, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 16,
+      "ho_ten": "Võ Thị Kim Yến",
+      "so_dien_thoai": "0932456781",
+      "dia_chi": "175 Nguyễn Thị Minh Khai, Q.1, TP.HCM"
+    },
+    {
+      "id": 17,
+      "ho_ten": "Đoàn Khắc Duy",
+      "so_dien_thoai": "0967332211",
+      "dia_chi": "68 Phạm Văn Đồng, Q. Bắc Từ Liêm, Hà Nội"
+    },
+    {
+      "id": 18,
+      "ho_ten": "Cao Thục Quyên",
+      "so_dien_thoai": "0908771122",
+      "dia_chi": "50 Điện Biên Phủ, P.15, Q. Bình Thạnh, TP.HCM"
+    },
+    {
+      "id": 19,
+      "ho_ten": "Hồ Hải Đăng",
+      "so_dien_thoai": "0989334411",
+      "dia_chi": "19 Tô Hiệu, Q. Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": 20,
+      "ho_ten": "Đinh Lan Chi",
+      "so_dien_thoai": "0912556677",
+      "dia_chi": "44 Trần Duy Hưng, Q. Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": 21,
+      "ho_ten": "Mai Văn Thành",
+      "so_dien_thoai": "0978990011",
+      "dia_chi": "83 Giải Phóng, Q. Hai Bà Trưng, Hà Nội"
+    },
+    {
+      "id": 22,
+      "ho_ten": "Trương Minh Khang",
+      "so_dien_thoai": "0936114477",
+      "dia_chi": "116 Phan Xích Long, Q. Phú Nhuận, TP.HCM"
+    },
+    {
+      "id": 23,
+      "ho_ten": "Lâm Mỹ Uyên",
+      "so_dien_thoai": "0902883399",
+      "dia_chi": "67 Hoàng Diệu, Q. Ba Đình, Hà Nội"
+    },
+    {
+      "id": 24,
+      "ho_ten": "Phùng Tuấn Kiệt",
+      "so_dien_thoai": "0981772244",
+      "dia_chi": "205 Tây Sơn, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 25,
+      "ho_ten": "Hà Ngọc Ánh",
+      "so_dien_thoai": "0917665544",
+      "dia_chi": "94 Lý Thường Kiệt, Q. Hoàn Kiếm, Hà Nội"
+    },
+    {
+      "id": 26,
+      "ho_ten": "Nghiêm Xuân Mạnh",
+      "so_dien_thoai": "0974332255",
+      "dia_chi": "36 Võ Thị Sáu, Q. Hai Bà Trưng, Hà Nội"
+    },
+    {
+      "id": 27,
+      "ho_ten": "Kiều Bảo Châu",
+      "so_dien_thoai": "0935889911",
+      "dia_chi": "142 Nam Kỳ Khởi Nghĩa, Q.3, TP.HCM"
+    },
+    {
+      "id": 28,
+      "ho_ten": "Đào Hữu Phước",
+      "so_dien_thoai": "0906223388",
+      "dia_chi": "58 Tôn Thất Tùng, Q.1, TP.HCM"
+    },
+    {
+      "id": 29,
+      "ho_ten": "Chu Diệu Linh",
+      "so_dien_thoai": "0984119933",
+      "dia_chi": "29 Huỳnh Thúc Kháng, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 30,
+      "ho_ten": "Lương Thế Vinh",
+      "so_dien_thoai": "0915443322",
+      "dia_chi": "76 Lê Duẩn, Q. Hoàn Kiếm, Hà Nội"
+    },
+    {
+      "id": 31,
+      "ho_ten": "Vương Khánh Huyền",
+      "so_dien_thoai": "0973221166",
+      "dia_chi": "180 Trường Chinh, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 32,
+      "ho_ten": "Thạch Văn Tùng",
+      "so_dien_thoai": "0939556622",
+      "dia_chi": "22 Hồ Tùng Mậu, Q. Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": 33,
+      "ho_ten": "Giang Thu Hà",
+      "so_dien_thoai": "0907441188",
+      "dia_chi": "33 Hai Bà Trưng, Q.1, TP.HCM"
+    },
+    {
+      "id": 34,
+      "ho_ten": "Đồng Quốc Cường",
+      "so_dien_thoai": "0986778899",
+      "dia_chi": "150 Hoàng Văn Thụ, Q. Phú Nhuận, TP.HCM"
+    },
+    {
+      "id": 35,
+      "ho_ten": "Tiêu Thanh Mai",
+      "so_dien_thoai": "0919332266",
+      "dia_chi": "85 Đội Cấn, Q. Ba Đình, Hà Nội"
+    },
+    {
+      "id": 36,
+      "ho_ten": "Khổng Minh Quân",
+      "so_dien_thoai": "0972665511",
+      "dia_chi": "49 Nguyễn Chí Thanh, Q. Đống Đa, Hà Nội"
+    },
+    {
+      "id": 37,
+      "ho_ten": "Lưu Bích Thảo",
+      "so_dien_thoai": "0937881144",
+      "dia_chi": "108 Quang Trung, Q. Gò Vấp, TP.HCM"
+    },
+    {
+      "id": 38,
+      "ho_ten": "Phan Hữu Thắng",
+      "so_dien_thoai": "0904556633",
+      "dia_chi": "62 Hàng Bài, Q. Hoàn Kiếm, Hà Nội"
+    },
+    {
+      "id": 39,
+      "ho_ten": "Ôn Gia Bảo",
+      "so_dien_thoai": "0983225588",
+      "dia_chi": "19 Lê Duẩn, Q. Bến Nghé, Q.1, TP.HCM"
+    },
+    {
+      "id": 40,
+      "ho_ten": "Tô Ngọc Thư",
+      "so_dien_thoai": "0916778822",
+      "dia_chi": "127 Đại Cồ Việt, Q. Hai Bà Trưng, Hà Nội"
+    },
+    {
+      "id": 41,
+      "ho_ten": "Biện Văn Dũng",
+      "so_dien_thoai": "0975112277",
+      "dia_chi": "39 Duy Tân, Q. Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": 42,
+      "ho_ten": "Ân Hồng Hạnh",
+      "so_dien_thoai": "0933448822",
+      "dia_chi": "201 Cách Mạng Tháng 8, Q.3, TP.HCM"
+    }
+  ],
+  "devices": [
+    {
+      "id": 1,
+      "khach_hang_id": 1,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 13 Pro Max",
+      "so_imei": "354892091234567",
+      "mat_khau_may": "112233"
+    },
+    {
+      "id": 2,
+      "khach_hang_id": 1,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 11",
+      "so_imei": "356781098234123",
+      "mat_khau_may": "2580"
+    },
+    {
+      "id": 3,
+      "khach_hang_id": 2,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 12 Pro Max",
+      "so_imei": "359124089876543",
+      "mat_khau_may": "Chữ L (1-4-7-8-9)"
+    },
+    {
+      "id": 4,
+      "khach_hang_id": 3,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14 Pro Max",
+      "so_imei": "358902112345678",
+      "mat_khau_may": "000000"
+    },
+    {
+      "id": 5,
+      "khach_hang_id": 4,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 12",
+      "so_imei": "351234098765432",
+      "mat_khau_may": "147258"
+    },
+    {
+      "id": 6,
+      "khach_hang_id": 5,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 13 Pro Max",
+      "so_imei": "353344098123456",
+      "mat_khau_may": "998877"
+    },
+    {
+      "id": 7,
+      "khach_hang_id": 6,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14 Pro",
+      "so_imei": "357788091122334",
+      "mat_khau_may": "123123"
+    },
+    {
+      "id": 8,
+      "khach_hang_id": 7,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 11",
+      "so_imei": "354455092233445",
+      "mat_khau_may": "1111"
+    },
+    {
+      "id": 9,
+      "khach_hang_id": 8,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14 Pro",
+      "so_imei": "356677093344556",
+      "mat_khau_may": "332211"
+    },
+    {
+      "id": 10,
+      "khach_hang_id": 9,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 15 Pro Max",
+      "so_imei": "359900094455667",
+      "mat_khau_may": "987654"
+    },
+    {
+      "id": 11,
+      "khach_hang_id": 10,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 13",
+      "so_imei": "352233095566778",
+      "mat_khau_may": "2468"
+    },
+    {
+      "id": 12,
+      "khach_hang_id": 11,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 12",
+      "so_imei": "358899096677889",
+      "mat_khau_may": "1234"
+    },
+    {
+      "id": 13,
+      "khach_hang_id": 12,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 11",
+      "so_imei": "353456097788990",
+      "mat_khau_may": "Không khóa"
+    },
+    {
+      "id": 14,
+      "khach_hang_id": 13,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 15 Pro",
+      "so_imei": "357890098899001",
+      "mat_khau_may": "5566"
+    },
+    {
+      "id": 15,
+      "khach_hang_id": 14,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14",
+      "so_imei": "351357099900112",
+      "mat_khau_may": "7890"
+    },
+    {
+      "id": 16,
+      "khach_hang_id": 15,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 15 Pro Max",
+      "so_imei": "354680091011121",
+      "mat_khau_may": "369258"
+    },
+    {
+      "id": 17,
+      "khach_hang_id": 16,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 12 Pro Max",
+      "so_imei": "359876092122232",
+      "mat_khau_may": "010203"
+    },
+    {
+      "id": 18,
+      "khach_hang_id": 17,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 13 Pro Max",
+      "so_imei": "357654093233343",
+      "mat_khau_may": "9999"
+    },
+    {
+      "id": 19,
+      "khach_hang_id": 18,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 11 Pro Max",
+      "so_imei": "356543094344454",
+      "mat_khau_may": "070809"
+    },
+    {
+      "id": 20,
+      "khach_hang_id": 19,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14 Pro Max",
+      "so_imei": "355432095455565",
+      "mat_khau_may": "456123"
+    },
+    {
+      "id": 21,
+      "khach_hang_id": 20,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 13",
+      "so_imei": "354321096566676",
+      "mat_khau_may": "224466"
+    },
+    {
+      "id": 22,
+      "khach_hang_id": 21,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14",
+      "so_imei": "353210097677787",
+      "mat_khau_may": "8888"
+    },
+    {
+      "id": 23,
+      "khach_hang_id": 22,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 15 Pro Max",
+      "so_imei": "352109098788898",
+      "mat_khau_may": "13579"
+    },
+    {
+      "id": 24,
+      "khach_hang_id": 23,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 12 Pro Max",
+      "so_imei": "351098099899909",
+      "mat_khau_may": "4455"
+    },
+    {
+      "id": 25,
+      "khach_hang_id": 24,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 11",
+      "so_imei": "350987090911020",
+      "mat_khau_may": "0011"
+    },
+    {
+      "id": 26,
+      "khach_hang_id": 25,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 13 Pro Max",
+      "so_imei": "359870091022131",
+      "mat_khau_may": "1122"
+    },
+    {
+      "id": 27,
+      "khach_hang_id": 26,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14 Pro",
+      "so_imei": "358760092133242",
+      "mat_khau_may": "7788"
+    },
+    {
+      "id": 28,
+      "khach_hang_id": 27,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 15",
+      "so_imei": "357650093244353",
+      "mat_khau_may": "3344"
+    },
+    {
+      "id": 29,
+      "khach_hang_id": 28,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 12 Pro Max",
+      "so_imei": "356540094355464",
+      "mat_khau_may": "6677"
+    },
+    {
+      "id": 30,
+      "khach_hang_id": 29,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 11",
+      "so_imei": "355430095466575",
+      "mat_khau_may": "8899"
+    },
+    {
+      "id": 31,
+      "khach_hang_id": 30,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 14 Pro Max",
+      "so_imei": "354320096577686",
+      "mat_khau_may": "1478"
+    },
+    {
+      "id": 32,
+      "khach_hang_id": 31,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 13 Pro Max",
+      "so_imei": "353210097688797",
+      "mat_khau_may": "2589"
+    },
+    {
+      "id": 33,
+      "khach_hang_id": 32,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 12",
+      "so_imei": "352100098799808",
+      "mat_khau_may": "3698"
+    },
+    {
+      "id": 34,
+      "khach_hang_id": 33,
+      "hang_san_xuat": "Apple",
+      "model_may": "iPhone 15 Pro Max",
+      "so_imei": "351090099800919",
+      "mat_khau_may": "0987"
+    },
+    {
+      "id": 35,
+      "khach_hang_id": 2,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S22 Ultra",
+      "so_imei": "354490123456",
+      "mat_khau_may": "Vẽ hình: Chữ Z (1-2-3-5-7-8-9)"
+    },
+    {
+      "id": 36,
+      "khach_hang_id": 34,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S23",
+      "so_imei": "358765091234567",
+      "mat_khau_may": "123456"
+    },
+    {
+      "id": 37,
+      "khach_hang_id": 35,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S23 Ultra",
+      "so_imei": "357654092345678",
+      "mat_khau_may": "Vẽ chữ L (1-4-7-8-9)"
+    },
+    {
+      "id": 38,
+      "khach_hang_id": 36,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy Z Flip 5",
+      "so_imei": "356543093456789",
+      "mat_khau_may": "001122"
+    },
+    {
+      "id": 39,
+      "khach_hang_id": 37,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy A54 5G",
+      "so_imei": "355432094567890",
+      "mat_khau_may": "9876"
+    },
+    {
+      "id": 40,
+      "khach_hang_id": 38,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S24 Ultra",
+      "so_imei": "354321095678901",
+      "mat_khau_may": "112233"
+    },
+    {
+      "id": 41,
+      "khach_hang_id": 39,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S22 Ultra",
+      "so_imei": "353210096789012",
+      "mat_khau_may": "0000"
+    },
+    {
+      "id": 42,
+      "khach_hang_id": 40,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy Z Fold 4",
+      "so_imei": "352109097890123",
+      "mat_khau_may": "9900"
+    },
+    {
+      "id": 43,
+      "khach_hang_id": 41,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S24",
+      "so_imei": "351098098901234",
+      "mat_khau_may": "1357"
+    },
+    {
+      "id": 44,
+      "khach_hang_id": 42,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S23 Ultra",
+      "so_imei": "350987099012345",
+      "mat_khau_may": "2468"
+    },
+    {
+      "id": 45,
+      "khach_hang_id": 3,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy Note 20 Ultra",
+      "so_imei": "359876090123456",
+      "mat_khau_may": "3579"
+    },
+    {
+      "id": 46,
+      "khach_hang_id": 4,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S24 Ultra",
+      "so_imei": "358765091234568",
+      "mat_khau_may": "Không cài"
+    },
+    {
+      "id": 47,
+      "khach_hang_id": 5,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy A54 5G",
+      "so_imei": "357654092345679",
+      "mat_khau_may": "1212"
+    },
+    {
+      "id": 48,
+      "khach_hang_id": 6,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S23",
+      "so_imei": "356543093456780",
+      "mat_khau_may": "5678"
+    },
+    {
+      "id": 49,
+      "khach_hang_id": 7,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S22 Ultra",
+      "so_imei": "355432094567891",
+      "mat_khau_may": "8899"
+    },
+    {
+      "id": 50,
+      "khach_hang_id": 8,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy Z Flip 5",
+      "so_imei": "354321095678902",
+      "mat_khau_may": "1122"
+    },
+    {
+      "id": 51,
+      "khach_hang_id": 9,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S23 Ultra",
+      "so_imei": "353210096789013",
+      "mat_khau_may": "3344"
+    },
+    {
+      "id": 52,
+      "khach_hang_id": 10,
+      "hang_san_xuat": "Samsung",
+      "model_may": "Galaxy S24",
+      "so_imei": "352109097890124",
+      "mat_khau_may": "6677"
+    },
+    {
+      "id": 53,
+      "khach_hang_id": 3,
+      "hang_san_xuat": "Xiaomi",
+      "model_may": "Xiaomi 13 Pro",
+      "so_imei": "867530912384756",
+      "mat_khau_may": "Vẽ chữ C (7-4-1-2-3)"
+    },
+    {
+      "id": 54,
+      "khach_hang_id": 4,
+      "hang_san_xuat": "Xiaomi",
+      "model_may": "Redmi Note 12 Pro",
+      "so_imei": "864321098765432",
+      "mat_khau_may": "0000"
+    },
+    {
+      "id": 55,
+      "khach_hang_id": 11,
+      "hang_san_xuat": "Xiaomi",
+      "model_may": "Xiaomi 13 Pro",
+      "so_imei": "865432091234567",
+      "mat_khau_may": "9876"
+    },
+    {
+      "id": 56,
+      "khach_hang_id": 12,
+      "hang_san_xuat": "Xiaomi",
+      "model_may": "Redmi Note 13",
+      "so_imei": "866543092345678",
+      "mat_khau_may": "Không khóa"
+    },
+    {
+      "id": 57,
+      "khach_hang_id": 13,
+      "hang_san_xuat": "Xiaomi",
+      "model_may": "Poco F5",
+      "so_imei": "867654093456789",
+      "mat_khau_may": "1234"
+    },
+    {
+      "id": 58,
+      "khach_hang_id": 14,
+      "hang_san_xuat": "Oppo",
+      "model_may": "Oppo Reno 10 5G",
+      "so_imei": "868765094567890",
+      "mat_khau_may": "2580"
+    },
+    {
+      "id": 59,
+      "khach_hang_id": 15,
+      "hang_san_xuat": "Oppo",
+      "model_may": "Oppo Find N2 Flip",
+      "so_imei": "869876095678901",
+      "mat_khau_may": "7788"
+    },
+    {
+      "id": 60,
+      "khach_hang_id": 16,
+      "hang_san_xuat": "Oppo",
+      "model_may": "Oppo Reno 10 5G",
+      "so_imei": "860987096789012",
+      "mat_khau_may": "0011"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "ma_phieu": "PSC-20260917-001",
+      "khach_hang_id": 1,
+      "thiet_bi_id": 1,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Màn hình đột ngột trắng xóa khi đang lướt mạng, chuông gọi đến vẫn rung",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Lỗi mất áp hiển thị màn hình OLED dòng 13 Pro Max (bệnh WSOD)\", \"faulty_components\": [\"Đường áp hiển thị màn hình\"], \"recommended_action\": \"Câu dây đồng vi phẫu thuật áp màn hình không cần thay cụm màn\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Màn hình iPhone 13 Pro Max của bạn bị mất nguồn cấp hiển thị do lỗi đứt vi mạch ngầm của nhà sản xuất. Kỹ thuật viên đã câu dây vi phẫu phục hồi tín hiệu, tiết kiệm 80% chi phí so với thay nguyên cụm màn hình mới.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 500000.0,
+      "ngay_tiep_nhan": "2026-09-17 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-18 20:33:06.022538",
+      "ngay_hoan_tat": "2026-09-18 20:23:06.022538"
+    },
+    {
+      "id": 2,
+      "ma_phieu": "PSC-20260915-002",
+      "khach_hang_id": 1,
+      "thiet_bi_id": 2,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin chai 73%, máy báo bảo trì và tự sập nguồn khi còn 20%",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Pin Lithium-ion chai quá giới hạn an toàn gây tụt áp đột ngột\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin dung lượng cao chính hãng và test sạc\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Pin điện thoại của bạn đã quá chu kỳ sạc quy định, các cell pin bị suy giảm khả năng giữ điện. Việc thay pin mới chuẩn zin sẽ khôi phục thời lượng sử dụng 100% và bảo vệ máy khỏi nguy cơ cháy nổ.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 630000.0,
+      "ngay_tiep_nhan": "2026-09-15 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-15 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "id": 3,
+      "ma_phieu": "PSC-20260914-003",
+      "khach_hang_id": 2,
+      "thiet_bi_id": 3,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Rơi va góc bàn nứt kính mặt trước, cảm ứng và màn hiển thị bên trong vẫn bình thường",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Vỡ lớp kính cường lực bảo vệ bên ngoài, phôi màn hình OLED và cảm ứng nguyên vẹn\", \"faulty_components\": [\"Kính mặt trước\"], \"recommended_action\": \"Ép kính chân không giữ lại màn hình zin gốc\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Rất may mắn là màn hình hiển thị và cảm ứng đắt tiền bên trong của máy chưa bị tổn hại. Chúng tôi tách lớp kính vỡ và ép lớp kính cường lực mới bằng máy ép chân không, giữ trọn vẹn màu sắc hiển thị zin ban đầu.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-14 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-14 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "id": 4,
+      "ma_phieu": "PSC-20260917-004",
+      "khach_hang_id": 3,
+      "thiet_bi_id": 4,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Rơi từ tầng 2 xuống sàn đá, màn hình nứt toác chảy mực tím góc trên và liệt toàn bộ cảm ứng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chết tấm nền OLED Dynamic Island và hỏng mạch số hóa cảm ứng\", \"faulty_components\": [\"Cụm màn hình Dynamic Island\"], \"recommended_action\": \"Thay cụm màn hình nguyên bộ và dán ron chống nước\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Va chạm mạnh làm vỡ vụn phôi kính và hỏng tấm nền hiển thị Dynamic Island. Kỹ thuật viên đang tiến hành thay thế nguyên cụm màn hình cao cấp và dán keo ron chống nước đạt tiêu chuẩn xuất xưởng.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 6400000.0,
+      "ngay_tiep_nhan": "2026-09-17 20:33:06.022538",
+      "ngay_hen_tra": "2026-09-18 00:03:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 5,
+      "ma_phieu": "PSC-20260918-005",
+      "khach_hang_id": 4,
+      "thiet_bi_id": 5,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Rơi xuống bồn rửa tay, sấy máy không lên nguồn, cắm sạc nóng ran cạnh sườn",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Nước ngấm qua khe loa làm oxy hóa bo mạch, chập đường nguồn chính VDD_MAIN\", \"faulty_components\": [\"Tụ lọc C1802\", \"IC sạc USB U3300\"], \"recommended_action\": \"Sấy rung siêu âm làm sạch rỉ sét, dò chạm nhiệt hồng ngoại và thay IC sạc\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Nước xâm nhập vào bên trong tạo ra các muối khoáng gây đoản mạch đường nguồn chính của điện thoại. Trung tâm đang xử lý sấy siêu âm khử muối và thay thế linh kiện quản lý nguồn để máy khởi động lại an toàn.",
+      "trang_thai": "KiemTra",
+      "tong_tien_du_kien": 850000.0,
+      "ngay_tiep_nhan": "2026-09-18 03:45:06.022538",
+      "ngay_hen_tra": "2026-09-19 15:45:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 6,
+      "ma_phieu": "PSC-20260916-006",
+      "khach_hang_id": 5,
+      "thiet_bi_id": 6,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin tụt cực nhanh, xem Youtube 30 phút nóng máy, cần thay pin lấy liền để đi làm",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Cell pin bị lão hóa hóa học, nội trở tăng cao gây phát nhiệt khi tải\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin dung lượng cao dung lượng 4352mAh\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Thiết bị đã được thay thế pin dung lượng cao hoàn tất trong 30 phút. Quá trình kiểm tra dòng sạc nhanh 27W và đo nhiệt độ máy đều đạt tiêu chuẩn an toàn của Apple.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 900000.0,
+      "ngay_tiep_nhan": "2026-09-16 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-16 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-16 09:08:06.022538"
+    },
+    {
+      "id": 7,
+      "ma_phieu": "PSC-20260917-007",
+      "khach_hang_id": 6,
+      "thiet_bi_id": 7,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Báo lỗi 'Face ID không khả dụng' sau khi đi mưa về, camera trước vẫn chụp được",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chập đường cấp nguồn máy chiếu tia Dot Projector của cảm biến TrueDepth do hơi ẩm\", \"faulty_components\": [\"Cụm cáp TrueDepth\", \"Dot Projector\"], \"recommended_action\": \"Căn chỉnh lăng kính quang học và khò hàn IC FaceID\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Cảm biến nhận diện khuôn mặt 3D TrueDepth đã được tháo vi phẫu, sấy khô và căn chỉnh lại lăng kính tia hồng ngoại, tính năng mở khóa khuôn mặt đã hoạt động cực nhạy trở lại.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 400000.0,
+      "ngay_tiep_nhan": "2026-09-17 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 12:03:06.022538",
+      "ngay_hoan_tat": "2026-09-17 11:53:06.022538"
+    },
+    {
+      "id": 8,
+      "ma_phieu": "PSC-20260913-008",
+      "khach_hang_id": 7,
+      "thiet_bi_id": 8,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Cắm sạc chập chờn, phải đè mạnh hoặc lắc gập dây mới nhận điện",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Mòn chân tiếp xúc Lightning và đứt ngầm cụm cáp sạc dưới đáy máy\", \"faulty_components\": [\"Cụm cáp sạc và mic\"], \"recommended_action\": \"Thay cụm bo cáp sạc Lightning chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay thế cụm cáp sạc và micro đàm thoại zin mới 100%. Khách hàng nhận máy tại chỗ sau 25 phút chờ đợi.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-13 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-13 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-13 09:08:06.022538"
+    },
+    {
+      "id": 9,
+      "ma_phieu": "PSC-20260917-009",
+      "khach_hang_id": 8,
+      "thiet_bi_id": 9,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Kính lưng sau bị nứt mạng nhện do rơi chìa khóa đè trúng, camera bình thường",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Nứt vỡ kính lưng bảo vệ cuộn sạc không dây MagSafe\", \"faulty_components\": [\"Kính lưng\"], \"recommended_action\": \"Bắn laser bóc tách kính vỡ và dán kính lưng Zin\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Kính lưng vỡ đã được tách sạch sẽ bằng chùm laser định hình chuyên dụng và thay thế mặt kính lưng mới tinh, hoàn toàn không làm trầy xước sườn máy hay ảnh hưởng sạc MagSafe.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 500000.0,
+      "ngay_tiep_nhan": "2026-09-17 20:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 21:18:06.022538",
+      "ngay_hoan_tat": "2026-09-17 21:08:06.022538"
+    },
+    {
+      "id": 10,
+      "ma_phieu": "PSC-20260918-010",
+      "khach_hang_id": 9,
+      "thiet_bi_id": 10,
+      "ktv_id": null,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Nứt một đường mảnh góc kính bên trái, khách muốn ép kính ngay trong buổi sáng",
+      "ghi_chu_ky_thuat": null,
+      "ai_tom_tat_loi": null,
+      "ai_giai_thich_dv": null,
+      "trang_thai": "TiepNhan",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-18 06:09:06.022538",
+      "ngay_hen_tra": "2026-09-18 06:54:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 11,
+      "ma_phieu": "PSC-20260918-011",
+      "khach_hang_id": 10,
+      "thiet_bi_id": 11,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 4 tiếng] Màn hình chớp nháy màu xanh lá cây liên tục rồi tối đen",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Đứt mạch đường tín hiệu quét ảnh OLED 120Hz\", \"faulty_components\": [\"Cáp màn hình\"], \"recommended_action\": \"Hàn phục hồi vi mạch quét áp màn hình\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang xử lý khôi phục đường truyền tín hiệu màn hình, bảo toàn màn hình zin nguyên bản cho quý khách.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 500000.0,
+      "ngay_tiep_nhan": "2026-09-18 01:21:06.022538",
+      "ngay_hen_tra": "2026-09-18 04:51:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 12,
+      "ma_phieu": "PSC-20260912-012",
+      "khach_hang_id": 11,
+      "thiet_bi_id": 12,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Loa thoại nghe gọi rất bé, người khác nói không nghe rõ",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Màng lưới loa thoại bị bám bụi bẩn và bã nhờn lâu ngày gây bít tắc\", \"faulty_components\": [\"Màng bảo vệ loa\"], \"recommended_action\": \"Vệ sinh siêu âm màng loa và thay lưới chắn bụi mới\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã vệ sinh hút sạch bụi bẩn và thay màng lưới loa trong chống nước. Âm lượng đàm thoại to rõ đạt 100% công suất.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 150000.0,
+      "ngay_tiep_nhan": "2026-09-12 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-12 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-12 09:08:06.022538"
+    },
+    {
+      "id": 13,
+      "ma_phieu": "PSC-20260911-013",
+      "khach_hang_id": 12,
+      "thiet_bi_id": 13,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 2 tiếng] Rơi xe máy, màn hình sọc trắng và tối đen nửa góc",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chết tấm nền tinh thể lỏng LCD sau va đập tốc độ cao\", \"faulty_components\": [\"Màn hình LCD\"], \"recommended_action\": \"Thay màn hình nguyên bộ bóc máy chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Máy đã được lắp màn hình LCD zin bóc máy hiển thị chuẩn TrueTone và dán ron kháng bụi kháng nước mới.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 1350000.0,
+      "ngay_tiep_nhan": "2026-09-11 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-11 12:03:06.022538",
+      "ngay_hoan_tat": "2026-09-11 11:53:06.022538"
+    },
+    {
+      "id": 14,
+      "ma_phieu": "PSC-20260917-014",
+      "khach_hang_id": 13,
+      "thiet_bi_id": 14,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Pin bị phồng làm đội hở nhẹ viền màn hình, cần thay pin gấp",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Pin bị biến chất sinh khí làm phù phồng cell pin đùn khung màn\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Tháo pin phù cẩn thận và thay thế pin zin mới\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đã xử lý tháo khối pin phồng nguy hiểm và đang kiểm tra lắp pin zin mới, bảo toàn tuyệt đối cho màn hình.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 1000000.0,
+      "ngay_tiep_nhan": "2026-09-17 22:57:06.022538",
+      "ngay_hen_tra": "2026-09-17 23:42:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 15,
+      "ma_phieu": "PSC-20260917-015",
+      "khach_hang_id": 14,
+      "thiet_bi_id": 15,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Camera sau mở lên kêu rè rè và hình ảnh rung giật liên hồi sau khi gắn giá đỡ xe máy",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Hỏng hệ thống chống rung quang học OIS do tần số rung động động cơ xe máy\", \"faulty_components\": [\"Cụm camera sau OIS\"], \"recommended_action\": \"Thay cụm camera sau chính hãng có chống rung\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Bộ phận chống rung cơ học của camera đã được thay thế nguyên cụm zin, hình ảnh chụp và quay video mượt mà sắc nét trở lại.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 1950000.0,
+      "ngay_tiep_nhan": "2026-09-17 03:45:06.022538",
+      "ngay_hen_tra": "2026-09-17 07:15:06.022538",
+      "ngay_hoan_tat": "2026-09-17 07:05:06.022538"
+    },
+    {
+      "id": 16,
+      "ma_phieu": "PSC-20260918-016",
+      "khach_hang_id": 15,
+      "thiet_bi_id": 16,
+      "ktv_id": null,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 2 tiếng] Máy trượt rơi trên cầu thang, nứt vỡ kính hiển thị bên ngoài",
+      "ghi_chu_ky_thuat": null,
+      "ai_tom_tat_loi": null,
+      "ai_giai_thich_dv": null,
+      "trang_thai": "TiepNhan",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-18 07:21:06.022538",
+      "ngay_hen_tra": "2026-09-18 10:51:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 17,
+      "ma_phieu": "PSC-20260916-017",
+      "khach_hang_id": 16,
+      "thiet_bi_id": 17,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Máy báo 'Không có SIM' hoặc 'Đang tìm kiếm...', IMEI vi điều khiển mất sóng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Hở chân mối hàn IC Baseband (băng tần cơ sở) do va chạm\", \"faulty_components\": [\"IC Baseband\"], \"recommended_action\": \"Đổ chân chì và đóng lại IC Baseband trung tần\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Điện thoại đang được chờ vỉ làm chân vi mạch chuyên dụng để kỹ thuật viên tiến hành đóng lại IC sóng vi cơ.",
+      "trang_thai": "ChoLinhKien",
+      "tong_tien_du_kien": 350000.0,
+      "ngay_tiep_nhan": "2026-09-16 20:33:06.022538",
+      "ngay_hen_tra": "2026-09-18 08:33:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 18,
+      "ma_phieu": "PSC-20260914-018",
+      "khach_hang_id": 17,
+      "thiet_bi_id": 18,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Kính lưng nứt góc camera, muốn thay kính lưng lấy ngay trong 45 phút",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Kính lưng sau vỡ nứt thẩm mỹ\", \"faulty_components\": [\"Kính lưng\"], \"recommended_action\": \"Tách kính bằng tia laser công nghệ cao và dán kính mới\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã hoàn tất thay kính lưng sau bằng máy laser chỉ trong 40 phút. Máy đẹp hoàn mỹ như ban đầu.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 500000.0,
+      "ngay_tiep_nhan": "2026-09-14 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-14 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "id": 19,
+      "ma_phieu": "PSC-20260916-019",
+      "khach_hang_id": 18,
+      "thiet_bi_id": 19,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Màn hình xuất hiện 1 đường sọc xanh lá cây thẳng đứng từ trên xuống dưới",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Nứt đứt cụm cổ cáp tín hiệu điều khiển dòng Pixel OLED\", \"faulty_components\": [\"Màn hình OLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đã thay xong cụm màn hình hiển thị OLED sắc nét, loại bỏ hoàn toàn vệt sọc xanh gây chói mắt.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 1350000.0,
+      "ngay_tiep_nhan": "2026-09-16 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-16 12:03:06.022538",
+      "ngay_hoan_tat": "2026-09-16 11:53:06.022538"
+    },
+    {
+      "id": 20,
+      "ma_phieu": "PSC-20260917-020",
+      "khach_hang_id": 19,
+      "thiet_bi_id": 20,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin báo 79%, dung lượng sụt nhanh, cần thay pin zin lấy ngay",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Pin chai chu kỳ sạc trên 800 lần\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin new 100% dung lượng cao\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã hoàn thành thay pin cho iPhone 14 Pro Max trong 28 phút. Dung lượng pin tối đa khôi phục 100%.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 1000000.0,
+      "ngay_tiep_nhan": "2026-09-17 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-17 09:08:06.022538"
+    },
+    {
+      "id": 21,
+      "ma_phieu": "PSC-20260915-021",
+      "khach_hang_id": 20,
+      "thiet_bi_id": 21,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Vỡ mắt kính camera góc rộng, chụp ảnh bị mờ lóa sáng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Vỡ mắt kính bảo vệ bên ngoài của ống kính camera\", \"faulty_components\": [\"Kính camera\"], \"recommended_action\": \"Thay mắt kính sapphire chống trầy mới\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Mắt kính camera đã được thay thế mới trong suốt, hình ảnh chụp qua camera góc rộng rõ nét không còn vệt chói.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-15 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-15 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "id": 22,
+      "ma_phieu": "PSC-20260917-022",
+      "khach_hang_id": 21,
+      "thiet_bi_id": 22,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Cắm sạc dự phòng không rõ nguồn gốc thì nổ lách tách nhẹ và tắt ngúm",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Sốc điện áp đánh thủng IC sạc USB U3300 và diot bảo vệ nguồn\", \"faulty_components\": [\"IC sạc USB\", \"Diode bảo vệ áp\"], \"recommended_action\": \"Thay thế IC sạc U3300 chính hãng và đo đạc lại đường sạc\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Điện thoại đang được thay thế chip IC sạc bị cháy do nguồn điện không ổn định, đảm bảo khôi phục tính năng sạc nhanh an toàn.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 700000.0,
+      "ngay_tiep_nhan": "2026-09-17 13:21:06.022538",
+      "ngay_hen_tra": "2026-09-19 01:21:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 23,
+      "ma_phieu": "PSC-20260915-023",
+      "khach_hang_id": 22,
+      "thiet_bi_id": 23,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Bị xe ô tô chèn qua, cong vênh toàn bộ khung sườn Titan và gãy đôi bo mạch",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Gãy đôi bo mạch chủ Mainboard nhiều lớp, đứt toàn bộ đường mạch CPU và RAM\", \"faulty_components\": [\"Bo mạch chủ\"], \"recommended_action\": \"Báo hủy do chi phí thay toàn bộ linh kiện vượt quá giá trị máy mới\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Máy bị ngoại lực ép quá nặng làm gãy đứt cấu trúc bo mạch nhiều tầng. Trung tâm xin phép hoàn trả thiết bị do không thể phục hồi an toàn.",
+      "trang_thai": "Huy",
+      "tong_tien_du_kien": 250000.0,
+      "ngay_tiep_nhan": "2026-09-15 20:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 08:33:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 24,
+      "ma_phieu": "PSC-20260918-024",
+      "khach_hang_id": 23,
+      "thiet_bi_id": 24,
+      "ktv_id": null,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Ép kính mặt trước lấy ngay, máy vẫn hiển thị và cảm ứng bình thường",
+      "ghi_chu_ky_thuat": null,
+      "ai_tom_tat_loi": null,
+      "ai_giai_thich_dv": null,
+      "trang_thai": "TiepNhan",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-18 06:37:54.022538",
+      "ngay_hen_tra": "2026-09-18 07:22:54.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 25,
+      "ma_phieu": "PSC-20260910-025",
+      "khach_hang_id": 24,
+      "thiet_bi_id": 25,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin xuống cấp còn 69%, máy giật lag khi mở ứng dụng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Pin chai nặng kích hoạt cơ chế bóp hiệu năng CPU của iOS\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin mới để khôi phục hiệu năng tối đa\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Thay pin Deji dung lượng cao hoàn tất trong 30 phút. Máy hoạt động mượt mà trở lại, thời lượng pin tăng thêm 25%.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 630000.0,
+      "ngay_tiep_nhan": "2026-09-10 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-10 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-10 09:08:06.022538"
+    },
+    {
+      "id": 26,
+      "ma_phieu": "PSC-20260917-026",
+      "khach_hang_id": 25,
+      "thiet_bi_id": 26,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Màn hình bỗng nhiên chuyển sang màu trắng sữa, chuông gọi đến vẫn kêu",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Mất áp đường hiển thị Vcore màn hình OLED\", \"faulty_components\": [\"Đường áp hiển thị\"], \"recommended_action\": \"Câu dây đồng vi phẫu phục hồi tín hiệu\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang câu vi mạch bảo vệ màn hình zin, cam kết không thay đổi chất lượng hiển thị gốc.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 500000.0,
+      "ngay_tiep_nhan": "2026-09-17 18:09:06.022538",
+      "ngay_hen_tra": "2026-09-19 06:09:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 27,
+      "ma_phieu": "PSC-20260914-027",
+      "khach_hang_id": 26,
+      "thiet_bi_id": 27,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Màn hình chớp nháy sọc đen che mất Dynamic Island",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chảy mực OLED và hỏng mạch hiển thị viền Dynamic Island\", \"faulty_components\": [\"Màn hình OLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đã thay cụm màn hình hiển thị hoàn tất, chức năng Dynamic Island và cảm ứng mượt mà.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 6400000.0,
+      "ngay_tiep_nhan": "2026-09-14 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-14 12:03:06.022538",
+      "ngay_hoan_tat": "2026-09-14 11:53:06.022538"
+    },
+    {
+      "id": 28,
+      "ma_phieu": "PSC-20260916-028",
+      "khach_hang_id": 27,
+      "thiet_bi_id": 28,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Máy liên tục cảnh báo 'Phát hiện chất lỏng trong đầu nối USB-C', không cho sạc",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chân cắm Type-C bị ẩm rỉ muối gây chạm cảm biến đo độ ẩm\", \"faulty_components\": [\"Cổng USB-C\"], \"recommended_action\": \"Vệ sinh chân sạc hoặc thay cụm bo cổng USB-C\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã xử lý tẩy rỉ và sấy khô chân tiếp xúc USB-C chuẩn Type-C. Cảnh báo chất lỏng đã biến mất, sạc nhanh bình thường.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 400000.0,
+      "ngay_tiep_nhan": "2026-09-16 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-16 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-16 09:08:06.022538"
+    },
+    {
+      "id": 29,
+      "ma_phieu": "PSC-20260918-029",
+      "khach_hang_id": 28,
+      "thiet_bi_id": 29,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Kính lưng vỡ vụn góc dưới, cần thay nhanh lấy ngay",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": null,
+      "ai_giai_thich_dv": null,
+      "trang_thai": "KiemTra",
+      "tong_tien_du_kien": 500000.0,
+      "ngay_tiep_nhan": "2026-09-18 04:57:06.022538",
+      "ngay_hen_tra": "2026-09-18 05:42:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 30,
+      "ma_phieu": "PSC-20260917-030",
+      "khach_hang_id": 29,
+      "thiet_bi_id": 30,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 2 tiếng] Cảm ứng nửa dưới màn hình không bấm được bàn phím",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Đứt đường quét cảm ứng số hóa lớp kính màn hình\", \"faulty_components\": [\"Cụm cảm ứng màn hình\"], \"recommended_action\": \"Thay cụm màn hình hoặc ép lớp cảm ứng mới\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang tiến hành thay thế phôi cảm ứng mới, giúp bàn phím bấm mượt mà trở lại.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 1350000.0,
+      "ngay_tiep_nhan": "2026-09-17 22:57:06.022538",
+      "ngay_hen_tra": "2026-09-18 02:27:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 31,
+      "ma_phieu": "PSC-20260913-031",
+      "khach_hang_id": 30,
+      "thiet_bi_id": 31,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin chai phù nhẹ, muốn thay pin dung lượng chuẩn lấy liền",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chai pin sau 2 năm sử dụng cường độ cao\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin new seal\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Hoàn tất thay pin chuẩn trong 25 phút. Khách hàng đã test sạc xả và nhận máy.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 1000000.0,
+      "ngay_tiep_nhan": "2026-09-13 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-13 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-13 09:08:06.022538"
+    },
+    {
+      "id": 32,
+      "ma_phieu": "PSC-20260918-032",
+      "khach_hang_id": 31,
+      "thiet_bi_id": 32,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Ép kính màn hình nứt góc, giữ màn zin",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Nứt vỡ kính cường lực ngoài, hiển thị và cảm ứng tốt 100%\", \"faulty_components\": [\"Kính mặt trước\"], \"recommended_action\": \"Ép kính chân không giữ màn gốc\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã ép xong kính mới bằng công nghệ buồng ép chân không, khít đẹp như ban đầu.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-18 01:21:06.022538",
+      "ngay_hen_tra": "2026-09-18 02:06:06.022538",
+      "ngay_hoan_tat": "2026-09-18 01:56:06.022538"
+    },
+    {
+      "id": 33,
+      "ma_phieu": "PSC-20260915-033",
+      "khach_hang_id": 32,
+      "thiet_bi_id": 33,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Loa chuông phát nhạc bị rè và tịt hẳn, chỉ còn rung",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Đứt cuộn dây đồng màng loa ngoài\", \"faulty_components\": [\"Cụm loa ngoài chuông\"], \"recommended_action\": \"Thay cụm loa chuông chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay loa chuông mới âm lượng trong trẻo, tiếng chuông to rõ.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-15 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-15 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "id": 34,
+      "ma_phieu": "PSC-20260916-034",
+      "khach_hang_id": 33,
+      "thiet_bi_id": 34,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Màn hình bị kẻ sọc hồng giữa màn sau khi rơi",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Lỗi đứt cổ cáp màn hình AMOLED\", \"faulty_components\": [\"Màn hình Dynamic AMOLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đã thay cụm màn hình hiển thị mới 100%, bảo hành 6 tháng.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 6400000.0,
+      "ngay_tiep_nhan": "2026-09-16 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-16 12:03:06.022538",
+      "ngay_hoan_tat": "2026-09-16 11:53:06.022538"
+    },
+    {
+      "id": 35,
+      "ma_phieu": "PSC-20260917-035",
+      "khach_hang_id": 2,
+      "thiet_bi_id": 35,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Màn hình Dynamic AMOLED bị 2 sọc xanh dọc sau khi cập nhật phần mềm và máy nóng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Đứt cổ cáp hiển thị Dynamic AMOLED 2X do nhiệt độ cao làm bong keo ACF\", \"faulty_components\": [\"Cụm màn hình\"], \"recommended_action\": \"Thay màn hình chính hãng nguyên khung\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Màn hình Dynamic AMOLED đã được thay thế mới nguyên khung chính hãng, hỗ trợ tần số quét 120Hz mượt mà và nhận diện bút S-Pen chuẩn xác.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 3800000.0,
+      "ngay_tiep_nhan": "2026-09-17 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 12:03:06.022538",
+      "ngay_hoan_tat": "2026-09-17 11:53:06.022538"
+    },
+    {
+      "id": 36,
+      "ma_phieu": "PSC-20260915-036",
+      "khach_hang_id": 34,
+      "thiet_bi_id": 36,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin chỉ dùng được 3 tiếng là cạn, máy sụt nguồn",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chai pin hóa học sau thời gian dài vừa sạc vừa chơi game\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin hãng 3900mAh\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay pin zin mới trong 25 phút. Kiểm tra sạc nhanh Super Fast Charging đạt công suất tối đa.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 700000.0,
+      "ngay_tiep_nhan": "2026-09-15 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-15 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "id": 37,
+      "ma_phieu": "PSC-20260914-037",
+      "khach_hang_id": 35,
+      "thiet_bi_id": 37,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Nứt kính viền cong bên phải, cảm ứng và màn trong vẫn hiển thị hoàn hảo",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Nứt vỡ kính cong bảo vệ ngoài Gorilla Glass Victus 2\", \"faulty_components\": [\"Kính cong\"], \"recommended_action\": \"Ép kính màn cong chuyên dụng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đã ép lại mặt kính cong nguyên bản bằng khuôn đúc nhiệt độ cao, mặt kính phẳng khít tuyệt đối.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-14 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-14 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "id": 38,
+      "ma_phieu": "PSC-20260916-038",
+      "khach_hang_id": 36,
+      "thiet_bi_id": 38,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Mở gập máy nửa chừng thì màn hình chớp tắt rồi tối đen, gập hẳn lại thì màn ngoài vẫn sáng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Đứt gãy cổ cáp nối qua trục bản lề gập do mỏi cơ học\", \"faulty_components\": [\"Cáp bản lề gập\"], \"recommended_action\": \"Thay thế cụm cáp gập bản lề chính hãng\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang chờ kiện cáp gập bản lề tiêu chuẩn từ nhà phân phối để tiến hành thay thế theo quy chuẩn phòng sạch.",
+      "trang_thai": "ChoLinhKien",
+      "tong_tien_du_kien": 1050000.0,
+      "ngay_tiep_nhan": "2026-09-16 13:21:06.022538",
+      "ngay_hen_tra": "2026-09-18 01:21:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 39,
+      "ma_phieu": "PSC-20260912-039",
+      "khach_hang_id": 37,
+      "thiet_bi_id": 39,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Chân cắm Type-C lỏng lẻo, cắm dây sạc không báo nhận dòng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Gãy chân lưỡi gà bên trong cổng cắm sạc USB Type-C\", \"faulty_components\": [\"Cụm chân sạc\"], \"recommended_action\": \"Thay cụm bo sạc Type-C mới\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay bo sạc Type-C mới chỉ trong 20 phút. Sạc nhanh 25W nhận ngay tức thì.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 400000.0,
+      "ngay_tiep_nhan": "2026-09-12 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-12 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-12 09:08:06.022538"
+    },
+    {
+      "id": 40,
+      "ma_phieu": "PSC-20260917-040",
+      "khach_hang_id": 38,
+      "thiet_bi_id": 40,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Nứt mắt kính camera tiềm vọng 5x, chụp zoom xa bị quầng sáng",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Vỡ mắt kính bảo vệ ống kính tele tiềm vọng\", \"faulty_components\": [\"Kính camera\"], \"recommended_action\": \"Thay mắt kính sapphire bảo vệ mới\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay mặt kính bảo vệ camera mới, hình ảnh zoom 10x 100x sắc nét không còn mờ nhòe.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-17 20:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 21:18:06.022538",
+      "ngay_hoan_tat": "2026-09-17 21:08:06.022538"
+    },
+    {
+      "id": 41,
+      "ma_phieu": "PSC-20260913-041",
+      "khach_hang_id": 39,
+      "thiet_bi_id": 41,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin phù đẩy hở nắp lưng kính phía sau, khách muốn thay pin lấy liền",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Pin phù do sạc qua đêm liên tục\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin hãng 5000mAh và dán lại nắp lưng\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay pin mới và dán keo chuyên dụng nắp lưng phẳng khít, an toàn tuyệt đối.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 700000.0,
+      "ngay_tiep_nhan": "2026-09-13 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-13 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-13 09:08:06.022538"
+    },
+    {
+      "id": 42,
+      "ma_phieu": "PSC-20260918-042",
+      "khach_hang_id": 40,
+      "thiet_bi_id": 42,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Màn hình trong xuất hiện đốm đen ngay nếp gấp bản lề, lan dần ra ngoài",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chảy mực tấm nền Ultra Thin Glass (UTG) dẻo do cấn dị vật khi gập\", \"faulty_components\": [\"Màn hình trong UTG\"], \"recommended_action\": \"Thay cụm màn hình gập nguyên bộ kèm bản lề\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang kiểm tra khung xương và cơ chế trợ lực bản lề để lập báo giá thay cụm màn trong.",
+      "trang_thai": "KiemTra",
+      "tong_tien_du_kien": 200000.0,
+      "ngay_tiep_nhan": "2026-09-18 01:21:06.022538",
+      "ngay_hen_tra": "2026-09-19 13:21:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 43,
+      "ma_phieu": "PSC-20260916-043",
+      "khach_hang_id": 41,
+      "thiet_bi_id": 43,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Loa dưới đáy máy bị rè khi mở nhạc to, âm thanh nghẹt",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Rách màng loa ngoài do va đập nhẹ\", \"faulty_components\": [\"Cụm loa\"], \"recommended_action\": \"Thay cụm loa chuông zin\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Thay loa ngoài zin chính hãng hoàn tất trong 20 phút, âm thanh to ấm rõ ràng.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 400000.0,
+      "ngay_tiep_nhan": "2026-09-16 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-16 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-16 09:08:06.022538"
+    },
+    {
+      "id": 44,
+      "ma_phieu": "PSC-20260917-044",
+      "khach_hang_id": 42,
+      "thiet_bi_id": 44,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Màn hình nứt toác và chớp sọc xanh sau khi rơi từ xe máy",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Hỏng hoàn toàn tấm nền Dynamic AMOLED\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên cụm chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đang tiến hành lắp ráp cụm màn hình AMOLED mới và nạp lại cảm biến vân tay siêu âm.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 4300000.0,
+      "ngay_tiep_nhan": "2026-09-17 15:45:06.022538",
+      "ngay_hen_tra": "2026-09-17 19:15:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 45,
+      "ma_phieu": "PSC-20260911-045",
+      "khach_hang_id": 3,
+      "thiet_bi_id": 45,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Nắp lưng sau bị bong keo hở viền, pin hơi đội nhẹ",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Keo dán nắp lưng lão hóa kết hợp pin phù nhẹ\", \"faulty_components\": [\"Pin\", \"Keo nắp lưng\"], \"recommended_action\": \"Thay pin mới và dán lại keo chống nước\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay pin mới và vệ sinh dán keo nắp lưng khít đẹp nguyên bản.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 700000.0,
+      "ngay_tiep_nhan": "2026-09-11 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-11 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-11 09:08:06.022538"
+    },
+    {
+      "id": 46,
+      "ma_phieu": "PSC-20260918-046",
+      "khach_hang_id": 4,
+      "thiet_bi_id": 46,
+      "ktv_id": null,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Ép kính bảo vệ màn hình mặt trước, máy mua lướt bị xước dăm nhiều",
+      "ghi_chu_ky_thuat": null,
+      "ai_tom_tat_loi": null,
+      "ai_giai_thich_dv": null,
+      "trang_thai": "TiepNhan",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-18 07:21:06.022538",
+      "ngay_hen_tra": "2026-09-18 08:06:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 47,
+      "ma_phieu": "PSC-20260918-047",
+      "khach_hang_id": 5,
+      "thiet_bi_id": 47,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Đang cắm sạc thì máy sập nguồn không bật lên lại được",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Chập mạch nguồn IC sạc do nguồn điện sạc không ổn định\", \"faulty_components\": [\"IC nguồn\"], \"recommended_action\": \"Đo đạc và thay thế linh kiện nguồn\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang đo áp phân luồng trên bo mạch chủ để xác định vị trí linh kiện chập.",
+      "trang_thai": "KiemTra",
+      "tong_tien_du_kien": 700000.0,
+      "ngay_tiep_nhan": "2026-09-18 02:33:06.022538",
+      "ngay_hen_tra": "2026-09-19 14:33:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 48,
+      "ma_phieu": "PSC-20260914-048",
+      "khach_hang_id": 6,
+      "thiet_bi_id": 48,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Chân sạc bám bụi đen, sạc lúc nhận lúc không",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Bụi nén chặt trong cổng Type-C cản trở tiếp xúc\", \"faulty_components\": [\"Cổng sạc\"], \"recommended_action\": \"Vệ sinh chuyên dụng họng sạc và chân tiếp xúc\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã vệ sinh thông thoáng cổng USB-C, máy nhận sạc nhanh bình thường.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 120000.0,
+      "ngay_tiep_nhan": "2026-09-14 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-14 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "id": 49,
+      "ma_phieu": "PSC-20260916-049",
+      "khach_hang_id": 7,
+      "thiet_bi_id": 49,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Màn hình bị sọc chỉ hồng dọc thân máy",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Đứt vi mạch cổ cáp màn hình\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên bộ\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đã thay màn hình mới cho khách, hiển thị đẹp không tì vết.",
+      "trang_thai": "DaSuaXong",
+      "tong_tien_du_kien": 3800000.0,
+      "ngay_tiep_nhan": "2026-09-16 20:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 00:03:06.022538",
+      "ngay_hoan_tat": "2026-09-16 23:53:06.022538"
+    },
+    {
+      "id": 50,
+      "ma_phieu": "PSC-20260918-050",
+      "khach_hang_id": 8,
+      "thiet_bi_id": 50,
+      "ktv_id": null,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Nứt kính màn hình phụ bên ngoài",
+      "ghi_chu_ky_thuat": null,
+      "ai_tom_tat_loi": null,
+      "ai_giai_thich_dv": null,
+      "trang_thai": "TiepNhan",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-18 06:09:06.022538",
+      "ngay_hen_tra": "2026-09-18 06:54:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 51,
+      "ma_phieu": "PSC-20260915-051",
+      "khach_hang_id": 9,
+      "thiet_bi_id": 51,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Rơi xuống nước biển khi đi du lịch, để 3 ngày sau mới đem sửa",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Muối biển ăn mòn thủng bo mạch và mục chân linh kiện\", \"faulty_components\": [\"Bo mạch chủ\"], \"recommended_action\": \"Hoàn trả do oxy hóa diện rộng không thể khắc phục\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Nước muối biển đã làm rỉ sét và mục gãy các chân tiếp xúc siêu vi trên bo mạch chủ. Không thể phục hồi an toàn.",
+      "trang_thai": "Huy",
+      "tong_tien_du_kien": 150000.0,
+      "ngay_tiep_nhan": "2026-09-15 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-16 20:33:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 52,
+      "ma_phieu": "PSC-20260917-052",
+      "khach_hang_id": 10,
+      "thiet_bi_id": 52,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Khách dùng nhiều cần thay pin dự phòng lấy ngay",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Pin sụt giảm dung lượng sử dụng\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Hoàn thành thay pin nhanh chóng trong 25 phút.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 700000.0,
+      "ngay_tiep_nhan": "2026-09-17 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-17 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-17 09:08:06.022538"
+    },
+    {
+      "id": 53,
+      "ma_phieu": "PSC-20260915-053",
+      "khach_hang_id": 3,
+      "thiet_bi_id": 53,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Rơi nứt góc kính cong màn hình, camera Leica và cảm ứng vẫn bình thường",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Nứt kính bảo vệ ngoài tấm nền OLED cong 2K\", \"faulty_components\": [\"Mặt kính\"], \"recommended_action\": \"Ép kính cong chân không chuyên dụng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Mặt kính cong cao cấp đã được ép mới hoàn hảo, hiển thị 2K sắc nét của Xiaomi 13 Pro giữ nguyên vẹn 100%.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-15 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-15 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "id": 54,
+      "ma_phieu": "PSC-20260912-054",
+      "khach_hang_id": 4,
+      "thiet_bi_id": 54,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Chân cắm sạc lỏng lẻo, phải bẻ gập dây sạc mới nhận sạc nhanh 67W",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Mòn gãy lưỡi đồng tiếp xúc cổng Type-C và đứt đường sạc nhanh\", \"faulty_components\": [\"Cụm bo cáp sạc 67W\"], \"recommended_action\": \"Thay cụm bo mạch sạc nhanh zin mới\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay thế cụm cáp sạc nhanh chính hãng. Máy đã kích hoạt thành công chế độ sạc siêu tốc Mi Turbo Charge 67W.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 340000.0,
+      "ngay_tiep_nhan": "2026-09-12 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-12 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-12 09:08:06.022538"
+    },
+    {
+      "id": 55,
+      "ma_phieu": "PSC-20260917-055",
+      "khach_hang_id": 11,
+      "thiet_bi_id": 55,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Hẹn trả trong ngày - 3 tiếng] Màn hình tối đen, chỉ rung chuông khi có người gọi",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: TRONG_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Vỡ tấm nền OLED 2K\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đang thay cụm màn hình OLED LTPO chính hãng cho thiết bị.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 3150000.0,
+      "ngay_tiep_nhan": "2026-09-17 20:33:06.022538",
+      "ngay_hen_tra": "2026-09-18 00:03:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 56,
+      "ma_phieu": "PSC-20260917-056",
+      "khach_hang_id": 12,
+      "thiet_bi_id": 56,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Rơi vào chậu nước giặt đồ, sấy không lên",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Xà phòng bám gây chập mạch nguồn\", \"faulty_components\": [\"Bo mạch sạc\"], \"recommended_action\": \"Sấy buồng siêu âm và thay bo sạc\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Đang sấy siêu âm khử hóa chất và đợi bo sạc thay thế.",
+      "trang_thai": "ChoLinhKien",
+      "tong_tien_du_kien": 720000.0,
+      "ngay_tiep_nhan": "2026-09-17 03:45:06.022538",
+      "ngay_hen_tra": "2026-09-18 15:45:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 57,
+      "ma_phieu": "PSC-20260917-057",
+      "khach_hang_id": 13,
+      "thiet_bi_id": 57,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Đang chơi game thì máy đơ rồi tự khởi động lại liên tục ở logo POCO",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Hở chân chì vi xử lý Snapdragon do nhiệt độ quá cao\", \"faulty_components\": [\"CPU Snapdragon\"], \"recommended_action\": \"Đổ chân chì và đóng lại CPU (Reballing)\", \"risk_level\": \"Cao\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang kiểm tra điện áp đường cấp CPU để tiến hành reballing.",
+      "trang_thai": "KiemTra",
+      "tong_tien_du_kien": 350000.0,
+      "ngay_tiep_nhan": "2026-09-17 22:57:06.022538",
+      "ngay_hen_tra": "2026-09-19 10:57:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 58,
+      "ma_phieu": "PSC-20260916-058",
+      "khach_hang_id": 14,
+      "thiet_bi_id": 58,
+      "ktv_id": 4,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 30 phút] Pin tụt nhanh, cần thay pin zin để chạy xe công nghệ",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: LAY_NGAY.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Pin chai chu kỳ sạc cao\", \"faulty_components\": [\"Pin SuperVOOC\"], \"recommended_action\": \"Thay pin zin dung lượng cao\", \"risk_level\": \"Thap\"}",
+      "ai_giai_thich_dv": "Đã thay pin mới hỗ trợ sạc nhanh SuperVOOC trong 25 phút.",
+      "trang_thai": "DaTraKhach",
+      "tong_tien_du_kien": 570000.0,
+      "ngay_tiep_nhan": "2026-09-16 08:33:06.022538",
+      "ngay_hen_tra": "2026-09-16 09:18:06.022538",
+      "ngay_hoan_tat": "2026-09-16 09:08:06.022538"
+    },
+    {
+      "id": 59,
+      "ma_phieu": "PSC-20260917-059",
+      "khach_hang_id": 15,
+      "thiet_bi_id": 59,
+      "ktv_id": 3,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[Kỹ thuật chuyên sâu - Hẹn 24h-48h] Mở gập máy nhiều lần khiến màn hình chính nháy chớp sọc ngang",
+      "ghi_chu_ky_thuat": "Đã tiếp nhận và chẩn đoán theo quy trình SLA: CHUYEN_SAU.",
+      "ai_tom_tat_loi": "{\"hardware_issue\": \"Lỏng cổ cáp gập\", \"faulty_components\": [\"Cáp bản lề\"], \"recommended_action\": \"Gia cố và thay thế cáp gập\", \"risk_level\": \"TrungBinh\"}",
+      "ai_giai_thich_dv": "Kỹ thuật viên đang tiến hành căn chỉnh lại trục bản lề và cáp màn hình.",
+      "trang_thai": "DangSuaChua",
+      "tong_tien_du_kien": 200000.0,
+      "ngay_tiep_nhan": "2026-09-17 10:57:06.022538",
+      "ngay_hen_tra": "2026-09-18 22:57:06.022538",
+      "ngay_hoan_tat": null
+    },
+    {
+      "id": 60,
+      "ma_phieu": "PSC-20260918-060",
+      "khach_hang_id": 16,
+      "thiet_bi_id": 60,
+      "ktv_id": null,
+      "le_tan_id": 2,
+      "mo_ta_loi_khach": "[⚡ Sửa lấy ngay - 45 phút] Nứt góc kính màn hình, cần ép kính lấy liền",
+      "ghi_chu_ky_thuat": null,
+      "ai_tom_tat_loi": null,
+      "ai_giai_thich_dv": null,
+      "trang_thai": "TiepNhan",
+      "tong_tien_du_kien": 470000.0,
+      "ngay_tiep_nhan": "2026-09-18 07:49:54.022538",
+      "ngay_hen_tra": "2026-09-18 08:34:54.022538",
+      "ngay_hoan_tat": null
+    }
+  ],
+  "details": [
+    {
+      "phieu_sua_chua_id": 1,
+      "linh_kien_id": null,
+      "dich_vu_id": 5,
+      "so_luong": 1,
+      "don_gia": 500000.0,
+      "thanh_tien": 500000.0
+    },
+    {
+      "phieu_sua_chua_id": 2,
+      "linh_kien_id": 1,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 480000.0,
+      "thanh_tien": 480000.0
+    },
+    {
+      "phieu_sua_chua_id": 2,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 3,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 3,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 4,
+      "linh_kien_id": 8,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 6200000.0,
+      "thanh_tien": 6200000.0
+    },
+    {
+      "phieu_sua_chua_id": 4,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 5,
+      "linh_kien_id": 13,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 5,
+      "linh_kien_id": null,
+      "dich_vu_id": 4,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 5,
+      "linh_kien_id": null,
+      "dich_vu_id": 9,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 6,
+      "linh_kien_id": 5,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 750000.0,
+      "thanh_tien": 750000.0
+    },
+    {
+      "phieu_sua_chua_id": 6,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 7,
+      "linh_kien_id": null,
+      "dich_vu_id": 6,
+      "so_luong": 1,
+      "don_gia": 400000.0,
+      "thanh_tien": 400000.0
+    },
+    {
+      "phieu_sua_chua_id": 8,
+      "linh_kien_id": 12,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 8,
+      "linh_kien_id": null,
+      "dich_vu_id": 7,
+      "so_luong": 1,
+      "don_gia": 120000.0,
+      "thanh_tien": 120000.0
+    },
+    {
+      "phieu_sua_chua_id": 9,
+      "linh_kien_id": 11,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 320000.0,
+      "thanh_tien": 320000.0
+    },
+    {
+      "phieu_sua_chua_id": 9,
+      "linh_kien_id": null,
+      "dich_vu_id": 8,
+      "so_luong": 1,
+      "don_gia": 180000.0,
+      "thanh_tien": 180000.0
+    },
+    {
+      "phieu_sua_chua_id": 10,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 10,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 11,
+      "linh_kien_id": null,
+      "dich_vu_id": 5,
+      "so_luong": 1,
+      "don_gia": 500000.0,
+      "thanh_tien": 500000.0
+    },
+    {
+      "phieu_sua_chua_id": 12,
+      "linh_kien_id": null,
+      "dich_vu_id": 9,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 13,
+      "linh_kien_id": 2,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 1150000.0,
+      "thanh_tien": 1150000.0
+    },
+    {
+      "phieu_sua_chua_id": 13,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 14,
+      "linh_kien_id": 7,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 850000.0,
+      "thanh_tien": 850000.0
+    },
+    {
+      "phieu_sua_chua_id": 14,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 15,
+      "linh_kien_id": 14,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 1750000.0,
+      "thanh_tien": 1750000.0
+    },
+    {
+      "phieu_sua_chua_id": 15,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 16,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 16,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 17,
+      "linh_kien_id": null,
+      "dich_vu_id": 4,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 18,
+      "linh_kien_id": 11,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 320000.0,
+      "thanh_tien": 320000.0
+    },
+    {
+      "phieu_sua_chua_id": 18,
+      "linh_kien_id": null,
+      "dich_vu_id": 8,
+      "so_luong": 1,
+      "don_gia": 180000.0,
+      "thanh_tien": 180000.0
+    },
+    {
+      "phieu_sua_chua_id": 19,
+      "linh_kien_id": 2,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 1150000.0,
+      "thanh_tien": 1150000.0
+    },
+    {
+      "phieu_sua_chua_id": 19,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 20,
+      "linh_kien_id": 7,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 850000.0,
+      "thanh_tien": 850000.0
+    },
+    {
+      "phieu_sua_chua_id": 20,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 21,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 21,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 22,
+      "linh_kien_id": 13,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 22,
+      "linh_kien_id": null,
+      "dich_vu_id": 4,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 24,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 24,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 25,
+      "linh_kien_id": 1,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 480000.0,
+      "thanh_tien": 480000.0
+    },
+    {
+      "phieu_sua_chua_id": 25,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 26,
+      "linh_kien_id": null,
+      "dich_vu_id": 5,
+      "so_luong": 1,
+      "don_gia": 500000.0,
+      "thanh_tien": 500000.0
+    },
+    {
+      "phieu_sua_chua_id": 27,
+      "linh_kien_id": 8,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 6200000.0,
+      "thanh_tien": 6200000.0
+    },
+    {
+      "phieu_sua_chua_id": 27,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 28,
+      "linh_kien_id": 21,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 280000.0,
+      "thanh_tien": 280000.0
+    },
+    {
+      "phieu_sua_chua_id": 28,
+      "linh_kien_id": null,
+      "dich_vu_id": 7,
+      "so_luong": 1,
+      "don_gia": 120000.0,
+      "thanh_tien": 120000.0
+    },
+    {
+      "phieu_sua_chua_id": 29,
+      "linh_kien_id": 11,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 320000.0,
+      "thanh_tien": 320000.0
+    },
+    {
+      "phieu_sua_chua_id": 29,
+      "linh_kien_id": null,
+      "dich_vu_id": 8,
+      "so_luong": 1,
+      "don_gia": 180000.0,
+      "thanh_tien": 180000.0
+    },
+    {
+      "phieu_sua_chua_id": 30,
+      "linh_kien_id": 2,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 1150000.0,
+      "thanh_tien": 1150000.0
+    },
+    {
+      "phieu_sua_chua_id": 30,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 31,
+      "linh_kien_id": 7,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 850000.0,
+      "thanh_tien": 850000.0
+    },
+    {
+      "phieu_sua_chua_id": 31,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 32,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 32,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 33,
+      "linh_kien_id": 12,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 33,
+      "linh_kien_id": null,
+      "dich_vu_id": 7,
+      "so_luong": 1,
+      "don_gia": 120000.0,
+      "thanh_tien": 120000.0
+    },
+    {
+      "phieu_sua_chua_id": 34,
+      "linh_kien_id": 8,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 6200000.0,
+      "thanh_tien": 6200000.0
+    },
+    {
+      "phieu_sua_chua_id": 34,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 35,
+      "linh_kien_id": 16,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 3600000.0,
+      "thanh_tien": 3600000.0
+    },
+    {
+      "phieu_sua_chua_id": 35,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 36,
+      "linh_kien_id": 15,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 550000.0,
+      "thanh_tien": 550000.0
+    },
+    {
+      "phieu_sua_chua_id": 36,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 37,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 37,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 38,
+      "linh_kien_id": 19,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 850000.0,
+      "thanh_tien": 850000.0
+    },
+    {
+      "phieu_sua_chua_id": 38,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 39,
+      "linh_kien_id": 21,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 280000.0,
+      "thanh_tien": 280000.0
+    },
+    {
+      "phieu_sua_chua_id": 39,
+      "linh_kien_id": null,
+      "dich_vu_id": 7,
+      "so_luong": 1,
+      "don_gia": 120000.0,
+      "thanh_tien": 120000.0
+    },
+    {
+      "phieu_sua_chua_id": 40,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 40,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 41,
+      "linh_kien_id": 15,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 550000.0,
+      "thanh_tien": 550000.0
+    },
+    {
+      "phieu_sua_chua_id": 41,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 42,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 43,
+      "linh_kien_id": 21,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 280000.0,
+      "thanh_tien": 280000.0
+    },
+    {
+      "phieu_sua_chua_id": 43,
+      "linh_kien_id": null,
+      "dich_vu_id": 7,
+      "so_luong": 1,
+      "don_gia": 120000.0,
+      "thanh_tien": 120000.0
+    },
+    {
+      "phieu_sua_chua_id": 44,
+      "linh_kien_id": 18,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 4100000.0,
+      "thanh_tien": 4100000.0
+    },
+    {
+      "phieu_sua_chua_id": 44,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 45,
+      "linh_kien_id": 15,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 550000.0,
+      "thanh_tien": 550000.0
+    },
+    {
+      "phieu_sua_chua_id": 45,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 46,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 46,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 47,
+      "linh_kien_id": 13,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 47,
+      "linh_kien_id": null,
+      "dich_vu_id": 4,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 48,
+      "linh_kien_id": null,
+      "dich_vu_id": 7,
+      "so_luong": 1,
+      "don_gia": 120000.0,
+      "thanh_tien": 120000.0
+    },
+    {
+      "phieu_sua_chua_id": 49,
+      "linh_kien_id": 16,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 3600000.0,
+      "thanh_tien": 3600000.0
+    },
+    {
+      "phieu_sua_chua_id": 49,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 50,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 50,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 51,
+      "linh_kien_id": null,
+      "dich_vu_id": 9,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 52,
+      "linh_kien_id": 15,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 550000.0,
+      "thanh_tien": 550000.0
+    },
+    {
+      "phieu_sua_chua_id": 52,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 53,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 53,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    },
+    {
+      "phieu_sua_chua_id": 54,
+      "linh_kien_id": 24,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 54,
+      "linh_kien_id": null,
+      "dich_vu_id": 7,
+      "so_luong": 1,
+      "don_gia": 120000.0,
+      "thanh_tien": 120000.0
+    },
+    {
+      "phieu_sua_chua_id": 55,
+      "linh_kien_id": 22,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 2950000.0,
+      "thanh_tien": 2950000.0
+    },
+    {
+      "phieu_sua_chua_id": 55,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 56,
+      "linh_kien_id": 24,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 56,
+      "linh_kien_id": null,
+      "dich_vu_id": 4,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 56,
+      "linh_kien_id": null,
+      "dich_vu_id": 9,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 57,
+      "linh_kien_id": null,
+      "dich_vu_id": 4,
+      "so_luong": 1,
+      "don_gia": 350000.0,
+      "thanh_tien": 350000.0
+    },
+    {
+      "phieu_sua_chua_id": 58,
+      "linh_kien_id": 25,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 420000.0,
+      "thanh_tien": 420000.0
+    },
+    {
+      "phieu_sua_chua_id": 58,
+      "linh_kien_id": null,
+      "dich_vu_id": 1,
+      "so_luong": 1,
+      "don_gia": 150000.0,
+      "thanh_tien": 150000.0
+    },
+    {
+      "phieu_sua_chua_id": 59,
+      "linh_kien_id": null,
+      "dich_vu_id": 3,
+      "so_luong": 1,
+      "don_gia": 200000.0,
+      "thanh_tien": 200000.0
+    },
+    {
+      "phieu_sua_chua_id": 60,
+      "linh_kien_id": 10,
+      "dich_vu_id": null,
+      "so_luong": 1,
+      "don_gia": 220000.0,
+      "thanh_tien": 220000.0
+    },
+    {
+      "phieu_sua_chua_id": 60,
+      "linh_kien_id": null,
+      "dich_vu_id": 2,
+      "so_luong": 1,
+      "don_gia": 250000.0,
+      "thanh_tien": 250000.0
+    }
+  ],
+  "invoices": [
+    {
+      "ma_hoa_don": "HD-20260915-002",
+      "phieu_sua_chua_id": 2,
+      "thu_ngan_id": 5,
+      "tong_tien": 630000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260914-003",
+      "phieu_sua_chua_id": 3,
+      "thu_ngan_id": 5,
+      "tong_tien": 470000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260916-006",
+      "phieu_sua_chua_id": 6,
+      "thu_ngan_id": 5,
+      "tong_tien": 900000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-16 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260913-008",
+      "phieu_sua_chua_id": 8,
+      "thu_ngan_id": 5,
+      "tong_tien": 470000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-13 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260912-012",
+      "phieu_sua_chua_id": 12,
+      "thu_ngan_id": 5,
+      "tong_tien": 150000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-12 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260911-013",
+      "phieu_sua_chua_id": 13,
+      "thu_ngan_id": 5,
+      "tong_tien": 1350000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-11 11:53:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260914-018",
+      "phieu_sua_chua_id": 18,
+      "thu_ngan_id": 5,
+      "tong_tien": 500000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260917-020",
+      "phieu_sua_chua_id": 20,
+      "thu_ngan_id": 5,
+      "tong_tien": 1000000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-17 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260915-021",
+      "phieu_sua_chua_id": 21,
+      "thu_ngan_id": 5,
+      "tong_tien": 470000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260910-025",
+      "phieu_sua_chua_id": 25,
+      "thu_ngan_id": 5,
+      "tong_tien": 630000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-10 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260914-027",
+      "phieu_sua_chua_id": 27,
+      "thu_ngan_id": 5,
+      "tong_tien": 6400000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-14 11:53:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260916-028",
+      "phieu_sua_chua_id": 28,
+      "thu_ngan_id": 5,
+      "tong_tien": 400000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-16 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260913-031",
+      "phieu_sua_chua_id": 31,
+      "thu_ngan_id": 5,
+      "tong_tien": 1000000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-13 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260915-033",
+      "phieu_sua_chua_id": 33,
+      "thu_ngan_id": 5,
+      "tong_tien": 470000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260916-034",
+      "phieu_sua_chua_id": 34,
+      "thu_ngan_id": 5,
+      "tong_tien": 6400000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-16 11:53:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260915-036",
+      "phieu_sua_chua_id": 36,
+      "thu_ngan_id": 5,
+      "tong_tien": 700000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260914-037",
+      "phieu_sua_chua_id": 37,
+      "thu_ngan_id": 5,
+      "tong_tien": 470000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260912-039",
+      "phieu_sua_chua_id": 39,
+      "thu_ngan_id": 5,
+      "tong_tien": 400000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-12 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260913-041",
+      "phieu_sua_chua_id": 41,
+      "thu_ngan_id": 5,
+      "tong_tien": 700000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-13 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260916-043",
+      "phieu_sua_chua_id": 43,
+      "thu_ngan_id": 5,
+      "tong_tien": 400000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-16 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260911-045",
+      "phieu_sua_chua_id": 45,
+      "thu_ngan_id": 5,
+      "tong_tien": 700000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-11 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260914-048",
+      "phieu_sua_chua_id": 48,
+      "thu_ngan_id": 5,
+      "tong_tien": 120000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-14 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260917-052",
+      "phieu_sua_chua_id": 52,
+      "thu_ngan_id": 5,
+      "tong_tien": 700000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-17 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260915-053",
+      "phieu_sua_chua_id": 53,
+      "thu_ngan_id": 5,
+      "tong_tien": 470000.0,
+      "phuong_thuc_tt": "ChuyenKhoan",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-15 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260912-054",
+      "phieu_sua_chua_id": 54,
+      "thu_ngan_id": 5,
+      "tong_tien": 340000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-12 09:08:06.022538"
+    },
+    {
+      "ma_hoa_don": "HD-20260916-058",
+      "phieu_sua_chua_id": 58,
+      "thu_ngan_id": 5,
+      "tong_tien": 570000.0,
+      "phuong_thuc_tt": "TienMat",
+      "trang_thai_tt": "DaThanhToan",
+      "ngay_thanh_toan": "2026-09-16 09:08:06.022538"
+    }
+  ],
+  "warranties": [
+    {
+      "ma_bao_hanh": "BH-AP-002",
+      "phieu_sua_chua_id": 2,
+      "linh_kien_id": 1,
+      "ngay_bat_dau": "2026-09-15 09:08:06.022538",
+      "ngay_het_han": "2027-03-14 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-003",
+      "phieu_sua_chua_id": 3,
+      "linh_kien_id": 10,
+      "ngay_bat_dau": "2026-09-14 09:08:06.022538",
+      "ngay_het_han": "2027-03-13 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-006",
+      "phieu_sua_chua_id": 6,
+      "linh_kien_id": 5,
+      "ngay_bat_dau": "2026-09-16 09:08:06.022538",
+      "ngay_het_han": "2027-03-15 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-008",
+      "phieu_sua_chua_id": 8,
+      "linh_kien_id": 12,
+      "ngay_bat_dau": "2026-09-13 09:08:06.022538",
+      "ngay_het_han": "2027-03-12 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-013",
+      "phieu_sua_chua_id": 13,
+      "linh_kien_id": 2,
+      "ngay_bat_dau": "2026-09-11 11:53:06.022538",
+      "ngay_het_han": "2027-03-10 11:53:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-018",
+      "phieu_sua_chua_id": 18,
+      "linh_kien_id": 11,
+      "ngay_bat_dau": "2026-09-14 09:08:06.022538",
+      "ngay_het_han": "2027-03-13 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-020",
+      "phieu_sua_chua_id": 20,
+      "linh_kien_id": 7,
+      "ngay_bat_dau": "2026-09-17 09:08:06.022538",
+      "ngay_het_han": "2027-03-16 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-021",
+      "phieu_sua_chua_id": 21,
+      "linh_kien_id": 10,
+      "ngay_bat_dau": "2026-09-15 09:08:06.022538",
+      "ngay_het_han": "2027-03-14 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-025",
+      "phieu_sua_chua_id": 25,
+      "linh_kien_id": 1,
+      "ngay_bat_dau": "2026-09-10 09:08:06.022538",
+      "ngay_het_han": "2027-03-09 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-027",
+      "phieu_sua_chua_id": 27,
+      "linh_kien_id": 8,
+      "ngay_bat_dau": "2026-09-14 11:53:06.022538",
+      "ngay_het_han": "2027-03-13 11:53:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-028",
+      "phieu_sua_chua_id": 28,
+      "linh_kien_id": 21,
+      "ngay_bat_dau": "2026-09-16 09:08:06.022538",
+      "ngay_het_han": "2027-03-15 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-031",
+      "phieu_sua_chua_id": 31,
+      "linh_kien_id": 7,
+      "ngay_bat_dau": "2026-09-13 09:08:06.022538",
+      "ngay_het_han": "2027-03-12 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-033",
+      "phieu_sua_chua_id": 33,
+      "linh_kien_id": 12,
+      "ngay_bat_dau": "2026-09-15 09:08:06.022538",
+      "ngay_het_han": "2027-03-14 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-AP-034",
+      "phieu_sua_chua_id": 34,
+      "linh_kien_id": 8,
+      "ngay_bat_dau": "2026-09-16 11:53:06.022538",
+      "ngay_het_han": "2027-03-15 11:53:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-SA-036",
+      "phieu_sua_chua_id": 36,
+      "linh_kien_id": 15,
+      "ngay_bat_dau": "2026-09-15 09:08:06.022538",
+      "ngay_het_han": "2027-03-14 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-SA-037",
+      "phieu_sua_chua_id": 37,
+      "linh_kien_id": 10,
+      "ngay_bat_dau": "2026-09-14 09:08:06.022538",
+      "ngay_het_han": "2027-03-13 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-SA-039",
+      "phieu_sua_chua_id": 39,
+      "linh_kien_id": 21,
+      "ngay_bat_dau": "2026-09-12 09:08:06.022538",
+      "ngay_het_han": "2027-03-11 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-SA-041",
+      "phieu_sua_chua_id": 41,
+      "linh_kien_id": 15,
+      "ngay_bat_dau": "2026-09-13 09:08:06.022538",
+      "ngay_het_han": "2027-03-12 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-SA-043",
+      "phieu_sua_chua_id": 43,
+      "linh_kien_id": 21,
+      "ngay_bat_dau": "2026-09-16 09:08:06.022538",
+      "ngay_het_han": "2027-03-15 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-SA-045",
+      "phieu_sua_chua_id": 45,
+      "linh_kien_id": 15,
+      "ngay_bat_dau": "2026-09-11 09:08:06.022538",
+      "ngay_het_han": "2027-03-10 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-SA-052",
+      "phieu_sua_chua_id": 52,
+      "linh_kien_id": 15,
+      "ngay_bat_dau": "2026-09-17 09:08:06.022538",
+      "ngay_het_han": "2027-03-16 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-XI-053",
+      "phieu_sua_chua_id": 53,
+      "linh_kien_id": 10,
+      "ngay_bat_dau": "2026-09-15 09:08:06.022538",
+      "ngay_het_han": "2027-03-14 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-XI-054",
+      "phieu_sua_chua_id": 54,
+      "linh_kien_id": 24,
+      "ngay_bat_dau": "2026-09-12 09:08:06.022538",
+      "ngay_het_han": "2027-03-11 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    },
+    {
+      "ma_bao_hanh": "BH-OP-058",
+      "phieu_sua_chua_id": 58,
+      "linh_kien_id": 25,
+      "ngay_bat_dau": "2026-09-16 09:08:06.022538",
+      "ngay_het_han": "2027-03-15 09:08:06.022538",
+      "dieu_kien_bh": "Bảo hành lỗi kỹ thuật phần cứng và cảm ứng 06 tháng. Từ chối bảo hành rơi vỡ, nứt kính, vào nước.",
+      "trang_thai": "ConHan"
+    }
+  ],
+  "ai_logs": [
+    {
+      "phieu_sua_chua_id": 1,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Màn hình đột ngột trắng xóa khi đang lướt mạng, chuông gọi đến vẫn rung",
+      "ai_raw_response": "{\"hardware_issue\": \"Lỗi mất áp hiển thị màn hình OLED dòng 13 Pro Max (bệnh WSOD)\", \"faulty_components\": [\"Đường áp hiển thị màn hình\"], \"recommended_action\": \"Câu dây đồng vi phẫu thuật áp màn hình không cần thay cụm màn\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Lỗi mất áp hiển thị màn hình OLED dòng 13 Pro Max (bệnh WSOD)\", \"faulty_components\": [\"Đường áp hiển thị màn hình\"], \"recommended_action\": \"Câu dây đồng vi phẫu thuật áp màn hình không cần thay cụm màn\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1250.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 2,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin chai 73%, máy báo bảo trì và tự sập nguồn khi còn 20%",
+      "ai_raw_response": "{\"hardware_issue\": \"Pin Lithium-ion chai quá giới hạn an toàn gây tụt áp đột ngột\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin dung lượng cao chính hãng và test sạc\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Pin Lithium-ion chai quá giới hạn an toàn gây tụt áp đột ngột\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin dung lượng cao chính hãng và test sạc\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1265.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-15 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 3,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 45 phút] Rơi va góc bàn nứt kính mặt trước, cảm ứng và màn hiển thị bên trong vẫn bình thường",
+      "ai_raw_response": "{\"hardware_issue\": \"Vỡ lớp kính cường lực bảo vệ bên ngoài, phôi màn hình OLED và cảm ứng nguyên vẹn\", \"faulty_components\": [\"Kính mặt trước\"], \"recommended_action\": \"Ép kính chân không giữ lại màn hình zin gốc\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Vỡ lớp kính cường lực bảo vệ bên ngoài, phôi màn hình OLED và cảm ứng nguyên vẹn\", \"faulty_components\": [\"Kính mặt trước\"], \"recommended_action\": \"Ép kính chân không giữ lại màn hình zin gốc\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1280.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-14 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 4,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Rơi từ tầng 2 xuống sàn đá, màn hình nứt toác chảy mực tím góc trên và liệt toàn bộ cảm ứng",
+      "ai_raw_response": "{\"hardware_issue\": \"Chết tấm nền OLED Dynamic Island và hỏng mạch số hóa cảm ứng\", \"faulty_components\": [\"Cụm màn hình Dynamic Island\"], \"recommended_action\": \"Thay cụm màn hình nguyên bộ và dán ron chống nước\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chết tấm nền OLED Dynamic Island và hỏng mạch số hóa cảm ứng\", \"faulty_components\": [\"Cụm màn hình Dynamic Island\"], \"recommended_action\": \"Thay cụm màn hình nguyên bộ và dán ron chống nước\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1295.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 20:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 5,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Rơi xuống bồn rửa tay, sấy máy không lên nguồn, cắm sạc nóng ran cạnh sườn",
+      "ai_raw_response": "{\"hardware_issue\": \"Nước ngấm qua khe loa làm oxy hóa bo mạch, chập đường nguồn chính VDD_MAIN\", \"faulty_components\": [\"Tụ lọc C1802\", \"IC sạc USB U3300\"], \"recommended_action\": \"Sấy rung siêu âm làm sạch rỉ sét, dò chạm nhiệt hồng ngoại và thay IC sạc\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Nước ngấm qua khe loa làm oxy hóa bo mạch, chập đường nguồn chính VDD_MAIN\", \"faulty_components\": [\"Tụ lọc C1802\", \"IC sạc USB U3300\"], \"recommended_action\": \"Sấy rung siêu âm làm sạch rỉ sét, dò chạm nhiệt hồng ngoại và thay IC sạc\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1310.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-18 04:00:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 6,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin tụt cực nhanh, xem Youtube 30 phút nóng máy, cần thay pin lấy liền để đi làm",
+      "ai_raw_response": "{\"hardware_issue\": \"Cell pin bị lão hóa hóa học, nội trở tăng cao gây phát nhiệt khi tải\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin dung lượng cao dung lượng 4352mAh\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Cell pin bị lão hóa hóa học, nội trở tăng cao gây phát nhiệt khi tải\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin dung lượng cao dung lượng 4352mAh\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1325.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 7,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Báo lỗi 'Face ID không khả dụng' sau khi đi mưa về, camera trước vẫn chụp được",
+      "ai_raw_response": "{\"hardware_issue\": \"Chập đường cấp nguồn máy chiếu tia Dot Projector của cảm biến TrueDepth do hơi ẩm\", \"faulty_components\": [\"Cụm cáp TrueDepth\", \"Dot Projector\"], \"recommended_action\": \"Căn chỉnh lăng kính quang học và khò hàn IC FaceID\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chập đường cấp nguồn máy chiếu tia Dot Projector của cảm biến TrueDepth do hơi ẩm\", \"faulty_components\": [\"Cụm cáp TrueDepth\", \"Dot Projector\"], \"recommended_action\": \"Căn chỉnh lăng kính quang học và khò hàn IC FaceID\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1340.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 8,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Cắm sạc chập chờn, phải đè mạnh hoặc lắc gập dây mới nhận điện",
+      "ai_raw_response": "{\"hardware_issue\": \"Mòn chân tiếp xúc Lightning và đứt ngầm cụm cáp sạc dưới đáy máy\", \"faulty_components\": [\"Cụm cáp sạc và mic\"], \"recommended_action\": \"Thay cụm bo cáp sạc Lightning chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Mòn chân tiếp xúc Lightning và đứt ngầm cụm cáp sạc dưới đáy máy\", \"faulty_components\": [\"Cụm cáp sạc và mic\"], \"recommended_action\": \"Thay cụm bo cáp sạc Lightning chính hãng\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1355.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-13 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 9,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 45 phút] Kính lưng sau bị nứt mạng nhện do rơi chìa khóa đè trúng, camera bình thường",
+      "ai_raw_response": "{\"hardware_issue\": \"Nứt vỡ kính lưng bảo vệ cuộn sạc không dây MagSafe\", \"faulty_components\": [\"Kính lưng\"], \"recommended_action\": \"Bắn laser bóc tách kính vỡ và dán kính lưng Zin\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Nứt vỡ kính lưng bảo vệ cuộn sạc không dây MagSafe\", \"faulty_components\": [\"Kính lưng\"], \"recommended_action\": \"Bắn laser bóc tách kính vỡ và dán kính lưng Zin\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1370.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 20:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 11,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 4 tiếng] Màn hình chớp nháy màu xanh lá cây liên tục rồi tối đen",
+      "ai_raw_response": "{\"hardware_issue\": \"Đứt mạch đường tín hiệu quét ảnh OLED 120Hz\", \"faulty_components\": [\"Cáp màn hình\"], \"recommended_action\": \"Hàn phục hồi vi mạch quét áp màn hình\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Đứt mạch đường tín hiệu quét ảnh OLED 120Hz\", \"faulty_components\": [\"Cáp màn hình\"], \"recommended_action\": \"Hàn phục hồi vi mạch quét áp màn hình\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1400.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-18 01:36:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 12,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Loa thoại nghe gọi rất bé, người khác nói không nghe rõ",
+      "ai_raw_response": "{\"hardware_issue\": \"Màng lưới loa thoại bị bám bụi bẩn và bã nhờn lâu ngày gây bít tắc\", \"faulty_components\": [\"Màng bảo vệ loa\"], \"recommended_action\": \"Vệ sinh siêu âm màng loa và thay lưới chắn bụi mới\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Màng lưới loa thoại bị bám bụi bẩn và bã nhờn lâu ngày gây bít tắc\", \"faulty_components\": [\"Màng bảo vệ loa\"], \"recommended_action\": \"Vệ sinh siêu âm màng loa và thay lưới chắn bụi mới\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1415.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-12 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 13,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 2 tiếng] Rơi xe máy, màn hình sọc trắng và tối đen nửa góc",
+      "ai_raw_response": "{\"hardware_issue\": \"Chết tấm nền tinh thể lỏng LCD sau va đập tốc độ cao\", \"faulty_components\": [\"Màn hình LCD\"], \"recommended_action\": \"Thay màn hình nguyên bộ bóc máy chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chết tấm nền tinh thể lỏng LCD sau va đập tốc độ cao\", \"faulty_components\": [\"Màn hình LCD\"], \"recommended_action\": \"Thay màn hình nguyên bộ bóc máy chính hãng\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1430.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-11 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 14,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 45 phút] Pin bị phồng làm đội hở nhẹ viền màn hình, cần thay pin gấp",
+      "ai_raw_response": "{\"hardware_issue\": \"Pin bị biến chất sinh khí làm phù phồng cell pin đùn khung màn\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Tháo pin phù cẩn thận và thay thế pin zin mới\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Pin bị biến chất sinh khí làm phù phồng cell pin đùn khung màn\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Tháo pin phù cẩn thận và thay thế pin zin mới\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1445.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 23:12:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 15,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Camera sau mở lên kêu rè rè và hình ảnh rung giật liên hồi sau khi gắn giá đỡ xe máy",
+      "ai_raw_response": "{\"hardware_issue\": \"Hỏng hệ thống chống rung quang học OIS do tần số rung động động cơ xe máy\", \"faulty_components\": [\"Cụm camera sau OIS\"], \"recommended_action\": \"Thay cụm camera sau chính hãng có chống rung\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Hỏng hệ thống chống rung quang học OIS do tần số rung động động cơ xe máy\", \"faulty_components\": [\"Cụm camera sau OIS\"], \"recommended_action\": \"Thay cụm camera sau chính hãng có chống rung\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1460.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 04:00:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 17,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Máy báo 'Không có SIM' hoặc 'Đang tìm kiếm...', IMEI vi điều khiển mất sóng",
+      "ai_raw_response": "{\"hardware_issue\": \"Hở chân mối hàn IC Baseband (băng tần cơ sở) do va chạm\", \"faulty_components\": [\"IC Baseband\"], \"recommended_action\": \"Đổ chân chì và đóng lại IC Baseband trung tần\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Hở chân mối hàn IC Baseband (băng tần cơ sở) do va chạm\", \"faulty_components\": [\"IC Baseband\"], \"recommended_action\": \"Đổ chân chì và đóng lại IC Baseband trung tần\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1490.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 20:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 18,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 45 phút] Kính lưng nứt góc camera, muốn thay kính lưng lấy ngay trong 45 phút",
+      "ai_raw_response": "{\"hardware_issue\": \"Kính lưng sau vỡ nứt thẩm mỹ\", \"faulty_components\": [\"Kính lưng\"], \"recommended_action\": \"Tách kính bằng tia laser công nghệ cao và dán kính mới\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Kính lưng sau vỡ nứt thẩm mỹ\", \"faulty_components\": [\"Kính lưng\"], \"recommended_action\": \"Tách kính bằng tia laser công nghệ cao và dán kính mới\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1505.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-14 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 19,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Màn hình xuất hiện 1 đường sọc xanh lá cây thẳng đứng từ trên xuống dưới",
+      "ai_raw_response": "{\"hardware_issue\": \"Nứt đứt cụm cổ cáp tín hiệu điều khiển dòng Pixel OLED\", \"faulty_components\": [\"Màn hình OLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Nứt đứt cụm cổ cáp tín hiệu điều khiển dòng Pixel OLED\", \"faulty_components\": [\"Màn hình OLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1520.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 20,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin báo 79%, dung lượng sụt nhanh, cần thay pin zin lấy ngay",
+      "ai_raw_response": "{\"hardware_issue\": \"Pin chai chu kỳ sạc trên 800 lần\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin new 100% dung lượng cao\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Pin chai chu kỳ sạc trên 800 lần\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin new 100% dung lượng cao\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1535.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 21,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Vỡ mắt kính camera góc rộng, chụp ảnh bị mờ lóa sáng",
+      "ai_raw_response": "{\"hardware_issue\": \"Vỡ mắt kính bảo vệ bên ngoài của ống kính camera\", \"faulty_components\": [\"Kính camera\"], \"recommended_action\": \"Thay mắt kính sapphire chống trầy mới\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Vỡ mắt kính bảo vệ bên ngoài của ống kính camera\", \"faulty_components\": [\"Kính camera\"], \"recommended_action\": \"Thay mắt kính sapphire chống trầy mới\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1550.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-15 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 22,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Cắm sạc dự phòng không rõ nguồn gốc thì nổ lách tách nhẹ và tắt ngúm",
+      "ai_raw_response": "{\"hardware_issue\": \"Sốc điện áp đánh thủng IC sạc USB U3300 và diot bảo vệ nguồn\", \"faulty_components\": [\"IC sạc USB\", \"Diode bảo vệ áp\"], \"recommended_action\": \"Thay thế IC sạc U3300 chính hãng và đo đạc lại đường sạc\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Sốc điện áp đánh thủng IC sạc USB U3300 và diot bảo vệ nguồn\", \"faulty_components\": [\"IC sạc USB\", \"Diode bảo vệ áp\"], \"recommended_action\": \"Thay thế IC sạc U3300 chính hãng và đo đạc lại đường sạc\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1565.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 13:36:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 23,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Bị xe ô tô chèn qua, cong vênh toàn bộ khung sườn Titan và gãy đôi bo mạch",
+      "ai_raw_response": "{\"hardware_issue\": \"Gãy đôi bo mạch chủ Mainboard nhiều lớp, đứt toàn bộ đường mạch CPU và RAM\", \"faulty_components\": [\"Bo mạch chủ\"], \"recommended_action\": \"Báo hủy do chi phí thay toàn bộ linh kiện vượt quá giá trị máy mới\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Gãy đôi bo mạch chủ Mainboard nhiều lớp, đứt toàn bộ đường mạch CPU và RAM\", \"faulty_components\": [\"Bo mạch chủ\"], \"recommended_action\": \"Báo hủy do chi phí thay toàn bộ linh kiện vượt quá giá trị máy mới\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1580.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-15 20:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 25,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin xuống cấp còn 69%, máy giật lag khi mở ứng dụng",
+      "ai_raw_response": "{\"hardware_issue\": \"Pin chai nặng kích hoạt cơ chế bóp hiệu năng CPU của iOS\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin mới để khôi phục hiệu năng tối đa\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Pin chai nặng kích hoạt cơ chế bóp hiệu năng CPU của iOS\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin mới để khôi phục hiệu năng tối đa\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1610.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-10 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 26,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Màn hình bỗng nhiên chuyển sang màu trắng sữa, chuông gọi đến vẫn kêu",
+      "ai_raw_response": "{\"hardware_issue\": \"Mất áp đường hiển thị Vcore màn hình OLED\", \"faulty_components\": [\"Đường áp hiển thị\"], \"recommended_action\": \"Câu dây đồng vi phẫu phục hồi tín hiệu\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Mất áp đường hiển thị Vcore màn hình OLED\", \"faulty_components\": [\"Đường áp hiển thị\"], \"recommended_action\": \"Câu dây đồng vi phẫu phục hồi tín hiệu\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1625.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 18:24:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 27,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Màn hình chớp nháy sọc đen che mất Dynamic Island",
+      "ai_raw_response": "{\"hardware_issue\": \"Chảy mực OLED và hỏng mạch hiển thị viền Dynamic Island\", \"faulty_components\": [\"Màn hình OLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chảy mực OLED và hỏng mạch hiển thị viền Dynamic Island\", \"faulty_components\": [\"Màn hình OLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1640.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-14 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 28,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Máy liên tục cảnh báo 'Phát hiện chất lỏng trong đầu nối USB-C', không cho sạc",
+      "ai_raw_response": "{\"hardware_issue\": \"Chân cắm Type-C bị ẩm rỉ muối gây chạm cảm biến đo độ ẩm\", \"faulty_components\": [\"Cổng USB-C\"], \"recommended_action\": \"Vệ sinh chân sạc hoặc thay cụm bo cổng USB-C\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chân cắm Type-C bị ẩm rỉ muối gây chạm cảm biến đo độ ẩm\", \"faulty_components\": [\"Cổng USB-C\"], \"recommended_action\": \"Vệ sinh chân sạc hoặc thay cụm bo cổng USB-C\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1655.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 30,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 2 tiếng] Cảm ứng nửa dưới màn hình không bấm được bàn phím",
+      "ai_raw_response": "{\"hardware_issue\": \"Đứt đường quét cảm ứng số hóa lớp kính màn hình\", \"faulty_components\": [\"Cụm cảm ứng màn hình\"], \"recommended_action\": \"Thay cụm màn hình hoặc ép lớp cảm ứng mới\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Đứt đường quét cảm ứng số hóa lớp kính màn hình\", \"faulty_components\": [\"Cụm cảm ứng màn hình\"], \"recommended_action\": \"Thay cụm màn hình hoặc ép lớp cảm ứng mới\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1685.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 23:12:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 31,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin chai phù nhẹ, muốn thay pin dung lượng chuẩn lấy liền",
+      "ai_raw_response": "{\"hardware_issue\": \"Chai pin sau 2 năm sử dụng cường độ cao\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin new seal\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chai pin sau 2 năm sử dụng cường độ cao\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin new seal\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1700.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-13 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 32,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 45 phút] Ép kính màn hình nứt góc, giữ màn zin",
+      "ai_raw_response": "{\"hardware_issue\": \"Nứt vỡ kính cường lực ngoài, hiển thị và cảm ứng tốt 100%\", \"faulty_components\": [\"Kính mặt trước\"], \"recommended_action\": \"Ép kính chân không giữ màn gốc\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Nứt vỡ kính cường lực ngoài, hiển thị và cảm ứng tốt 100%\", \"faulty_components\": [\"Kính mặt trước\"], \"recommended_action\": \"Ép kính chân không giữ màn gốc\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1715.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-18 01:36:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 33,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Loa chuông phát nhạc bị rè và tịt hẳn, chỉ còn rung",
+      "ai_raw_response": "{\"hardware_issue\": \"Đứt cuộn dây đồng màng loa ngoài\", \"faulty_components\": [\"Cụm loa ngoài chuông\"], \"recommended_action\": \"Thay cụm loa chuông chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Đứt cuộn dây đồng màng loa ngoài\", \"faulty_components\": [\"Cụm loa ngoài chuông\"], \"recommended_action\": \"Thay cụm loa chuông chính hãng\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1730.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-15 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 34,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Màn hình bị kẻ sọc hồng giữa màn sau khi rơi",
+      "ai_raw_response": "{\"hardware_issue\": \"Lỗi đứt cổ cáp màn hình AMOLED\", \"faulty_components\": [\"Màn hình Dynamic AMOLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Lỗi đứt cổ cáp màn hình AMOLED\", \"faulty_components\": [\"Màn hình Dynamic AMOLED\"], \"recommended_action\": \"Thay màn hình nguyên bộ\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1745.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 35,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Màn hình Dynamic AMOLED bị 2 sọc xanh dọc sau khi cập nhật phần mềm và máy nóng",
+      "ai_raw_response": "{\"hardware_issue\": \"Đứt cổ cáp hiển thị Dynamic AMOLED 2X do nhiệt độ cao làm bong keo ACF\", \"faulty_components\": [\"Cụm màn hình\"], \"recommended_action\": \"Thay màn hình chính hãng nguyên khung\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Đứt cổ cáp hiển thị Dynamic AMOLED 2X do nhiệt độ cao làm bong keo ACF\", \"faulty_components\": [\"Cụm màn hình\"], \"recommended_action\": \"Thay màn hình chính hãng nguyên khung\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1760.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 36,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin chỉ dùng được 3 tiếng là cạn, máy sụt nguồn",
+      "ai_raw_response": "{\"hardware_issue\": \"Chai pin hóa học sau thời gian dài vừa sạc vừa chơi game\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin hãng 3900mAh\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chai pin hóa học sau thời gian dài vừa sạc vừa chơi game\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin hãng 3900mAh\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1775.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-15 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 37,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 45 phút] Nứt kính viền cong bên phải, cảm ứng và màn trong vẫn hiển thị hoàn hảo",
+      "ai_raw_response": "{\"hardware_issue\": \"Nứt vỡ kính cong bảo vệ ngoài Gorilla Glass Victus 2\", \"faulty_components\": [\"Kính cong\"], \"recommended_action\": \"Ép kính màn cong chuyên dụng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Nứt vỡ kính cong bảo vệ ngoài Gorilla Glass Victus 2\", \"faulty_components\": [\"Kính cong\"], \"recommended_action\": \"Ép kính màn cong chuyên dụng\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1790.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-14 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 38,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Mở gập máy nửa chừng thì màn hình chớp tắt rồi tối đen, gập hẳn lại thì màn ngoài vẫn sáng",
+      "ai_raw_response": "{\"hardware_issue\": \"Đứt gãy cổ cáp nối qua trục bản lề gập do mỏi cơ học\", \"faulty_components\": [\"Cáp bản lề gập\"], \"recommended_action\": \"Thay thế cụm cáp gập bản lề chính hãng\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Đứt gãy cổ cáp nối qua trục bản lề gập do mỏi cơ học\", \"faulty_components\": [\"Cáp bản lề gập\"], \"recommended_action\": \"Thay thế cụm cáp gập bản lề chính hãng\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1805.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 13:36:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 39,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Chân cắm Type-C lỏng lẻo, cắm dây sạc không báo nhận dòng",
+      "ai_raw_response": "{\"hardware_issue\": \"Gãy chân lưỡi gà bên trong cổng cắm sạc USB Type-C\", \"faulty_components\": [\"Cụm chân sạc\"], \"recommended_action\": \"Thay cụm bo sạc Type-C mới\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Gãy chân lưỡi gà bên trong cổng cắm sạc USB Type-C\", \"faulty_components\": [\"Cụm chân sạc\"], \"recommended_action\": \"Thay cụm bo sạc Type-C mới\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1820.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-12 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 40,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Nứt mắt kính camera tiềm vọng 5x, chụp zoom xa bị quầng sáng",
+      "ai_raw_response": "{\"hardware_issue\": \"Vỡ mắt kính bảo vệ ống kính tele tiềm vọng\", \"faulty_components\": [\"Kính camera\"], \"recommended_action\": \"Thay mắt kính sapphire bảo vệ mới\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Vỡ mắt kính bảo vệ ống kính tele tiềm vọng\", \"faulty_components\": [\"Kính camera\"], \"recommended_action\": \"Thay mắt kính sapphire bảo vệ mới\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1835.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 20:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 41,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin phù đẩy hở nắp lưng kính phía sau, khách muốn thay pin lấy liền",
+      "ai_raw_response": "{\"hardware_issue\": \"Pin phù do sạc qua đêm liên tục\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin hãng 5000mAh và dán lại nắp lưng\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Pin phù do sạc qua đêm liên tục\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin hãng 5000mAh và dán lại nắp lưng\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1850.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-13 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 42,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Màn hình trong xuất hiện đốm đen ngay nếp gấp bản lề, lan dần ra ngoài",
+      "ai_raw_response": "{\"hardware_issue\": \"Chảy mực tấm nền Ultra Thin Glass (UTG) dẻo do cấn dị vật khi gập\", \"faulty_components\": [\"Màn hình trong UTG\"], \"recommended_action\": \"Thay cụm màn hình gập nguyên bộ kèm bản lề\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chảy mực tấm nền Ultra Thin Glass (UTG) dẻo do cấn dị vật khi gập\", \"faulty_components\": [\"Màn hình trong UTG\"], \"recommended_action\": \"Thay cụm màn hình gập nguyên bộ kèm bản lề\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1865.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-18 01:36:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 43,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Loa dưới đáy máy bị rè khi mở nhạc to, âm thanh nghẹt",
+      "ai_raw_response": "{\"hardware_issue\": \"Rách màng loa ngoài do va đập nhẹ\", \"faulty_components\": [\"Cụm loa\"], \"recommended_action\": \"Thay cụm loa chuông zin\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Rách màng loa ngoài do va đập nhẹ\", \"faulty_components\": [\"Cụm loa\"], \"recommended_action\": \"Thay cụm loa chuông zin\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1880.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 44,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Màn hình nứt toác và chớp sọc xanh sau khi rơi từ xe máy",
+      "ai_raw_response": "{\"hardware_issue\": \"Hỏng hoàn toàn tấm nền Dynamic AMOLED\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên cụm chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Hỏng hoàn toàn tấm nền Dynamic AMOLED\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên cụm chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1895.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 16:00:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 45,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Nắp lưng sau bị bong keo hở viền, pin hơi đội nhẹ",
+      "ai_raw_response": "{\"hardware_issue\": \"Keo dán nắp lưng lão hóa kết hợp pin phù nhẹ\", \"faulty_components\": [\"Pin\", \"Keo nắp lưng\"], \"recommended_action\": \"Thay pin mới và dán lại keo chống nước\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Keo dán nắp lưng lão hóa kết hợp pin phù nhẹ\", \"faulty_components\": [\"Pin\", \"Keo nắp lưng\"], \"recommended_action\": \"Thay pin mới và dán lại keo chống nước\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1910.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-11 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 47,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Đang cắm sạc thì máy sập nguồn không bật lên lại được",
+      "ai_raw_response": "{\"hardware_issue\": \"Chập mạch nguồn IC sạc do nguồn điện sạc không ổn định\", \"faulty_components\": [\"IC nguồn\"], \"recommended_action\": \"Đo đạc và thay thế linh kiện nguồn\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Chập mạch nguồn IC sạc do nguồn điện sạc không ổn định\", \"faulty_components\": [\"IC nguồn\"], \"recommended_action\": \"Đo đạc và thay thế linh kiện nguồn\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1940.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-18 02:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 48,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Chân sạc bám bụi đen, sạc lúc nhận lúc không",
+      "ai_raw_response": "{\"hardware_issue\": \"Bụi nén chặt trong cổng Type-C cản trở tiếp xúc\", \"faulty_components\": [\"Cổng sạc\"], \"recommended_action\": \"Vệ sinh chuyên dụng họng sạc và chân tiếp xúc\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Bụi nén chặt trong cổng Type-C cản trở tiếp xúc\", \"faulty_components\": [\"Cổng sạc\"], \"recommended_action\": \"Vệ sinh chuyên dụng họng sạc và chân tiếp xúc\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1955.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-14 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 49,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Màn hình bị sọc chỉ hồng dọc thân máy",
+      "ai_raw_response": "{\"hardware_issue\": \"Đứt vi mạch cổ cáp màn hình\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên bộ\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Đứt vi mạch cổ cáp màn hình\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên bộ\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1970.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 20:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 51,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Rơi xuống nước biển khi đi du lịch, để 3 ngày sau mới đem sửa",
+      "ai_raw_response": "{\"hardware_issue\": \"Muối biển ăn mòn thủng bo mạch và mục chân linh kiện\", \"faulty_components\": [\"Bo mạch chủ\"], \"recommended_action\": \"Hoàn trả do oxy hóa diện rộng không thể khắc phục\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Muối biển ăn mòn thủng bo mạch và mục chân linh kiện\", \"faulty_components\": [\"Bo mạch chủ\"], \"recommended_action\": \"Hoàn trả do oxy hóa diện rộng không thể khắc phục\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 2000.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-15 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 52,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Khách dùng nhiều cần thay pin dự phòng lấy ngay",
+      "ai_raw_response": "{\"hardware_issue\": \"Pin sụt giảm dung lượng sử dụng\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin chính hãng\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Pin sụt giảm dung lượng sử dụng\", \"faulty_components\": [\"Pin\"], \"recommended_action\": \"Thay pin Zin chính hãng\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 2015.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 53,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 45 phút] Rơi nứt góc kính cong màn hình, camera Leica và cảm ứng vẫn bình thường",
+      "ai_raw_response": "{\"hardware_issue\": \"Nứt kính bảo vệ ngoài tấm nền OLED cong 2K\", \"faulty_components\": [\"Mặt kính\"], \"recommended_action\": \"Ép kính cong chân không chuyên dụng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Nứt kính bảo vệ ngoài tấm nền OLED cong 2K\", \"faulty_components\": [\"Mặt kính\"], \"recommended_action\": \"Ép kính cong chân không chuyên dụng\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 2030.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-15 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 54,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Chân cắm sạc lỏng lẻo, phải bẻ gập dây sạc mới nhận sạc nhanh 67W",
+      "ai_raw_response": "{\"hardware_issue\": \"Mòn gãy lưỡi đồng tiếp xúc cổng Type-C và đứt đường sạc nhanh\", \"faulty_components\": [\"Cụm bo cáp sạc 67W\"], \"recommended_action\": \"Thay cụm bo mạch sạc nhanh zin mới\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Mòn gãy lưỡi đồng tiếp xúc cổng Type-C và đứt đường sạc nhanh\", \"faulty_components\": [\"Cụm bo cáp sạc 67W\"], \"recommended_action\": \"Thay cụm bo mạch sạc nhanh zin mới\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 2045.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-12 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 55,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Hẹn trả trong ngày - 3 tiếng] Màn hình tối đen, chỉ rung chuông khi có người gọi",
+      "ai_raw_response": "{\"hardware_issue\": \"Vỡ tấm nền OLED 2K\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Vỡ tấm nền OLED 2K\", \"faulty_components\": [\"Màn hình\"], \"recommended_action\": \"Thay màn hình nguyên bộ chính hãng\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1260.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 20:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 56,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Rơi vào chậu nước giặt đồ, sấy không lên",
+      "ai_raw_response": "{\"hardware_issue\": \"Xà phòng bám gây chập mạch nguồn\", \"faulty_components\": [\"Bo mạch sạc\"], \"recommended_action\": \"Sấy buồng siêu âm và thay bo sạc\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Xà phòng bám gây chập mạch nguồn\", \"faulty_components\": [\"Bo mạch sạc\"], \"recommended_action\": \"Sấy buồng siêu âm và thay bo sạc\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1275.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 04:00:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 57,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Đang chơi game thì máy đơ rồi tự khởi động lại liên tục ở logo POCO",
+      "ai_raw_response": "{\"hardware_issue\": \"Hở chân chì vi xử lý Snapdragon do nhiệt độ quá cao\", \"faulty_components\": [\"CPU Snapdragon\"], \"recommended_action\": \"Đổ chân chì và đóng lại CPU (Reballing)\", \"risk_level\": \"Cao\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Hở chân chì vi xử lý Snapdragon do nhiệt độ quá cao\", \"faulty_components\": [\"CPU Snapdragon\"], \"recommended_action\": \"Đổ chân chì và đóng lại CPU (Reballing)\", \"risk_level\": \"Cao\"}",
+      "execution_time_ms": 1290.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 23:12:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 58,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [⚡ Sửa lấy ngay - 30 phút] Pin tụt nhanh, cần thay pin zin để chạy xe công nghệ",
+      "ai_raw_response": "{\"hardware_issue\": \"Pin chai chu kỳ sạc cao\", \"faulty_components\": [\"Pin SuperVOOC\"], \"recommended_action\": \"Thay pin zin dung lượng cao\", \"risk_level\": \"Thap\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Pin chai chu kỳ sạc cao\", \"faulty_components\": [\"Pin SuperVOOC\"], \"recommended_action\": \"Thay pin zin dung lượng cao\", \"risk_level\": \"Thap\"}",
+      "execution_time_ms": 1305.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-16 08:48:06.022538"
+    },
+    {
+      "phieu_sua_chua_id": 59,
+      "loai_tac_vu": "TomTatLoi",
+      "model_name": "gemini-1.5-flash",
+      "prompt_input": "[Prompt 5 Components] Lỗi khách: [Kỹ thuật chuyên sâu - Hẹn 24h-48h] Mở gập máy nhiều lần khiến màn hình chính nháy chớp sọc ngang",
+      "ai_raw_response": "{\"hardware_issue\": \"Lỏng cổ cáp gập\", \"faulty_components\": [\"Cáp bản lề\"], \"recommended_action\": \"Gia cố và thay thế cáp gập\", \"risk_level\": \"TrungBinh\"}",
+      "ai_parsed_json": "{\"hardware_issue\": \"Lỏng cổ cáp gập\", \"faulty_components\": [\"Cáp bản lề\"], \"recommended_action\": \"Gia cố và thay thế cáp gập\", \"risk_level\": \"TrungBinh\"}",
+      "execution_time_ms": 1320.0,
+      "trang_thai": "ThanhCong",
+      "ngay_thuc_hien": "2026-09-17 11:12:06.022538"
+    }
+  ]
+}

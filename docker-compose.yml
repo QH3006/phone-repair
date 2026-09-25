@@ -1,0 +1,17 @@
+services:
+  phonecare-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phonecare_ai_app
+    ports:
+      - "8000:8000"
+    volumes:
+      # Ánh xạ CSDL SQLite và thư mục sao lưu ra host để bảo toàn dữ liệu
+      - ./phone_repair.db:/app/phone_repair.db
+      - ./backups:/app/backups
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=sqlite:////app/phone_repair.db
+    restart: unless-stopped
