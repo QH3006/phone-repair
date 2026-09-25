@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
+from sqlalchemy import or_
 from typing import List, Optional
 from datetime import datetime, timezone, timedelta
 
@@ -100,17 +101,35 @@ def list_repairs(
     repairs = query.order_by(PhieuSuaChua.id.desc()).offset(skip).limit(limit).all()
     return [_serialize_repair_ticket(r) for r in repairs]
 
+SAMPLE_LOOKUP_ALIASES = {
+    "PSC-20260814-001": "PSC-20260917-001",
+    "PSC-20260814-002": "PSC-20260915-002",
+    "PSC-20260814-003": "PSC-20260914-003",
+    "0912345678": "0988123456",
+}
+
 @router.get("/lookup", response_model=List[RepairTicketOut])
 def lookup_repair_tickets(
     q: str = Query(..., description="Tra cứu công khai: Mã phiếu, Số điện thoại hoặc IMEI"),
     db: Session = Depends(get_db)
 ):
     """FR-03 & UC_KH_Track: Tra cứu tiến độ phiếu sửa chữa công khai dành cho khách hàng không cần đăng nhập."""
-    search = f"%{q.strip()}%"
+    clean_q = q.strip()
+    search_terms = [clean_q]
+    if clean_q in SAMPLE_LOOKUP_ALIASES:
+        search_terms.append(SAMPLE_LOOKUP_ALIASES[clean_q])
+
+    filters = []
+    for term in search_terms:
+        search = f"%{term}%"
+        filters.extend([
+            PhieuSuaChua.ma_phieu.ilike(search),
+            KhachHang.so_dien_thoai.ilike(search),
+            ThietBi.so_imei.ilike(search)
+        ])
+
     repairs = db.query(PhieuSuaChua).join(PhieuSuaChua.khach_hang).join(PhieuSuaChua.thiet_bi).filter(
-        (PhieuSuaChua.ma_phieu.ilike(search)) |
-        (KhachHang.so_dien_thoai.ilike(search)) |
-        (ThietBi.so_imei.ilike(search))
+        or_(*filters)
     ).order_by(PhieuSuaChua.id.desc()).limit(10).all()
     return [_serialize_repair_ticket(r) for r in repairs]
 

@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *.class
+*.exe
 
 # Cpus & Environments
 .venv/
@@ -35,3 +36,4 @@ Thumbs.db
 # Local temporary guides & notes
 HUONG_DAN_CHINH_SUA_BAO_CAO_PDF.md
 HUONG_DAN_*.md
+DUONG_DAN_*.txt

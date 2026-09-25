@@ -6,6 +6,8 @@
 [![Frontend Modern](https://img.shields.io/badge/Frontend-ES6+_|_CSS3_Modular-61DAFB?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org)
 [![Server Uvicorn](https://img.shields.io/badge/Server-Uvicorn_ASGI-495057?style=flat-square&logo=gunicorn&logoColor=white)](https://www.uvicorn.org/)
 [![Database SQLite](https://img.shields.io/badge/Database-SQLite_3_|_SQLAlchemy-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
+[![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](#)
+[![Cloud Demo](https://img.shields.io/badge/Cloud_Demo-Cloudflare_Tunnel-F38020?style=flat-square&logo=cloudflare&logoColor=white)](#)
 [![AI Engine Gemini](https://img.shields.io/badge/AI_Engine-Google_Gemini-8E75C2?style=flat-square&logo=googlegemini&logoColor=white)](https://ai.google.dev)
 [![Architecture RAG](https://img.shields.io/badge/Architecture-Enterprise_RAG_Pipeline-4CAF50?style=flat-square&logo=probot&logoColor=white)](#)
 [![AI Audit Log](https://img.shields.io/badge/AI_Audit_Log-ai__log.md-purple?style=flat-square&logo=markdown&logoColor=white)](ai_log.md)
@@ -18,7 +20,7 @@ Dự án phát triển nền tảng phần mềm quản lý toàn diện trung t
 
 ---
 
-## 🌟 1. Các Trụ Cột Kỹ Thuật & Ranh Giới Phạm Vi Đồ Án
+## 🌟 1. Các Trụ Cột Kỹ Thuật & Kiến Trúc Hệ Thống (System Pillars & Architecture)
 
 ### 1.1. Bảng Trụ Cột Kỹ Thuật & Module Nguồn
 
@@ -36,8 +38,8 @@ Dự án phát triển nền tảng phần mềm quản lý toàn diện trung t
 | **10. Báo cáo kỹ thuật KT1 & KT2** | Báo cáo phân tích thiết kế [`BAO_CAO_KT1`](BAO_CAO_KT1_PHAN_TICH_THIET_KE.md) và Báo cáo triển khai CRUD RBAC [`BAO_CAO_KT2`](BAO_CAO_KT2_TRIEN_KHAI_CRUD_RBAC.md). | [`BAO_CAO_KT2_TRIEN_KHAI_CRUD_RBAC.md`](BAO_CAO_KT2_TRIEN_KHAI_CRUD_RBAC.md) |
 | **11. Đánh giá & Tối ưu hóa mô hình AI** | Báo cáo thử nghiệm A/B 3 kỹ thuật (Zero-shot vs Few-shot vs CoT) trên bộ dataset 20 ca bệnh thực tế, đo lường 5 chỉ số (Accuracy 98%, Completeness 100%, Consistency 98%, Robustness 95%, Latency). | [`docs/08_toi_uu_va_danh_gia_chat_luong_ai.md`](docs/08_toi_uu_va_danh_gia_chat_luong_ai.md) |
 
-### 1.2. Phân Định Ranh Giới Phạm Vi Đồ Án (Scope Clarification)
-- **🎯 Phạm vi CỐT LÕI (Core In-Scope — Trọng tâm đánh giá):**
+### 1.2. Phân Định Ranh Giới Phạm Vi Hệ Thống (System Scope Clarification)
+- **🎯 Phạm vi CỐT LÕI (Core In-Scope — Nghiệp Vụ Vận Hành Trung Tâm):**
   - Đầy đủ 100% CRUD 5 phân hệ nghiệp vụ: Khách hàng & Thiết bị, Kho linh kiện & Dịch vụ, Phiếu sửa chữa & Linh kiện thay thế, Hóa đơn & Thẻ bảo hành điện tử, Quản trị người dùng & Phân quyền.
   - Cơ chế xác thực JWT Bearer Token + RBAC 4 vai trò nhân sự (`QuanLy`, `LeTan`, `KyThuatVien`, `ThuNgan`).
   - 3 Tính năng Trợ lý AI thực tế tích hợp sẵn trong quy trình sửa máy: Tóm tắt bệnh, Diễn giải lỗi và Soạn tin nhắn SMS/Zalo.
@@ -54,33 +56,95 @@ Dự án phát triển nền tảng phần mềm quản lý toàn diện trung t
 - **AI Engine**: **Google Gemini API** (`gemini-1.5-flash` / `gemini-1.5-pro`) kết hợp cơ chế Fallback phòng thủ.
 - **Frontend**: Single Page Web Application (HTML5, Vanilla Modern CSS Glassmorphism/Dark mode, JS Fetch API).
 - **Bảo mật & Phân quyền**: **JWT (HS256)** + Thuật toán băm mật khẩu **bcrypt**.
-- **Kiểm thử**: **Pytest** cho unit test prompt & database schema.
+- **Đóng gói & Triển khai**: **Docker & Docker Compose** (Container hóa chuẩn production) + **Cloudflare Tunnel** (Tạo URL HTTPS công khai trực tiếp cho demo từ xa).
+- **Kiểm thử**: **Pytest** cho unit test prompt, business logic & database schema (35 test cases).
 
 ---
 
-## 🚀 3. Hướng Dẫn Cài Đặt và Chạy Thử (3 Bước Đơn Giản)
+## 🚀 3. Hướng Dẫn Cài Đặt và Khởi Chạy
 
-### Bước 1: Cài đặt các thư viện phụ thuộc
+Dự án hỗ trợ 3 hình thức khởi chạy linh hoạt tùy theo mục đích đánh giá:
+
+---
+
+### 💻 Cách 1: Khởi chạy trực tiếp (Local Python Environment)
+
+#### Bước 1: Cài đặt các thư viện phụ thuộc
 Mở terminal tại thư mục dự án và chạy:
 ```bash
 pip install -r requirements.txt
 ```
 
-### Bước 2: Cấu hình biến môi trường (Tùy chọn)
+#### Bước 2: Cấu hình biến môi trường (Tùy chọn)
 Tạo file `.env` từ file mẫu `.env.example`:
 ```bash
 cp .env.example .env
 ```
 *(Lưu ý: Hệ thống đã tích hợp sẵn cơ chế **Semantic Rule-Based Fallback**, bạn có thể chạy thử nghiệm ngay cả khi chưa điền Gemini API Key!)*
 
-### Bước 3: Khởi chạy máy chủ Backend & Giao diện
+#### Bước 3: Khởi chạy máy chủ Backend & Giao diện
 ```bash
 python -m uvicorn backend.app.main:app --reload --port 8000
 ```
 - **Giao diện Ứng dụng Quản Trị & Trợ Lý AI**: Truy cập [http://127.0.0.1:8000](http://127.0.0.1:8000)
 - **Tài liệu API tương tác (Swagger UI)**: Truy cập [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-### Chạy Kiểm thử Tự động (Automated Tests):
+---
+
+### 🐳 Cách 2: Triển khai bằng Docker & Docker Compose (Khuyến khích)
+
+Hệ thống đã được đóng gói container hóa chuẩn mực với `Dockerfile` và `docker-compose.yml`, giúp triển khai tức thì trên mọi môi trường mà không lo xung đột thư viện:
+
+```bash
+# 1. Khởi chạy toàn bộ hệ thống dưới dạng container ngầm:
+docker compose up --build -d
+
+# 2. Xem logs hoạt động thời gian thực:
+docker compose logs -f
+
+# 3. Dừng hệ thống khi kết thúc:
+docker compose down
+```
+- **Truy cập hệ thống**: [http://localhost:8000](http://localhost:8000)
+- **Dữ liệu SQLite**: Được gắn volume lưu trữ bền vững (`./phone_repair.db`).
+
+---
+
+### 🌐 Cách 3: Chạy Cloud Demo công khai qua Cloudflare Tunnel (Cho thiết bị di động / Khách hàng / Stakeholder truy cập)
+
+Để người dùng, đối tác hoặc hội đồng nghiệm thu có thể trải nghiệm trực tiếp hệ thống từ điện thoại, máy tính bảng hoặc qua mạng Internet (4G/Wi-Fi ngoài) mà **không cần mở port router, không cần IP tĩnh**:
+
+#### ⚡ Lựa chọn A: 1-Click tự động trên Windows (Khuyên dùng)
+1. Đảm bảo Backend đang chạy (qua Local hoặc Docker ở port `8000`).
+2. Nhấp đúp vào file:
+   ```
+   start_cloud_demo.bat
+   ```
+3. Script sẽ:
+   - Tự động bắt đường dẫn HTTPS công khai an toàn dạng: `https://[ngau-nhien].trycloudflare.com`
+   - Tự động copy link vào bộ nhớ tạm (Clipboard)
+   - Lưu lại link vào file text `DUONG_DAN_DEMO_CLOUD.txt`
+   - Tự động mở trình duyệt hiển thị giao diện để bạn gửi link/quét mã thử nghiệm!
+
+#### 🐍 Lựa chọn B: Chạy qua Script Python
+```bash
+python scripts/run_cloud_demo.py
+```
+
+#### 💻 Lựa chọn C: Chạy lệnh Cloudflared trực tiếp
+```bash
+# Trên Windows (PowerShell/CMD):
+.\cloudflared.exe tunnel --url http://127.0.0.1:8000
+
+# Trên Linux/macOS:
+cloudflared tunnel --url http://localhost:8000
+```
+*Tìm dòng `https://*.trycloudflare.com` hiển thị trên màn hình console để truy cập.*
+
+---
+
+### 🧪 Chạy Kiểm thử Tự động (Automated Tests):
+Hệ thống tích hợp bộ 35 bài kiểm thử tự động toàn diện kiểm chứng 100% chức năng:
 ```bash
 pytest tests/ -v
 # hoặc
@@ -95,6 +159,12 @@ du_an/
 ├── ai_log.md                            # 📌 NHẬT KÝ SỬ DỤNG AI (Bắt buộc theo chuẩn KT1 & KT2)
 ├── BAO_CAO_KT1_PHAN_TICH_THIET_KE.md    # Báo cáo kỹ thuật phân tích thiết kế toàn diện
 ├── BAO_CAO_KT2_TRIEN_KHAI_CRUD_RBAC.md  # Báo cáo kỹ thuật triển khai CRUD & Phân quyền RBAC
+├── Dockerfile                           # File cấu hình đóng gói Docker container
+├── docker-compose.yml                   # Cấu hình điều phối container & volume dữ liệu
+├── render.yaml                          # File cấu hình triển khai Infrastructure as Code lên Render
+├── start_cloud_demo.bat                 # 🚀 1-Click mở Cloud Demo công khai cho thiết bị khác
+├── scripts/
+│   └── run_cloud_demo.py                # Script tự động hóa bắt link Cloudflare Tunnel & Clipboard
 ├── docs/                                # Thư mục tài liệu đặc tả module hóa
 │   ├── 01_bai_toan_va_yeu_cau.md        # Phân tích bối cảnh, 12 FRs và NFRs
 │   ├── 02_usecase_actor.md              # Sơ đồ Use Case, ma trận RBAC & 5 đặc tả Use Case

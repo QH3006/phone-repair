@@ -22,7 +22,7 @@ function openPublicTrackingModal() {
         const input = document.getElementById('public-tracking-input');
         if (input) {
             input.focus();
-            if (!input.value) input.value = 'PSC-20260814-001';
+            if (!input.value) input.value = 'PSC-20260917-001';
             doPublicTrackingSearch();
         }
     }

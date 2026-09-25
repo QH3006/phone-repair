@@ -1,6 +1,6 @@
 # 📋 NHẬT KÝ SỬ DỤNG AI (AI USAGE & AUDIT LOG) — `ai_log.md`
 
-> **Đề tài:** Hệ thống Quản lý Dịch vụ Sửa chữa Thiết bị Di động Tích hợp Trợ lý AI (PhoneCare AI)  
+> **Dự án:** Hệ thống Quản trị & Vận hành Dịch vụ Sửa chữa Thiết bị Di động Tích hợp Trợ lý AI (PhoneCare AI)  
 > **Các giai đoạn:** KT1 (Phân tích & Thiết kế) — KT2 (CRUD Nghiệp vụ & Phân quyền RBAC) — Định hướng KT3 (Tối ưu hóa & Đánh giá chất lượng)  
 > **Quy trình áp dụng:** Phát triển phần mềm hiện đại có AI đồng hành (AI-Augmented SDLC) kết hợp Giám sát của Con người (**Human-in-the-Loop - HITL**)  
 
@@ -9,12 +9,12 @@
 ## 🎯 1. NGUYÊN TẮC SỬ DỤNG AI & GIỚI HẠN PHẠM VI (SCOPE BOUNDARY)
 
 ### 1.1. Nguyên tắc đạo đức & An toàn kỹ thuật
-1. **Human-in-the-loop (Con người quyết định tối thượng):** Mọi mã nguồn, thiết kế CSDL, quy trình nghiệp vụ và prompt do AI đề xuất đều phải qua bước phản biện, kiểm thử và hiệu chỉnh của sinh viên/kỹ sư trước khi đưa vào hệ thống. Tuyệt đối không sao chép nguyên văn khi chưa hiểu rõ bản chất.
+1. **Human-in-the-loop (Con người quyết định tối thượng):** Mọi mã nguồn, thiết kế CSDL, quy trình nghiệp vụ và prompt do AI đề xuất đều phải qua bước phản biện, kiểm thử và hiệu chỉnh của kỹ sư phần mềm / kiến trúc sư hệ thống trước khi đưa vào hệ thống. Tuyệt đối không sao chép nguyên văn khi chưa hiểu rõ bản chất.
 2. **Bảo mật dữ liệu riêng tư (PII Protection):** Không gửi dữ liệu định danh khách hàng (SĐT thật, IMEI, mật khẩu máy) lên các mô hình AI đám mây công cộng. Dự án xây dựng module `DataSanitizer` để che mờ dữ liệu trước khi gọi AI.
 3. **Phòng vệ chống ảo giác (Anti-Hallucination):** Ép buộc mô hình trả về cấu trúc Strict JSON Schema thông qua Pydantic Validation; xây dựng Fallback Engine khi API lỗi/timeout.
 
-### 1.2. Làm rõ phạm vi đồ án (Khắc phục hiện tượng "Tham phạm vi")
-Để khắc phục nhược điểm "tài liệu hơi tham phạm vi", đồ án phân định ranh giới kỹ thuật rõ ràng:
+### 1.2. Làm rõ phạm vi hệ thống (System Scope & Boundaries)
+Để kiểm soát kiến trúc và tối ưu độ tin cậy, hệ thống phân định ranh giới kỹ thuật rõ ràng:
 - **Phạm vi CỐT LÕI bắt buộc (In-Scope - Trọng tâm KT1 & KT2):**
   - Quản lý quy trình sửa chữa qua 8 trạng thái kỹ thuật chuẩn.
   - Hoàn thiện 100% CRUD 5 phân hệ: Khách hàng & Thiết bị, Kho linh kiện & Dịch vụ, Phiếu sửa chữa & Chi tiết thay thế, Hóa đơn & Sổ bảo hành điện tử, Quản trị nhân sự.
@@ -56,7 +56,7 @@
 2. **AI không thể thay thế con người trong quyết định nghiệp vụ:**
    - Việc phân chia vai trò trung tâm (tách Lễ tân và Thu ngân, phân quyền KTV chỉ được thao tác phiếu của mình) bắt nguồn từ thực tế quản trị vận hành, AI không tự hiểu được nếu không có chuyên gia con người định hướng.
 3. **Cảnh giác với "Tham phạm vi" (Scope Creep):**
-   - AI rất hay đề xuất các công nghệ hào nhoáng (RAG vector, microservices, đa đám mây) vượt quá yêu cầu môn học. Sinh viên/kỹ sư cần tỉnh táo giữ vững ranh giới phạm vi: tập trung làm xuất sắc, hoàn thiện và tin cậy các tính năng nghiệp vụ cốt lõi trước tiên.
+   - AI rất hay đề xuất các công nghệ hào nhoáng (RAG vector, microservices, đa đám mây) vượt quá yêu cầu bài toán thực tế. Kỹ sư kiến trúc cần tỉnh táo giữ vững ranh giới phạm vi: tập trung hoàn thiện và đảm bảo độ tin cậy của các tính năng nghiệp vụ cốt lõi trước tiên.
 
 ---
 

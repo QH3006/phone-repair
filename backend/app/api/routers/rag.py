@@ -88,7 +88,7 @@ def generate_grounded_answer(req: RAGGenerateRequest):
 @router.post("/compare")
 def compare_parameter_sensitivity(req: RAGCompareRequest):
     """
-    Yêu cầu 5: Thử thay chunk size hoặc top-k để sinh viên thấy chất lượng thay đổi.
+    Thử nghiệm độ nhạy tham số (Sensitivity Analysis & A/B Tuning) đánh giá chất lượng phản hồi RAG.
     Chạy đối chiếu đồng thời:
     - Kịch bản A: Chunk nhỏ (80 chars, K=2)
     - Kịch bản B: Chuẩn mực tối ưu (300 chars, K=3)

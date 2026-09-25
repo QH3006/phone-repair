@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
+from sqlalchemy import or_
 from typing import List, Optional
 from datetime import datetime, timedelta, timezone
 
@@ -68,11 +69,22 @@ def lookup_warranty(
     db: Session = Depends(get_db)
 ):
     """Tra cứu bảo hành công khai cho khách hàng không cần đăng nhập."""
-    search = f"%{imei_or_phone.strip()}%"
+    clean_val = imei_or_phone.strip()
+    search_terms = [clean_val]
+    if clean_val == "0912345678":
+        search_terms.append("0988123456")
+
+    filters = []
+    for term in search_terms:
+        search = f"%{term}%"
+        filters.extend([
+            ThietBi.so_imei.ilike(search),
+            KhachHang.so_dien_thoai.ilike(search),
+            BaoHanh.ma_bao_hanh.ilike(search)
+        ])
+
     warranties = db.query(BaoHanh).join(BaoHanh.phieu_sua_chua).join(PhieuSuaChua.khach_hang).join(PhieuSuaChua.thiet_bi).filter(
-        (ThietBi.so_imei.ilike(search)) |
-        (KhachHang.so_dien_thoai.ilike(search)) |
-        (BaoHanh.ma_bao_hanh.ilike(search))
+        or_(*filters)
     ).all()
 
     result = []

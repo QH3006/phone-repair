@@ -287,7 +287,7 @@
         <div class="search-card">
             <div class="search-bar-wrap">
                 <input type="text" id="portal-query-input" class="search-input-lg"
-                    placeholder="Nhập Mã phiếu (ví dụ: PSC-20260814-001) hoặc Số điện thoại, IMEI..."
+                    placeholder="Nhập Mã phiếu (ví dụ: PSC-20260917-001) hoặc Số điện thoại (0988123456), IMEI..."
                     onkeydown="if(event.key==='Enter') executeCustomerSearch()">
                 <button class="btn-search-lg" onclick="executeCustomerSearch()">
                     <span>🔍</span> Tra Cứu Ngay
@@ -295,9 +295,10 @@
             </div>
             <div class="quick-tags">
                 <span>Gợi ý tra cứu mẫu:</span>
-                <span class="tag-chip" onclick="quickFill('PSC-20260814-001')">PSC-20260814-001</span>
-                <span class="tag-chip" onclick="quickFill('PSC-20260814-002')">PSC-20260814-002</span>
-                <span class="tag-chip" onclick="quickFill('0912345678')">0912345678</span>
+                <span class="tag-chip" onclick="quickFill('PSC-20260917-001')">PSC-20260917-001 (iPhone 13 Pro Max)</span>
+                <span class="tag-chip" onclick="quickFill('PSC-20260915-002')">PSC-20260915-002 (Galaxy S22 Ultra)</span>
+                <span class="tag-chip" onclick="quickFill('0988123456')">0988123456 (SĐT Khách hàng)</span>
+                <span class="tag-chip" onclick="quickFill('354892091234567')">354892091234567 (IMEI)</span>
             </div>
         </div>
 
@@ -476,7 +477,7 @@
         // Tự động load nếu có query string hoặc mặc định
         window.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
-            const q = urlParams.get('q') || 'PSC-20260814-001';
+            const q = urlParams.get('q') || 'PSC-20260917-001';
             document.getElementById('portal-query-input').value = q;
             executeCustomerSearch();
         });
